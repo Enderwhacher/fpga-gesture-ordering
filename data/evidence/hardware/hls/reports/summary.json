@@ -1,0 +1,18 @@
+{
+  "csim_passed": true,
+  "parameter_reload_identity_test_passed": true,
+  "hls_synthesis_passed": true,
+  "rtl_simulation_passed": true,
+  "board_tested": false,
+  "estimated_clock_period_ns": 7.153,
+  "resources": {
+    "BRAM_18K": 252,
+    "DSP": 972,
+    "FF": 128492,
+    "LUT": 107888,
+    "URAM": 32
+  },
+  "ip_sha256": "f975b911df9d06c48bf33fd04f2596e2bebd7ed5fb185d0530cb5698c80904d7",
+  "rtl_uses_functional_fp_primitive_models": true,
+  "csim_block_vectors": 6
+}

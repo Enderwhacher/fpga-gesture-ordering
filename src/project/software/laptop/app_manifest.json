@@ -1,0 +1,22 @@
+{
+  "package": "gesture_order_laptop_v1_preview_fix1",
+  "created_utc": "2026-10-30T09:48:08.142247+00:00",
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+  "compute_release": "gesture4_dw_c120_h28_v1",
+  "hardware_included": false,
+  "new_application_board_tested": false,
+  "critical_sha256": {
+    "laptop_app.py": "1ac6b6bae9c27a4d2e161b75c837f280bf44d4acdde6732291616b913cef5b4b",
+    "remote_client.py": "e26b66cac02a9861a1b66262bf9622c3b72244764d18cb1b269bd1b36a725a24",
+    "order_core.py": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62",
+    "order_ui.py": "003faaf230f86d7d69814faf10c5934b212f631b781b30851d0b8529c8880c99",
+    "verify_remote_app.py": "128d136bd4eeba424561476c41e8d7e91e30644523c51d89a49f37e6fe6d593f",
+    "web/index.html": "2e5e08336583762197ad8d80d74288aeb99297e64100294ffa6e2f8c0bfa60f7",
+    "assets/cola.png": "c7d537df06b4c0965ea5f4bbe16b662d26d11cf3e5843a2362caba24226a2795",
+    "assets/fries.png": "294351d22220a8aee65830d72b8d111898d4435f75f9a907a59c15a140a7457a",
+    "start_laptop.bat": "1d8fcf3f8ccfb46afee5cb7d885204ecc2ed0265c1abee401de8f50da0dbb8b8",
+    "start_demo.bat": "c256a85e7c64aa93bfb65f25fb4059db61dffd95476ca6c80a0aeacd9d44968d",
+    "requirements-laptop.txt": "ab99b64988ce9433c25229834315204a5c6cf5e865de468d709fa42081111989"
+  },
+  "patch": "independent camera preview; recognition gate unchanged"
+}

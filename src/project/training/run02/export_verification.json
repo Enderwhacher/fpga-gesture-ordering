@@ -1,0 +1,15 @@
+{
+  "images": 384,
+  "matched_top1": 384,
+  "correct": 364,
+  "max_abs_logit_error": 4.336237907409668e-06,
+  "onnx": "1.18.0",
+  "opencv": "4.10.0",
+  "feature_parameter_tensors_changed": 170,
+  "feature_parameter_tensors_total": 170,
+  "desktop_only_forward_median_ms": 48.26839999986987,
+  "desktop_threads": 2,
+  "board_tested": false,
+  "board_latency_measured": false,
+  "note": "Desktop forward time is not board performance or full pipeline FPS."
+}

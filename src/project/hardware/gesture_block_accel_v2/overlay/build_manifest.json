@@ -1,0 +1,63 @@
+{
+  "release": "gesture_blocks56_fp32_pw16_v2",
+  "part": "xczu5eg-sfvc784-1-e",
+  "vivado": "2025.2",
+  "implementation_passed": true,
+  "csim_passed": true,
+  "rtl_simulation_passed": true,
+  "native_hls_cosim_run": false,
+  "rtl_simulation_kind": "Generated HLS RTL with cycle-matched functional FP32 primitive simulation models",
+  "rtl_uses_functional_fp_primitive_models": true,
+  "vendor_full_design_simulation_completed": false,
+  "board_tested": false,
+  "input_shape": [
+    1,
+    40,
+    28,
+    28
+  ],
+  "output_shape": [
+    1,
+    40,
+    28,
+    28
+  ],
+  "dtype": "float32",
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+  "blocks": [
+    5,
+    6
+  ],
+  "onnx_nodes": 24,
+  "hardware_top": "gesture_blocks56_axis",
+  "clock_mhz_nominal": 100,
+  "pointwise_input_lanes": 16,
+  "pointwise_output_lanes": 8,
+  "depthwise_lanes": 2,
+  "weight_storage": "FP32 pairs in BRAM; feature tensors in URAM",
+  "setup_slack_ns": 0.767,
+  "hold_slack_ns": 0.01,
+  "input_bytes_per_run": 125456,
+  "output_bytes_per_run": 125440,
+  "parameter_bytes_per_bank": 82848,
+  "weight_residency": "two banks loaded once; intermediate tensors remain on chip",
+  "resources": {
+    "CLB LUTs": 84062.0,
+    "CLB Registers": 103062.0,
+    "Block RAM Tile": 126.0,
+    "URAM": 32.0,
+    "DSPs": 973.0
+  },
+  "artifacts": {
+    "gesture_blocks56.bit": {
+      "sha256": "a7732997d677c89e16f6981625c796d4d9e5e34fe235dfbbb95328f03b91f89a",
+      "bytes": 7797826
+    },
+    "gesture_blocks56.hwh": {
+      "sha256": "8ed7017eb013a49bdb08b0150f4c625106dada999220d38ae8dd64c7d8e3be3f",
+      "bytes": 350234
+    }
+  },
+  "hls_ip_sha256": "f975b911df9d06c48bf33fd04f2596e2bebd7ed5fb185d0530cb5698c80904d7",
+  "scope": "PS + DMA + complete features.5 and features.6; no board HDMI; no board speedup claim before validation"
+}

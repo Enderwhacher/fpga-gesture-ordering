@@ -1,0 +1,5008 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "onnxruntime": "1.31.1",
+  "comparisons": 714,
+  "scope": "Windows real FP32-model comparisons; CPU block formula in place of FPGA; no ARM performance claim.",
+  "preserved_original_protocol_gate_and_serial_runtime": true,
+  "checks": [
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "black",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "gray",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v2_reference",
+      "image": "noise",
+      "raw_max_abs": 0.0,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 0.0
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "v3_reference",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "v3_reference",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "serial_cv1_t1",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "serial_cv1_t2",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "serial_cv1_t3",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "serial_cv1_t4",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "pipe_cv1_d1_c2",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "pipe_cv1_d2_c1",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.5497207641601562e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.3150274753570557e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.5033950805664062e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 9.834766387939453e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.9073486328125e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.2516975402832031e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.430511474609375e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 6.556510925292969e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.9818544387817383e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 7.450580596923828e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.1457672119140625e-06
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.980232238769531e-07
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.6391277313232422e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.0505318641662598e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 1.1324882507324219e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.125037670135498e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 1.9669532775878906e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.087784767150879e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 5.364418029785156e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 9.98377799987793e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.7136335372924805e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 6.258487701416016e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.7881393432617188e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t2",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.0505318641662598e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 1.1324882507324219e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.125037670135498e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 1.9669532775878906e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.087784767150879e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 5.364418029785156e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 9.98377799987793e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.7136335372924805e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 6.258487701416016e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.7881393432617188e-06
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_serial_cv1_t3",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.0505318641662598e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 1.1324882507324219e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.125037670135498e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 1.9669532775878906e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.087784767150879e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 5.364418029785156e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 9.98377799987793e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.7136335372924805e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 6.258487701416016e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.7881393432617188e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_t2",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_000_open_palm.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 3.258387249616135e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_001_open_palm.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_002_open_palm.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_003_fist.png",
+      "raw_max_abs": 0.00014781951904296875,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 1.3113021850585938e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_004_fist.png",
+      "raw_max_abs": 0.0001373291015625,
+      "coordinates_max_abs": 3.178914380441711e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_005_fist.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.6160151182684785e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_006_victory.png",
+      "raw_max_abs": 0.0001087188720703125,
+      "coordinates_max_abs": 7.311503088658355e-05,
+      "logits_max_abs": 1.0505318641662598e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_007_victory.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.00010808308923060395,
+      "logits_max_abs": 2.6226043701171875e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_008_victory.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.894170129115082e-05,
+      "logits_max_abs": 1.1324882507324219e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_009_thumbs_up.png",
+      "raw_max_abs": 0.00010347366333007812,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_010_thumbs_up.png",
+      "raw_max_abs": 0.00015544891357421875,
+      "coordinates_max_abs": 8.106231689453125e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_011_thumbs_up.png",
+      "raw_max_abs": 0.00012731552124023438,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 1.6689300537109375e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_012_no_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_013_no_hand.png",
+      "raw_max_abs": 0.00010502338409423828,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "diagnostic_014_no_hand.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_left_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 0.000152587890625,
+      "logits_max_abs": 1.125037670135498e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_left_02.png",
+      "raw_max_abs": 0.00026702880859375,
+      "coordinates_max_abs": 8.742014574636414e-05,
+      "logits_max_abs": 1.9669532775878906e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_left_03.png",
+      "raw_max_abs": 0.00012099742889404297,
+      "coordinates_max_abs": 3.079573320974305e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_left_04.png",
+      "raw_max_abs": 0.00013589859008789062,
+      "coordinates_max_abs": 0.0001239776611328125,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.178914386126053e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_right_02.png",
+      "raw_max_abs": 0.00015592575073242188,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_right_03.png",
+      "raw_max_abs": 0.000133514404296875,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fist_right_04.png",
+      "raw_max_abs": 0.00010764598846435547,
+      "coordinates_max_abs": 3.4968058230333554e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "fixed_hand.png",
+      "raw_max_abs": 0.00011444091796875,
+      "coordinates_max_abs": 7.62939453125e-05,
+      "logits_max_abs": 7.152557373046875e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_left_01.png",
+      "raw_max_abs": 0.0002384185791015625,
+      "coordinates_max_abs": 5.0862630246228946e-05,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 3.0199686648302304e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_left_03.png",
+      "raw_max_abs": 0.00010776519775390625,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 3.5762786865234375e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_left_04.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.087784767150879e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_right_01.png",
+      "raw_max_abs": 0.0001220703125,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_right_02.png",
+      "raw_max_abs": 0.0001250430941581726,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 5.364418029785156e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_right_03.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 2.5431315123114473e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "open_palm_right_04.png",
+      "raw_max_abs": 0.00013113021850585938,
+      "coordinates_max_abs": 6.67572021484375e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_01.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.58306884765625e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_02.png",
+      "raw_max_abs": 0.0001068115234375,
+      "coordinates_max_abs": 6.357828772252105e-05,
+      "logits_max_abs": 9.98377799987793e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_03.png",
+      "raw_max_abs": 0.00010967254638671875,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 1.7136335372924805e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_left_04.png",
+      "raw_max_abs": 0.00012302398681640625,
+      "coordinates_max_abs": 6.556510925292969e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_01.png",
+      "raw_max_abs": 0.00016689300537109375,
+      "coordinates_max_abs": 1.9073486328125e-05,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_02.png",
+      "raw_max_abs": 0.00010251998901367188,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_03.png",
+      "raw_max_abs": 0.0002238750457763672,
+      "coordinates_max_abs": 5.404154467214539e-05,
+      "logits_max_abs": 6.258487701416016e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "thumbs_up_right_04.png",
+      "raw_max_abs": 0.000110626220703125,
+      "coordinates_max_abs": 8.145968115513824e-05,
+      "logits_max_abs": 1.8030405044555664e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_left_01.png",
+      "raw_max_abs": 0.0001550912857055664,
+      "coordinates_max_abs": 3.1789143918103946e-05,
+      "logits_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_left_02.png",
+      "raw_max_abs": 0.00015354156494140625,
+      "coordinates_max_abs": 2.86102294921875e-05,
+      "logits_max_abs": 5.960464477539062e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_left_03.png",
+      "raw_max_abs": 0.00025665760040283203,
+      "coordinates_max_abs": 0.00028928120934779145,
+      "logits_max_abs": 8.344650268554688e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_left_04.png",
+      "raw_max_abs": 0.00015419721603393555,
+      "coordinates_max_abs": 4.4504801394396054e-05,
+      "logits_max_abs": 1.0728836059570312e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_right_01.png",
+      "raw_max_abs": 0.00012350082397460938,
+      "coordinates_max_abs": 0.00010172526037877105,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_right_02.png",
+      "raw_max_abs": 9.1552734375e-05,
+      "coordinates_max_abs": 3.814697265625e-05,
+      "logits_max_abs": 9.5367431640625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_right_03.png",
+      "raw_max_abs": 9.632110595703125e-05,
+      "coordinates_max_abs": 4.450480150808289e-05,
+      "logits_max_abs": 4.76837158203125e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "victory_right_04.png",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 8.900960290247895e-05,
+      "logits_max_abs": 1.0132789611816406e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "black",
+      "raw_max_abs": 0.00034999847412109375,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 1.7881393432617188e-06
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "gray",
+      "raw_max_abs": 0.0002484321594238281,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    },
+    {
+      "config": "cpu_pipe_cv1_d3_c1",
+      "image": "noise",
+      "raw_max_abs": 9.918212890625e-05,
+      "coordinates_max_abs": 0.0,
+      "logits_max_abs": 2.384185791015625e-07
+    }
+  ]
+}

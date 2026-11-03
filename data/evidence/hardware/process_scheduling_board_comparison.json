@@ -1,0 +1,1299 @@
+{
+  "passed": true,
+  "error": null,
+  "cleanup_errors": [],
+  "samples": [
+    {
+      "detector_ms": 260.1532900000052,
+      "classifier_ms": 159.78577999999288,
+      "pipeline_ms": 419.9390699999981,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 1,
+      "sample": 1
+    },
+    {
+      "detector_ms": 329.13444000001846,
+      "classifier_ms": 124.14542999999867,
+      "pipeline_ms": 453.2798700000171,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 1,
+      "sample": 2
+    },
+    {
+      "detector_ms": 294.24575000001596,
+      "classifier_ms": 117.40100999998049,
+      "pipeline_ms": 411.64675999999645,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 1,
+      "sample": 3
+    },
+    {
+      "detector_ms": 240.87389999999687,
+      "classifier_ms": 180.2886899999976,
+      "pipeline_ms": 421.16258999999445,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 1,
+      "sample": 4
+    },
+    {
+      "detector_ms": 333.7097799999924,
+      "classifier_ms": 172.9351500000007,
+      "pipeline_ms": 506.6449299999931,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 2,
+      "sample": 1
+    },
+    {
+      "detector_ms": 313.22088000001713,
+      "classifier_ms": 140.66181999999117,
+      "pipeline_ms": 453.8827000000083,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 2,
+      "sample": 2
+    },
+    {
+      "detector_ms": 302.782929999978,
+      "classifier_ms": 159.76605999998128,
+      "pipeline_ms": 462.5489899999593,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 2,
+      "sample": 3
+    },
+    {
+      "detector_ms": 256.6225599999825,
+      "classifier_ms": 137.2270400000275,
+      "pipeline_ms": 393.84960000001,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 2,
+      "sample": 4
+    },
+    {
+      "detector_ms": 314.35346000000663,
+      "classifier_ms": 146.95878999998513,
+      "pipeline_ms": 461.31224999999176,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 8.096439999974336,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 3,
+      "sample": 1
+    },
+    {
+      "detector_ms": 338.07896999996956,
+      "classifier_ms": 144.55732999999782,
+      "pipeline_ms": 482.6362999999674,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.635410000034426,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 3,
+      "sample": 2
+    },
+    {
+      "detector_ms": 324.1176299999893,
+      "classifier_ms": 149.37286999997923,
+      "pipeline_ms": 473.4904999999685,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.5913899999591195,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 3,
+      "sample": 3
+    },
+    {
+      "detector_ms": 341.6843599999879,
+      "classifier_ms": 181.59570000000258,
+      "pipeline_ms": 523.2800599999905,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.654940000008992,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 3,
+      "sample": 4
+    },
+    {
+      "detector_ms": 324.29336999996394,
+      "classifier_ms": 171.14358999998558,
+      "pipeline_ms": 495.4369599999495,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.449370000074396,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 4,
+      "sample": 1
+    },
+    {
+      "detector_ms": 337.9303099999902,
+      "classifier_ms": 185.09359000000813,
+      "pipeline_ms": 523.0238999999983,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.454100000018116,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 4,
+      "sample": 2
+    },
+    {
+      "detector_ms": 307.91155999997954,
+      "classifier_ms": 163.83762999998908,
+      "pipeline_ms": 471.7491899999686,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.763239999974303,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 4,
+      "sample": 3
+    },
+    {
+      "detector_ms": 320.47708999999713,
+      "classifier_ms": 140.98169999999755,
+      "pipeline_ms": 461.4587899999947,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.661310000059984,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 4,
+      "sample": 4
+    },
+    {
+      "detector_ms": 302.9267200000163,
+      "classifier_ms": 162.70079999998188,
+      "pipeline_ms": 465.6275199999982,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.752570000036485,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 5,
+      "sample": 1
+    },
+    {
+      "detector_ms": 336.2585099999933,
+      "classifier_ms": 134.2066500000101,
+      "pipeline_ms": 470.4651600000034,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.547799999997551,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 5,
+      "sample": 2
+    },
+    {
+      "detector_ms": 321.6408800000181,
+      "classifier_ms": 144.6803900000191,
+      "pipeline_ms": 466.3212700000372,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.592139999985648,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 5,
+      "sample": 3
+    },
+    {
+      "detector_ms": 298.2897100000059,
+      "classifier_ms": 138.2802400000287,
+      "pipeline_ms": 436.5699500000346,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.59941999996272,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "thread",
+      "backend": "fpga",
+      "block": 5,
+      "sample": 4
+    },
+    {
+      "detector_ms": 301.44110999998475,
+      "classifier_ms": 140.51176999998916,
+      "pipeline_ms": 441.9528799999739,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.935799999984283,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 6,
+      "sample": 1
+    },
+    {
+      "detector_ms": 351.89227000000756,
+      "classifier_ms": 146.66919000001144,
+      "pipeline_ms": 498.561460000019,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 9.982079999986126,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 6,
+      "sample": 2
+    },
+    {
+      "detector_ms": 302.84848000002285,
+      "classifier_ms": 148.12782999996443,
+      "pipeline_ms": 450.9763099999873,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.5964899999689806,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 6,
+      "sample": 3
+    },
+    {
+      "detector_ms": 310.10457000002134,
+      "classifier_ms": 122.03256999998757,
+      "pipeline_ms": 432.1371400000089,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "label": "open_palm",
+      "score": 0.7123013138771057,
+      "fpga_completed_delta": 1,
+      "fpga_call_ms": 7.618170000000646,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 5.774199962615967e-07,
+      "mode": "process",
+      "backend": "fpga",
+      "block": 6,
+      "sample": 4
+    },
+    {
+      "detector_ms": 324.9186300000133,
+      "classifier_ms": 158.34841999998162,
+      "pipeline_ms": 483.2670499999949,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 7,
+      "sample": 1
+    },
+    {
+      "detector_ms": 354.6124700000064,
+      "classifier_ms": 162.80892999998287,
+      "pipeline_ms": 517.4213999999893,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 7,
+      "sample": 2
+    },
+    {
+      "detector_ms": 329.4635299999982,
+      "classifier_ms": 196.82788000000073,
+      "pipeline_ms": 526.2914099999989,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 7,
+      "sample": 3
+    },
+    {
+      "detector_ms": 354.4561200000089,
+      "classifier_ms": 164.0542199999686,
+      "pipeline_ms": 518.5103399999775,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "process",
+      "backend": "cpu",
+      "block": 7,
+      "sample": 4
+    },
+    {
+      "detector_ms": 275.44841999997516,
+      "classifier_ms": 193.16221000002542,
+      "pipeline_ms": 468.6106300000006,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 8,
+      "sample": 1
+    },
+    {
+      "detector_ms": 335.64243000000715,
+      "classifier_ms": 162.0896099999527,
+      "pipeline_ms": 497.73203999995985,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 8,
+      "sample": 2
+    },
+    {
+      "detector_ms": 293.54590999997754,
+      "classifier_ms": 175.49507000001086,
+      "pipeline_ms": 469.0409799999884,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 8,
+      "sample": 3
+    },
+    {
+      "detector_ms": 350.9676099999979,
+      "classifier_ms": 195.1631200000179,
+      "pipeline_ms": 546.1307300000158,
+      "logits": [
+        1.530114769935608,
+        0.05198623612523079,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "label": "open_palm",
+      "score": 0.7123014330863953,
+      "fpga_completed_delta": 0,
+      "fpga_call_ms": null,
+      "palm_max_abs_error": 0.0,
+      "logits_max_abs_error": 0.0,
+      "mode": "thread",
+      "backend": "cpu",
+      "block": 8,
+      "sample": 4
+    }
+  ],
+  "blocks": [
+    {
+      "mode": "thread",
+      "backend": "cpu",
+      "index": 1,
+      "before": {
+        "capture_count": 3,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.682633810000027,
+      "after": {
+        "capture_count": 66,
+        "preview_count": 54,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 23.484383058602905,
+        "preview_count": 19.383935222973825
+      },
+      "cleanup": {
+        "capture_count": 66,
+        "preview_count": 54,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null,
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "process",
+      "backend": "cpu",
+      "index": 2,
+      "before": {
+        "capture_count": 2,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 3,
+          "last_capture": 313.31275879,
+          "read_ms": 13.382439999986673,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 3,
+          "preview_seq": 3,
+          "error": null,
+          "preview_error": null,
+          "pid": 1129,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.736616130000016,
+      "after": {
+        "capture_count": 68,
+        "preview_count": 55,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 69,
+          "last_capture": 316.04699788,
+          "read_ms": 26.42711999999392,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 56,
+          "preview_seq": 69,
+          "error": null,
+          "preview_error": null,
+          "pid": 1129,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 24.117375936097993,
+        "preview_count": 19.36698370626051
+      },
+      "cleanup": {
+        "capture_count": 68,
+        "preview_count": 55,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 69,
+          "last_capture": 316.04699788,
+          "read_ms": 26.42711999999392,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 56,
+          "preview_seq": 69,
+          "error": null,
+          "preview_error": null,
+          "pid": 1129,
+          "alive": false,
+          "forced_stop": false
+        },
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "process",
+      "backend": "fpga",
+      "index": 3,
+      "before": {
+        "capture_count": 3,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 4,
+          "last_capture": 321.88675372,
+          "read_ms": 12.09819000001744,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 4,
+          "preview_seq": 4,
+          "error": null,
+          "preview_error": null,
+          "pid": 1134,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.8110803999999803,
+      "after": {
+        "capture_count": 75,
+        "preview_count": 57,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 76,
+          "last_capture": 324.69394384,
+          "read_ms": 18.254239999976107,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 58,
+          "preview_seq": 76,
+          "error": null,
+          "preview_error": null,
+          "pid": 1134,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 25.61292804005197,
+        "preview_count": 19.565431141706366
+      },
+      "cleanup": {
+        "capture_count": 75,
+        "preview_count": 57,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 76,
+          "last_capture": 324.69394384,
+          "read_ms": 18.254239999976107,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 58,
+          "preview_seq": 76,
+          "error": null,
+          "preview_error": null,
+          "pid": 1134,
+          "alive": false,
+          "forced_stop": false
+        },
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "thread",
+      "backend": "fpga",
+      "index": 4,
+      "before": {
+        "capture_count": 3,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.923255719999986,
+      "after": {
+        "capture_count": 83,
+        "preview_count": 60,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 27.366747100729313,
+        "preview_count": 19.84089164802875
+      },
+      "cleanup": {
+        "capture_count": 83,
+        "preview_count": 60,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null,
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "thread",
+      "backend": "fpga",
+      "index": 5,
+      "before": {
+        "capture_count": 3,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.7913107100000047,
+      "after": {
+        "capture_count": 79,
+        "preview_count": 58,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 27.22735227136354,
+        "preview_count": 20.062259568373133
+      },
+      "cleanup": {
+        "capture_count": 80,
+        "preview_count": 58,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null,
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "process",
+      "backend": "fpga",
+      "index": 6,
+      "before": {
+        "capture_count": 2,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 3,
+          "last_capture": 345.85674005,
+          "read_ms": 13.330119999977796,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 3,
+          "preview_seq": 3,
+          "error": null,
+          "preview_error": null,
+          "pid": 1141,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.767446320000033,
+      "after": {
+        "capture_count": 70,
+        "preview_count": 54,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 72,
+          "last_capture": 348.63484311,
+          "read_ms": 28.919620000010582,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 55,
+          "preview_seq": 71,
+          "error": null,
+          "preview_error": null,
+          "pid": 1141,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 24.57138897639004,
+        "preview_count": 18.789885687827677
+      },
+      "cleanup": {
+        "capture_count": 71,
+        "preview_count": 55,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 72,
+          "last_capture": 348.63484311,
+          "read_ms": 28.919620000010582,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 56,
+          "preview_seq": 72,
+          "error": null,
+          "preview_error": null,
+          "pid": 1141,
+          "alive": false,
+          "forced_stop": false
+        },
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "process",
+      "backend": "cpu",
+      "index": 7,
+      "before": {
+        "capture_count": 2,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 3,
+          "last_capture": 354.43508544,
+          "read_ms": 13.784990000033304,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 3,
+          "preview_seq": 3,
+          "error": null,
+          "preview_error": null,
+          "pid": 1145,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.8946295299999747,
+      "after": {
+        "capture_count": 63,
+        "preview_count": 56,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 64,
+          "last_capture": 357.32605359,
+          "read_ms": 13.023949999990236,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 57,
+          "preview_seq": 64,
+          "error": null,
+          "preview_error": null,
+          "pid": 1145,
+          "alive": true,
+          "forced_stop": false
+        }
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 21.073508498339866,
+        "preview_count": 18.65523703131726
+      },
+      "cleanup": {
+        "capture_count": 64,
+        "preview_count": 56,
+        "error": null,
+        "preview_error": null,
+        "camera_process": {
+          "capture_count": 65,
+          "last_capture": 357.36189635,
+          "read_ms": 13.039549999973588,
+          "ready": 1,
+          "camera_threads": 1,
+          "preview_count": 57,
+          "preview_seq": 64,
+          "error": null,
+          "preview_error": null,
+          "pid": 1145,
+          "alive": false,
+          "forced_stop": false
+        },
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    },
+    {
+      "mode": "thread",
+      "backend": "cpu",
+      "index": 8,
+      "before": {
+        "capture_count": 2,
+        "preview_count": 2,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "duration_seconds": 2.9356707499999857,
+      "after": {
+        "capture_count": 76,
+        "preview_count": 58,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null
+      },
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "background_hz": {
+        "capture_count": 25.207186466670475,
+        "preview_count": 19.07570867748036
+      },
+      "cleanup": {
+        "capture_count": 77,
+        "preview_count": 58,
+        "error": null,
+        "preview_error": null,
+        "camera_process": null,
+        "alive": false,
+        "workers_still_alive": [],
+        "forced_stop": false
+      }
+    }
+  ],
+  "scope": "Fixed real image; detector+preprocess+classification+top-k. 2x2 thread/process x CPU/FPGA, balanced reverse order. Real camera and preview background, no HTTP clients or UI time.",
+  "board_tested": true,
+  "script_sha256": "9abf4e36a5ebc33900c6b436d1157ef3fc2f79b7514bb28ddaaa4e92d02f8262",
+  "frame_pixels_sha256": "adc8ab13306a45dd56f70ac77ec517d2968fff2337303a5d4af72733948141c7",
+  "reference_logits": [
+    1.530114769935608,
+    0.05198623612523079,
+    -1.8430286645889282,
+    -0.4249577522277832
+  ],
+  "parent_cv_threads": 4,
+  "hardware_release": "gesture_blocks56_fp32_v1",
+  "summary": {
+    "thread_cpu": {
+      "detector_ms": 293.89582999999675,
+      "classifier_ms": 168.79233999998178,
+      "pipeline_ms": 460.94525000000885,
+      "samples": 8
+    },
+    "process_cpu": {
+      "detector_ms": 327.19108000000574,
+      "classifier_ms": 161.28749499998207,
+      "pipeline_ms": 494.955989999994,
+      "samples": 8
+    },
+    "process_fpga": {
+      "detector_ms": 319.23554499999796,
+      "classifier_ms": 146.81398999999828,
+      "pipeline_ms": 467.40137499998013,
+      "samples": 8
+    },
+    "thread_fpga": {
+      "detector_ms": 321.0589850000076,
+      "classifier_ms": 153.69059500000049,
+      "pipeline_ms": 468.3932150000203,
+      "samples": 8
+    }
+  },
+  "process_reduction_percent": 0.21175370784141112,
+  "process_speedup": 1.0021220305567997,
+  "fpga_reduction_in_process_percent": 5.567083853256172,
+  "combined_vs_thread_cpu_speedup": 0.9861871929667054,
+  "recommend_process_mode": false,
+  "noticeable_25percent_target_met": false,
+  "process_background_quality_ok": true,
+  "kernel_restart_required": false
+}

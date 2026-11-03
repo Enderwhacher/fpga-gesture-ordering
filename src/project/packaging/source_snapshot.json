@@ -1,0 +1,777 @@
+[
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.gen/sources_1/bd/gblock/hdl/gblock_wrapper.v",
+    "source_member": "gblock/gblock.gen/sources_1/bd/gblock/hdl/gblock_wrapper.v",
+    "sha256": "eeb680fdd69dfe0c408ae1d3e6cef3c3e916007af8fcad5f7db59fcc6d416aca"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/component.xml",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/component.xml",
+    "sha256": "8c5d08841c5dcddf673d056d4e7008c6bb4d3417f8e72a0420612d852b9c2ab1"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/constraints/gesture_blocks56_axis_ooc.xdc",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/constraints/gesture_blocks56_axis_ooc.xdc",
+    "sha256": "bc275c403c2beeec95b0c3664ecc37842f82207b326bf93c35acb6c465ed2485"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/doc/ReleaseNotes.txt",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/doc/ReleaseNotes.txt",
+    "sha256": "1566cc6aad108ec3f889f8307040e5d5e089ba60b91df04b8b87261d1a39ace6"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.mdd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.mdd",
+    "sha256": "1fdf76d544a2faea3dc118b781fd447d4acc551e07efa4456639ee2fcbaf0fbf"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.tcl",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.tcl",
+    "sha256": "b313c87a002a061939835f456539278f295b0a6fde6e5034d49f49d3bda9b0a1"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.yaml",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.yaml",
+    "sha256": "2ac447fd675082e23feeabd7f0587767bd3b1fa13f652736c373ce82a8d850cd"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/CMakeLists.txt",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/CMakeLists.txt",
+    "sha256": "39c34087cf7becc697a8b107f8611d7a733a9a40cf758010cabebbe11970cde9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/Makefile",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/Makefile",
+    "sha256": "f4ed5400c65c7bc590173564cdafb357acdc91f14cce6b1f66212921d3fd270a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.c",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.c",
+    "sha256": "306eee356dd4858d0b88ca5973ed4ccebebe40ca8d900ed6b62d0c1019d68d61"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.h",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.h",
+    "sha256": "54230a171eeb935086e068db7a5ff51e1d083a89e9de16ffd47e378cf76c24fa"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_hw.h",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_hw.h",
+    "sha256": "d3cd2d31ff1763a190c5d6c9c22fa9ce0d483b88783b9098641df2c70ead51b0"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_linux.c",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_linux.c",
+    "sha256": "8be8499a8a9b9868396d407fdbd472e55286afa5b44166c9c341f9ecc64c0ce9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_sinit.c",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_sinit.c",
+    "sha256": "58cf8b0c0c40682389a14be393baf731b93f29a718155456bb4f8c14a73d6aa5"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci",
+    "sha256": "3a8be1be7145d7f20393f73ca4b08b59aa7c15e736f9f187510a396a54c791a0"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+    "sha256": "b63c6d9763af90340b25f4d7ffe66f19999b19ac43bbcb83f86f53354d337eb8"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+    "sha256": "d3f586a479a083e00b166ff0e316e5770a8c9777dc4d8e423ab6fe89e4883bf0"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis.v",
+    "sha256": "94f5a036d0d13563b935897f8228f33170a1ca3e14552792de73919529915860"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.v",
+    "sha256": "163b5fb433998453bc21b1e8f366a98de2ad52d7894044cc9de9439a7de02be9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.v",
+    "sha256": "a781c189d457e958b2edcbf501e12d9f5164b563530bfbf02c5646fa511e157a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_block_unpack.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_block_unpack.v",
+    "sha256": "0eb3dde98112de6566ab4c4bf10839e925791ad10150d7cbf55623efbb90d371"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_control_s_axi.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_control_s_axi.v",
+    "sha256": "c3c53c2fcd932333969a6fdc23a7510c98c9403ed5fe39e644e934175312548b"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise.v",
+    "sha256": "2d1aa6e1d490ab777b279b1ff3c492f0e2f14df7619f63d54883ed7625b020d7"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.v",
+    "sha256": "02f1533770df7eea1b738a4703d38caeea81270d2a24a32f7885c3b700de8a9b"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.v",
+    "sha256": "70edd9e00170d101175937aa2d8d343a6257dc7369b3024fc4935fca4cd2aa7a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.v",
+    "sha256": "d7a7dda442628961ea36e85c851f08b3fd2b383a969a79d40ae087bf3ab00fc9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.v",
+    "sha256": "86e5fe1f7d6b4dff3b7e903d17d800b0ab3c35cd7dca584d2bc5e90554221a33"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+    "sha256": "3935d39a674f9f9710fad29a11652c69b639be7d3670846553ebe91b053fcfdc"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.v",
+    "sha256": "84e955d094ac2c89395aaba075edb330352a03771608bc44c65ffaa08dff288e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.v",
+    "sha256": "dcca5bf346cfba8ee4713c852390c5cb74a2ba1fc2514e9497c81e5a275a4b59"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.v",
+    "sha256": "349abe7391518e89c04553c061c2e2f64ba4662e0007689daa215607c2ef41bb"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.v",
+    "sha256": "2fa1b76453e5feb091d0855bfb40dbf991435ff1cbd7cf538b4e16d647a1e5f6"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.v",
+    "sha256": "4227f3904f1064eca71757cf0b0bce2628a74bbbd7c840bffde8b0a191388260"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.v",
+    "sha256": "4b2282acb17d0dfa29d4ce525d713f1a688346c5283aa2c309040ef5762c8399"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.v",
+    "sha256": "957270d82f061c9c7626fe674c305aa9f459a83b534ed134156fcd8c641b24dd"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.v",
+    "sha256": "9a2433cc5422ac82d71bd4ae6414ec7e02c3183e679d4fd8b22af98600cfd59f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.v",
+    "sha256": "1d794e4014453aeb6df683d1b65b5654cc581b6f0761de460f4ec78fc56b83dd"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.v",
+    "sha256": "3cec6d7dc14dc8007dbf816a7a4fce667ba1a919a967e4e5b18ff5812968e541"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.v",
+    "sha256": "f4416001839ff98cb3ee2bd3b8af31d11461c221452bfb10fa2d196a0d79b9fb"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.v",
+    "sha256": "dd50a7e502cf376cbf3ee9538ebd0326b12b176ee12e4ed301325f6e33f1f1c3"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.dat",
+    "sha256": "e6ac863da5575533a4d9b0274f6b2d5b8ce63ad2d9848182902c6807a9b04b42"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.v",
+    "sha256": "0a0c821b315b2f92dd2e5f4e5ef93568b9071f18f41291e59999d38416dcd802"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.dat",
+    "sha256": "b4e514f567d80a5895d3daef715510c186d17f6eb5f41c942bd0672b2b4b376a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.v",
+    "sha256": "30b4c0261c25a27fae25646f498e54dce05038832431cbd4e4baf5ed3aa7f5f6"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.dat",
+    "sha256": "7551f4e68bb470dd686c4a10d4b4a770f66700add8801daf9b05d48d57f699bb"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.v",
+    "sha256": "18266f95aa62427ff7fab9b4b4c7ceef1006a15486f1d39e04a12b3318f47d2f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.dat",
+    "sha256": "96eac8f4a4aa2ccbc320015bb9d1f67f9689bc4d22863f8156bc4ad1c6270a3c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.v",
+    "sha256": "560c355f5a886ee1414e299e45e0c5f777c6aa5c0f1264bdb41ed9737ff96871"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.dat",
+    "sha256": "3aeab019f801f272b6391bd886a9a48bdc09f8f8ce3754b537cdea417968174f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.v",
+    "sha256": "a1fb4543c6cf3c0907252568fd6f51af5e83a5d3d378518452da9f08ed1a8597"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_hls_deadlock_idx0_monitor.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_hls_deadlock_idx0_monitor.v",
+    "sha256": "c5ddf5993a4d7006e0deb561ab6a7e69a8e6b8141d4527696642858a0840fb6e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_hls_deadlock_kernel_monitor_top.vh",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_hls_deadlock_kernel_monitor_top.vh",
+    "sha256": "fa6ee1e43cac87de21b02d748ba4ea2c738ef85129e86da6be8f0b0b63abcb92"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.v",
+    "sha256": "5cf004e42220074d6f0b0a095ce878639f01046310c085c3c19f4d193eb49500"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.v",
+    "sha256": "77e8663de6907bea189491d85b3b8ced7fdf30b822197f7339ad03e4e0a82ab5"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.v",
+    "sha256": "da50d225d0b5b33a9c63b256b8aba4fb570b687ea32a6b93b6586c0a8191cb81"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.v",
+    "sha256": "b09b96e6c288b8f655a8dca1d245cc4b9f0a1009d2dfe5e3fdfd066babd864d4"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mul_8s_7ns_13_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_mul_8s_7ns_13_1_1.v",
+    "sha256": "632207df76da2de10149f05b2fefeaee845bcbc28214bc1592b63bc6b4ebb285"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise.v",
+    "sha256": "59ce606b2ede8729966aad2726405a100d8ba01d94220d73ec85093d763efa5d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.v",
+    "sha256": "b9750e58dfcf486d9fd61ee016756a604f0f75de284e7f3e4ebf2dd924ed2e08"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_init.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_init.v",
+    "sha256": "e2d0f4cfb6fad1b5c1d38b2b335485866623a6d0368d43a95650ad03525d2960"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.v",
+    "sha256": "b8160cb740c32e93be39fb81654bfeca491967a13278409684448511719fdd36"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_store.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_store.v",
+    "sha256": "abb768bc766778b215968ea595c735b123341df71bdd583b8580429d67a63ea8"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.dat",
+    "sha256": "f08e73182081bbe4aa7821e618621a16c06e87ab45446705b59171f2ffa1dfdf"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.v",
+    "sha256": "74e87344e93c4f5ac278f737fda7ebfd7679f5e367869fb4f2efe93f7c926143"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.dat",
+    "sha256": "89cc3fa958d05ff334a8dee5e704856a7958874149ba3b416cd2412862b3af39"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.v",
+    "sha256": "62157f044a2a45236d5783946f017cb3f97efe2d3267bbad00ed3ec1aa3b564e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_read_pw.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_read_pw.v",
+    "sha256": "5f9c8feeeefb9d5caf056bc367e0b287d74deffd87ff91dac11a52fdf3d96f8e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.v",
+    "sha256": "a17c009dd61c6c5c4909837fa1cb2ec6e21e4d8a049478db919b1d846fd41581"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_regslice_both.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_regslice_both.v",
+    "sha256": "cdde1ebb30325b987bf96b3bdc0c3885e35e0bf7dfe5d70f33b231421f85eb07"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.dat",
+    "sha256": "b04501064652715342346791af9527096db2bfd12466920167a63c3855a95e68"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.v",
+    "sha256": "52ba9898fe85ba78f6aab190811e3134d8398d330ede4f516dc7e2951597e335"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.dat",
+    "sha256": "af09aeda73d89efdf97a992a4da2a620c23d92d2b2b8984d92807dd59df4d294"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.v",
+    "sha256": "cf35f77725ae4e66305d125f0c18e99b96193f3d5ed1cf340beacaba66530940"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_scale.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_scale.v",
+    "sha256": "8283bd2ecccef13279a50699a3847ef6ab53b5c345c27d3b5fa6e16d802a870c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_layer.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_layer.v",
+    "sha256": "a3ddf936df8e810e081469c5ce414509c42b0e9b1bf5e764235e972e01db2d79"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.v",
+    "sha256": "3a13dc84906972fb2eea3872055ae971ad47511e5b943793c28a37ff522ceb7a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.dat",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.dat",
+    "sha256": "0c591fbff7f74422c8a60fc19de76ae3f91b490e2fb0617d87b1b8e3a6074b1d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.v",
+    "sha256": "43eb699fe7e6e99521e4449129ab95a2ea387a67f821d0041369611e7dc17c12"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_32_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_32_1_1.v",
+    "sha256": "1146d30fcfa45dec738347c2ab3483117f66552d2401bd62241e8f13846b3c12"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_64_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_64_1_1.v",
+    "sha256": "5bae6946145fc6fef6aa32a8a6b052fd7f3e966996c2ccb2c9750e5de579daf4"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_241_7_32_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_241_7_32_1_1.v",
+    "sha256": "91f5c85135ffa485a48676e4c8b54fe761456f31fa53c5f27fb5529fcfcb9119"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_31_4_32_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_31_4_32_1_1.v",
+    "sha256": "7b9a288b6f02463740da54781fb90ef88e28eb6920cca59bbcd4d99d1f31e7ef"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_57_5_32_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_57_5_32_1_1.v",
+    "sha256": "a9e724abdb7985d57c56fcc97a3f9c63a48b00ae1e6060c88f2edb9151131557"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_9_2_64_1_1.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_sparsemux_9_2_64_1_1.v",
+    "sha256": "8559fb3874cb95291dd7b0997088aa784b5031d82dc6ca53e2f773b8bc76289e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_squeeze.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_squeeze.v",
+    "sha256": "1739ab57b710d6ce5541c778958ca7fb513d52abca397bbac8896e005f2d40f1"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.v",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/verilog/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.v",
+    "sha256": "ee1f7223356c368c0284a6a2e7ca38d7b52ffa16dccf94eac296a3f398e4a5ec"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis.vhd",
+    "sha256": "9fb2478593dacb15fd90ceb9aebd85a708c2213c8b9e3e7e059dc711fb39f56a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.vhd",
+    "sha256": "d6151cadc4cd91158dffd1ca945ff3182c445a336a1fc6fb407a7c192fb961f4"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.vhd",
+    "sha256": "affbbe306d2ff2490493277245920119e8bea7ee8b1358341acb64a620a7222a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_block_unpack.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_block_unpack.vhd",
+    "sha256": "d35f17a53caf05e669a7be16a253dacdec24e50d65ceed2ffab8d5906e9087a3"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_control_s_axi.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_control_s_axi.vhd",
+    "sha256": "c98f5ff096071c0ff42442ddcd3edb291bbf20527a90d3ea4009a27218b15a2c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise.vhd",
+    "sha256": "df36d7308c2492eb4b2f99d1d0cd154fbb7c37667beafdd805ac2bf9b957286f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.vhd",
+    "sha256": "c2db02d0568fa432a210b23c66871e6830dc36c48a586570ca4adf0e465e0db1"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.vhd",
+    "sha256": "f9e33032a294707ee20aa2763705932c98e40daa1a0c28621f4ab61a767dd8e9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.vhd",
+    "sha256": "d7d86a00ec27cb06181142a82ae263dc0623c54118cacf8477f95798437e23bb"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
+    "sha256": "39814827bf01da31efe17788aa6b3fe3c8eab2a27ff0ee93fa8d081be1648f76"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+    "sha256": "a7d92356bff54273e06e50bfccaba110c0610a3746fff758c46a053ee7d7514c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.vhd",
+    "sha256": "1e2c3b88a84367b982a08ca4722cedfc7a617e2abf01a72bf0c5c542ae9d459b"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+    "sha256": "901a93db5c13e75c3c9fb3d2801244f012043a01550cad5c10e0f9dcb74fb7da"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.vhd",
+    "sha256": "71f29a7ab1c547d1b69096781bf37b02da03888ea5ba09f29a53e6fd3fd0c006"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.vhd",
+    "sha256": "b3ee1f4d5314901dd99cff4ddc2279af465fc40a35a4817ee608d7ad945ab6cf"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.vhd",
+    "sha256": "6118532e5c5c1b61173d98721277a4ee3ec45e45568f708fa42c60f535d1f69f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.vhd",
+    "sha256": "249df12a08cb9abe2e44a4d132886a849354c954eb3d99c0267dccaf984ce071"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.vhd",
+    "sha256": "97fce8915e5c6b2270dc0ffaff7240eb6ecd740804c737ab07c9219fcb78fa5d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.vhd",
+    "sha256": "b3b80e0868773e9399168fdd886c591f6d4e9183e7c65acc1d72551b05b262d9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.vhd",
+    "sha256": "318828b02ddb123497e608370c9f1c4b5192cc99fe5afefb433de479ff08f648"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.vhd",
+    "sha256": "1bc5665295d0cb596be3af010b660831529a951f7192d194117574dc604bb308"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.vhd",
+    "sha256": "4f82293dd49248959c8354cc7304f4bafab99aecc92da7dc01a74cad124b7bd0"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.vhd",
+    "sha256": "9ec7911690217b1a49af172ef3f87bcd1e912c241e113eecddeb24ffba493230"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.vhd",
+    "sha256": "49ea138284ec9d434f1b2e1957dbf45844e1ce9ca1e6c1a8aaf05c257afc63d5"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.vhd",
+    "sha256": "15f78cf49cb1f822b3a3f2f840c449d0fdee2886fc79cb6d1d059a790cb7ff43"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.vhd",
+    "sha256": "b075e5d60daccd230902adba08f91d59a3dff389a49c4f562d3efea6056f6fc4"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.vhd",
+    "sha256": "21239ddd2f1f112972bde298bad73603f9b2f4ab8e0898857b98e1b905864b7c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.vhd",
+    "sha256": "f75d84615edfa2d3576982cdd755ffb071a23849a067dc9b63a104d49a333277"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.vhd",
+    "sha256": "49d2f2718efcb5ab660b237b588a472bea9ddfc6d451d6b8df34560b25b4420c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.vhd",
+    "sha256": "7b3e8efa6ac5d16e296ac0e58f1775c740923cce8d3a31919279c81c70ab9d0e"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.vhd",
+    "sha256": "47c60117174da4080aa712adada7f65216d549348d20934caa42193ce83f3bb1"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.vhd",
+    "sha256": "58b376f23cc25ded35113c915cb16b2aabce559b2998ba42b43214d05d9633f7"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mul_8s_7ns_13_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_mul_8s_7ns_13_1_1.vhd",
+    "sha256": "5e0e5ea8c34e03c6375cb45bab977fb4d82451b1a38d8116fe12e8894f95bc76"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise.vhd",
+    "sha256": "aaf5f9435e233e9285889640dd03947b18b42423f41f3d2cae5bab9561ac7d11"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.vhd",
+    "sha256": "b9e4782217b7f17485502600d1f66c70bec18e4f765eb650fc69737ce7b2d0a9"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_init.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_init.vhd",
+    "sha256": "5b3505f97203066b8ee448b0cd8a1bc786d6b3f3daa0fc5d6775ee6b64c7c25f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.vhd",
+    "sha256": "9a929f86c36908ab64b33fda1a64abf7a0ebe075031a342bd200289fbd79da14"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_store.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_store.vhd",
+    "sha256": "6a4abce2d4d6613c854d64da10c5697d4d1be1b6e01accf7fde2f9dad17a32e0"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.vhd",
+    "sha256": "02e34b4165ace1875cce32d162bb2ced840a95579c52c88b164bdf785e16a487"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.vhd",
+    "sha256": "453b6a06920da7052db55f083dd5574f5e70fa221ef773d3ee6f631798d32c90"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_read_pw.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_read_pw.vhd",
+    "sha256": "9d0b98ba4aeef77db638d43c1f43efd0d44df72c7a8395252a7bb33eb8aadf44"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.vhd",
+    "sha256": "10b87401284ac5cc76242658bfed88a744250af4366a928a30d747d09a827012"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_regslice_both.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_regslice_both.vhd",
+    "sha256": "9adf12b589431a177ecf330c4a88da4f496787483bb090d5668b9d790d5b5b1d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.vhd",
+    "sha256": "37ee7afd9e2879d5a22a489b3b4bcfdd15df6823f7bd9612054a0ae44d901946"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.vhd",
+    "sha256": "24fc02ae3a285a81ad4851471fff3f143541fb9081987e4428eb513eff3c6d0a"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_scale.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_scale.vhd",
+    "sha256": "9a62e2a6a6e8cd45c829322b97eea22c0f12cc1bd02f309dc28921a6b060fb38"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_layer.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_layer.vhd",
+    "sha256": "5958660e6439ffc868995639092fe51f11a06c704a786d410708fa2016175731"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.vhd",
+    "sha256": "0fc78eb592b8ec4760e256ae21bb225080d8f890c4fda3f107b8abf58c403a88"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.vhd",
+    "sha256": "f8b34154d514a8ef887e7d5be0afc491ef8f9e9aaf03b14d5869e8068b0b0f85"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_32_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_32_1_1.vhd",
+    "sha256": "5d0d4e95bda83a2409489e14c3630aa93f17451a258ab51703ac825d65b00d77"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_64_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_64_1_1.vhd",
+    "sha256": "8817006ad68b7195003f044724812a47eb20d23e6dec17e59dda24332b3280b5"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_241_7_32_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_241_7_32_1_1.vhd",
+    "sha256": "9abb68fc0c7357f1daedcdf9448784b35dfb9bebacc613c4c40ee33a3f640ddd"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_31_4_32_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_31_4_32_1_1.vhd",
+    "sha256": "06fc0d1a2022e107d46ca3fc568e23addc22d3aeb9fb76b541ac470aa73042b6"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_57_5_32_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_57_5_32_1_1.vhd",
+    "sha256": "af9612163bd7d575a904d8f30be0daa16a1816ea0140fc1577795ef51667ae2f"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_9_2_64_1_1.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_sparsemux_9_2_64_1_1.vhd",
+    "sha256": "a66c6c18a48b75779c25850674bb81b635b2ace1448ad0ff8344d3a5e00814ec"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_squeeze.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_squeeze.vhd",
+    "sha256": "88a14cffea26b675f998879aab65d00680957c27277907781db3c29f8046c3bc"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.vhd",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/hdl/vhdl/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.vhd",
+    "sha256": "f8732a1a02a543b353f18d247a48322c84f1159d564a802c091f7f7c7c1a2a86"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/misc/logo.png",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/misc/logo.png",
+    "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.ipdefs/ip_repo/xgui/gesture_blocks56_axis_v2_0.tcl",
+    "source_member": "gblock/gblock.ipdefs/ip_repo/xgui/gesture_blocks56_axis_v2_0.tcl",
+    "sha256": "e1b275c6a228102bcc04e348f00f4d5460c7700b4b60eb61c75afe168551435d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/gblock.bd",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/gblock.bd",
+    "sha256": "ac9fa6f195b39b746f5612502adc29c3daf7a9f9d99e43595e6a25988e9b2fd3"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0.xci",
+    "sha256": "2a63a66e043f80fc42a054f3de5a4566f66bc1f8df3737f2cc34710eef5ea250"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_const_one_0/gblock_const_one_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_const_one_0/gblock_const_one_0.xci",
+    "sha256": "dd886ba6840a4f3f3f3ca5b99fb586cd9467b9495ef2d2728a19b4b1506e319d"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_const_zero_0/gblock_const_zero_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_const_zero_0/gblock_const_zero_0.xci",
+    "sha256": "127c72508e48569960078a31b10c6536dc21aea98540a1f2d82455687cf78085"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_control_interconnect_0/gblock_control_interconnect_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_control_interconnect_0/gblock_control_interconnect_0.xci",
+    "sha256": "badd8b52561afa241558dd12ffa63cfa3a4d633e105f9647ad1173cdfe0a0e9c"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0.xci",
+    "sha256": "f1a35ee979fa94e75874667c319a291cb5a7645c8808ead6477b7be03435c563"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/gblock_memory_interconnect_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/gblock_memory_interconnect_0.xci",
+    "sha256": "b64dc3ea3e8a7044d6b4e6595c982073c6231753c31df639b0904ed74a2bd9d4"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0.xci",
+    "sha256": "3e1fe7094e0d670f8e9a02c3f1c924c008ed6f64812a593d7755ead3c64d5f46"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0.xci",
+    "source_member": "gblock/gblock.srcs/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0.xci",
+    "sha256": "902c7df2e6f89416b9955098119a4deb5dcf335d1405bcfa446c096ac426f7f8"
+  },
+  {
+    "path": "hardware/vivado_sources/gblock/gblock.xpr",
+    "source_member": "gblock/gblock.xpr",
+    "sha256": "05fc8e969839e15789a091eddaa1031f9bca95e1a9e4d7626f25466e2c468ea9"
+  }
+]

@@ -1,0 +1,7 @@
+vivado	2025.2
+part	xczu5eg-sfvc784-1-e
+setup_slack_ns	0.767
+hold_slack_ns	0.010
+synthesis_status	synth_design Complete!
+implementation_status	write_bitstream Complete!
+board_tested	false

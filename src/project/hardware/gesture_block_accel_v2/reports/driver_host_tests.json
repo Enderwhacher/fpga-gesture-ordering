@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "board_tested": false,
+  "scope": "Mock DMA/MMIO protocol, ownership, fault, cache and lifetime checks"
+}

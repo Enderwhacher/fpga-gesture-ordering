@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "tests": 3,
+  "failures": 0,
+  "errors": 0,
+  "board_tested": false,
+  "scope": "Real prefix/suffix OpenCV inference, independent NumPy target blocks, four complete logits vectors and invalid-output rejection"
+}

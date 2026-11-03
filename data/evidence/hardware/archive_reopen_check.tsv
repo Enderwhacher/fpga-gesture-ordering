@@ -1,0 +1,6 @@
+passed	true
+part	xczu5eg-sfvc784-1-e
+custom_ip	hand:hls:gesture_blocks56_axis:2.0
+ip_repo	D:/hand/tmp/v4_vivado_archive_reopen/gblock/gblock.ipdefs/ip_repo
+implementation_status	write_bitstream Complete!
+scope	Archived project reopened with its own IP repository and routed implementation; no synthesis/rebuild or board access.

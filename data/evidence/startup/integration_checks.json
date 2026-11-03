@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "new_board_test": false,
+  "source_project_sha256": "51a42b3fa06601eb93c8d52b69acb241bc70ff20977b7fb482e7624b59a2db62",
+  "source_supplement_sha256": "b3d3e152a87d18722c4fd0c4cf32ee7e2dbfc3a52ab5bb3b39b541f9ee123e6f",
+  "notebook_original_bytes_preserved": true,
+  "python310_code_cells_parsed": 3,
+  "uninitialized_start_rejected": true,
+  "initialized_start_calls_latest_report_and_run_selected": true,
+  "original_project_files_unchanged": 470,
+  "modified_existing_files": [
+    "docs/quickstart.md",
+    "readme.md",
+    "tools/verify_handoff.py"
+  ],
+  "added_files": [
+    "software/board/gesture_order_accel_v4/02_restart_v4.ipynb",
+    "deployment/02_restart_v4.ipynb",
+    "deployment/gesture_order_v4_startup_supplement.zip",
+    "evidence/startup/source_checks.json",
+    "docs/startup_update.md"
+  ],
+  "board_execution": "Not performed; local checks only"
+}

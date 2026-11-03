@@ -1,0 +1,31 @@
+{
+  "labels": [
+    "open_palm",
+    "fist",
+    "victory",
+    "thumbs_up"
+  ],
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "color_order": "RGB",
+  "mean": [
+    0.5400000214576721,
+    0.49900001287460327,
+    0.4740000069141388
+  ],
+  "std": [
+    0.23399999737739563,
+    0.23499999940395355,
+    0.23100000619888306
+  ],
+  "pad_value": 144,
+  "resize": "Longest side 224, centered padding; OpenCV linear",
+  "frame_orientation": "Use the same corrected orientation as collected PNGs; no extra rotation in preprocess",
+  "runtime": "CPU baseline; no FPGA acceleration",
+  "board_tested": false,
+  "training": "full_network_finetune"
+}

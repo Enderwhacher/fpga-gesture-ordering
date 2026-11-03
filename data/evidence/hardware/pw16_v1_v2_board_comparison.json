@@ -1,0 +1,1113 @@
+{
+  "passed": true,
+  "board_tested": true,
+  "samples": [
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 1,
+      "cpu_blocks_ms": 11.916249999956108,
+      "kernel_with_transfer_ms": 7.605140000009669,
+      "cpu_classifier_ms": 78.1054600000175,
+      "classifier_ms": 75.08461000003308,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 19.99319999998761,
+        "fpga_wall_ms": 7.615209999983108,
+        "suffix_check_ms": 47.40164000003233,
+        "logits_total_ms": 75.01005000000305
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 2,
+      "classifier_ms": 74.86369000002924,
+      "cpu_classifier_ms": 78.18840000004457,
+      "kernel_with_transfer_ms": 7.477429999994456,
+      "cpu_blocks_ms": 11.759769999969194,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.052770000006603,
+        "fpga_wall_ms": 7.622079999975995,
+        "suffix_check_ms": 47.12000000000671,
+        "logits_total_ms": 74.79484999998931
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 3,
+      "cpu_blocks_ms": 11.925900000051115,
+      "kernel_with_transfer_ms": 7.592520000002878,
+      "cpu_classifier_ms": 78.13683000000538,
+      "classifier_ms": 74.74557000000459,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 19.94150999996691,
+        "fpga_wall_ms": 7.60824000002458,
+        "suffix_check_ms": 47.121290000006866,
+        "logits_total_ms": 74.67103999999836
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 4,
+      "classifier_ms": 75.04877000002352,
+      "cpu_classifier_ms": 78.13888000003999,
+      "kernel_with_transfer_ms": 7.4724500000229455,
+      "cpu_blocks_ms": 11.734929999988708,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.08397999998124,
+        "fpga_wall_ms": 7.609259999981077,
+        "suffix_check_ms": 47.28723000005175,
+        "logits_total_ms": 74.98047000001407
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 5,
+      "cpu_blocks_ms": 11.857449999979508,
+      "kernel_with_transfer_ms": 7.581060000006801,
+      "cpu_classifier_ms": 78.23094000002584,
+      "classifier_ms": 75.27306000002909,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.031719999963116,
+        "fpga_wall_ms": 7.623590000036984,
+        "suffix_check_ms": 47.54411999999775,
+        "logits_total_ms": 75.19942999999785
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 6,
+      "classifier_ms": 75.01454999999169,
+      "cpu_classifier_ms": 78.14362999999958,
+      "kernel_with_transfer_ms": 7.463429999972959,
+      "cpu_blocks_ms": 11.759560000029978,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.10870999998815,
+        "fpga_wall_ms": 7.602829999996175,
+        "suffix_check_ms": 47.23337000001493,
+        "logits_total_ms": 74.94490999999925
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 7,
+      "cpu_blocks_ms": 11.841199999992114,
+      "kernel_with_transfer_ms": 7.6137500000186265,
+      "cpu_classifier_ms": 78.14322999996648,
+      "classifier_ms": 74.76062000000638,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 19.857909999984713,
+        "fpga_wall_ms": 7.61699000003091,
+        "suffix_check_ms": 47.18829000000824,
+        "logits_total_ms": 74.66319000002386
+      }
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "sample": 8,
+      "classifier_ms": 74.99833999997918,
+      "cpu_classifier_ms": 78.07778000000098,
+      "kernel_with_transfer_ms": 7.4855500000126085,
+      "cpu_blocks_ms": 11.783930000035525,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.09782000004634,
+        "fpga_wall_ms": 7.617369999991297,
+        "suffix_check_ms": 47.214919999987615,
+        "logits_total_ms": 74.93011000002525
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 1,
+      "cpu_blocks_ms": 11.926230000028681,
+      "kernel_with_transfer_ms": 6.625960000008035,
+      "cpu_classifier_ms": 80.08102999997391,
+      "classifier_ms": 73.92578000002459,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.92016999997759,
+        "fpga_wall_ms": 6.563210000024355,
+        "suffix_check_ms": 47.36595999997917,
+        "logits_total_ms": 73.84933999998111
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 2,
+      "classifier_ms": 74.09164000000601,
+      "cpu_classifier_ms": 79.40925000002608,
+      "kernel_with_transfer_ms": 6.509789999995519,
+      "cpu_blocks_ms": 11.760519999995722,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.073729999978696,
+        "fpga_wall_ms": 6.647950000001401,
+        "suffix_check_ms": 47.259650000000875,
+        "logits_total_ms": 73.98132999998097
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 3,
+      "cpu_blocks_ms": 11.907709999945837,
+      "kernel_with_transfer_ms": 6.553010000004633,
+      "cpu_classifier_ms": 78.1364799999551,
+      "classifier_ms": 73.74705000000858,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.93419000001495,
+        "fpga_wall_ms": 6.625929999984237,
+        "suffix_check_ms": 47.10989000000154,
+        "logits_total_ms": 73.67001000000073
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 4,
+      "classifier_ms": 73.89016000001902,
+      "cpu_classifier_ms": 78.21780999995553,
+      "kernel_with_transfer_ms": 6.427910000013526,
+      "cpu_blocks_ms": 11.784769999962919,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.0683099999992,
+        "fpga_wall_ms": 6.587259999946582,
+        "suffix_check_ms": 47.163080000018454,
+        "logits_total_ms": 73.81864999996424
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 5,
+      "cpu_blocks_ms": 27.82609999997021,
+      "kernel_with_transfer_ms": 6.721799999979794,
+      "cpu_classifier_ms": 89.3543500000078,
+      "classifier_ms": 73.87414000004355,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.917670000040744,
+        "fpga_wall_ms": 6.623539999964123,
+        "suffix_check_ms": 47.25852000001396,
+        "logits_total_ms": 73.79973000001883
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 6,
+      "classifier_ms": 74.07950000003893,
+      "cpu_classifier_ms": 78.18070000001853,
+      "kernel_with_transfer_ms": 6.497149999972862,
+      "cpu_blocks_ms": 11.768700000004628,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.081219999951827,
+        "fpga_wall_ms": 6.619740000019192,
+        "suffix_check_ms": 47.30768000001717,
+        "logits_total_ms": 74.00863999998819
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 7,
+      "cpu_blocks_ms": 11.928230000023632,
+      "kernel_with_transfer_ms": 6.625850000034461,
+      "cpu_classifier_ms": 78.02859000003082,
+      "classifier_ms": 73.71707999999444,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.95500999998967,
+        "fpga_wall_ms": 6.617790000007062,
+        "suffix_check_ms": 47.067040000001725,
+        "logits_total_ms": 73.63983999999846
+      }
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "sample": 8,
+      "classifier_ms": 74.00031000003082,
+      "cpu_classifier_ms": 79.17664000001423,
+      "kernel_with_transfer_ms": 6.531760000029863,
+      "cpu_blocks_ms": 11.794949999966775,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.08614999999736,
+        "fpga_wall_ms": 6.606709999971372,
+        "suffix_check_ms": 47.236800000007406,
+        "logits_total_ms": 73.92965999997614
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 1,
+      "cpu_blocks_ms": 11.869929999988926,
+      "kernel_with_transfer_ms": 6.585979999954361,
+      "cpu_classifier_ms": 78.40644999998858,
+      "classifier_ms": 73.80560999996533,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.942930000013348,
+        "fpga_wall_ms": 6.632309999986319,
+        "suffix_check_ms": 47.155990000021575,
+        "logits_total_ms": 73.73123000002124
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 2,
+      "classifier_ms": 73.91823000000386,
+      "cpu_classifier_ms": 77.98691000004965,
+      "kernel_with_transfer_ms": 6.468839999968168,
+      "cpu_blocks_ms": 11.78162000002203,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.112080000046717,
+        "fpga_wall_ms": 6.595829999980651,
+        "suffix_check_ms": 47.13937000002488,
+        "logits_total_ms": 73.84728000005225
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 3,
+      "cpu_blocks_ms": 11.884830000042257,
+      "kernel_with_transfer_ms": 6.611770000006345,
+      "cpu_classifier_ms": 78.24653000000126,
+      "classifier_ms": 73.79434999995738,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 19.884499999989202,
+        "fpga_wall_ms": 6.595059999995101,
+        "suffix_check_ms": 47.23954000002095,
+        "logits_total_ms": 73.71910000000526
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 4,
+      "classifier_ms": 74.0970599999855,
+      "cpu_classifier_ms": 78.32682999998042,
+      "kernel_with_transfer_ms": 6.4886200000273675,
+      "cpu_blocks_ms": 11.821530000020175,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.009379999976318,
+        "fpga_wall_ms": 6.66833000002498,
+        "suffix_check_ms": 47.347169999966354,
+        "logits_total_ms": 74.02487999996765
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 5,
+      "cpu_blocks_ms": 11.876200000017434,
+      "kernel_with_transfer_ms": 6.621339999981046,
+      "cpu_classifier_ms": 78.16482999999153,
+      "classifier_ms": 74.1554600000427,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.020200000033128,
+        "fpga_wall_ms": 6.602499999985412,
+        "suffix_check_ms": 47.455799999966075,
+        "logits_total_ms": 74.07849999998461
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 6,
+      "classifier_ms": 73.77479999996694,
+      "cpu_classifier_ms": 78.00363000001198,
+      "kernel_with_transfer_ms": 6.4657799999849885,
+      "cpu_blocks_ms": 11.780380000004698,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.054290000018682,
+        "fpga_wall_ms": 6.566689999999653,
+        "suffix_check_ms": 47.08240999997315,
+        "logits_total_ms": 73.70338999999149
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 7,
+      "cpu_blocks_ms": 11.909120000041185,
+      "kernel_with_transfer_ms": 6.657349999954931,
+      "cpu_classifier_ms": 78.11235999997734,
+      "classifier_ms": 74.04368999999633,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.240670000021055,
+        "fpga_wall_ms": 6.617249999976593,
+        "suffix_check_ms": 47.109770000020035,
+        "logits_total_ms": 73.96769000001768
+      }
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "sample": 8,
+      "classifier_ms": 73.92877000000908,
+      "cpu_classifier_ms": 78.17698000002338,
+      "kernel_with_transfer_ms": 6.471890000000258,
+      "cpu_blocks_ms": 11.825439999995524,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301140546798706,
+        0.05198662728071213,
+        -1.8430286645889282,
+        -0.4249577522277832
+      ],
+      "split_timing": {
+        "prefix_ms": 20.082779999995637,
+        "fpga_wall_ms": 6.596720000004552,
+        "suffix_check_ms": 47.17930999998998,
+        "logits_total_ms": 73.85880999999017
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 1,
+      "cpu_blocks_ms": 12.064740000027996,
+      "kernel_with_transfer_ms": 7.59117999996306,
+      "cpu_classifier_ms": 78.82551000000149,
+      "classifier_ms": 76.99527000005446,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.14523999997664,
+        "fpga_wall_ms": 7.600149999973382,
+        "suffix_check_ms": 49.170980000042164,
+        "logits_total_ms": 76.91636999999218
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 2,
+      "classifier_ms": 75.06714000004422,
+      "cpu_classifier_ms": 78.08310000001484,
+      "kernel_with_transfer_ms": 7.456369999999879,
+      "cpu_blocks_ms": 12.930109999956585,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.0166800000261,
+        "fpga_wall_ms": 7.59040999997751,
+        "suffix_check_ms": 47.389989999999216,
+        "logits_total_ms": 74.99708000000282
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 3,
+      "cpu_blocks_ms": 11.882330000048569,
+      "kernel_with_transfer_ms": 7.614810000006855,
+      "cpu_classifier_ms": 78.34516000002623,
+      "classifier_ms": 75.0427899999977,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 19.960669999989022,
+        "fpga_wall_ms": 7.631790000004912,
+        "suffix_check_ms": 47.37238000001298,
+        "logits_total_ms": 74.96484000000692
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 4,
+      "classifier_ms": 75.11883999995916,
+      "cpu_classifier_ms": 78.21771999999783,
+      "kernel_with_transfer_ms": 7.474909999984902,
+      "cpu_blocks_ms": 11.778350000042792,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.05493999996588,
+        "fpga_wall_ms": 7.592649999992318,
+        "suffix_check_ms": 47.398980000025404,
+        "logits_total_ms": 75.0465699999836
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 5,
+      "cpu_blocks_ms": 11.890950000008615,
+      "kernel_with_transfer_ms": 7.606759999987389,
+      "cpu_classifier_ms": 78.35801000004494,
+      "classifier_ms": 75.45558999999002,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.07383000000118,
+        "fpga_wall_ms": 7.625980000000254,
+        "suffix_check_ms": 47.67692999996598,
+        "logits_total_ms": 75.37673999996741
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 6,
+      "classifier_ms": 75.20892999997386,
+      "cpu_classifier_ms": 78.91168999998399,
+      "kernel_with_transfer_ms": 7.502600000009352,
+      "cpu_blocks_ms": 11.8477600000233,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.10806000004095,
+        "fpga_wall_ms": 7.642409999959909,
+        "suffix_check_ms": 47.3880000000122,
+        "logits_total_ms": 75.13847000001306
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 7,
+      "cpu_blocks_ms": 11.949940000022252,
+      "kernel_with_transfer_ms": 7.588260000034097,
+      "cpu_classifier_ms": 78.40876000000208,
+      "classifier_ms": 75.22474000001012,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.061839999982567,
+        "fpga_wall_ms": 7.622429999969427,
+        "suffix_check_ms": 47.463850000042385,
+        "logits_total_ms": 75.14811999999438
+      }
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "sample": 8,
+      "classifier_ms": 75.36296000000675,
+      "cpu_classifier_ms": 78.18837999997186,
+      "kernel_with_transfer_ms": 7.47243000000708,
+      "cpu_blocks_ms": 11.845029999960843,
+      "kernel_max_abs_error": 1.9073486328125e-06,
+      "logits_max_abs_error": 7.152557373046875e-07,
+      "cpu_blocks_max_abs_error": 9.5367431640625e-07,
+      "cpu_logits_max_abs_error": 3.5762786865234375e-07,
+      "logits": [
+        1.5301145315170288,
+        0.05198681354522705,
+        -1.8430289030075073,
+        -0.42495816946029663
+      ],
+      "split_timing": {
+        "prefix_ms": 20.0426499999935,
+        "fpga_wall_ms": 7.619570000031217,
+        "suffix_check_ms": 47.630059999960395,
+        "logits_total_ms": 75.29227999998511
+      }
+    }
+  ],
+  "phases": [
+    {
+      "index": 1,
+      "version": "v1",
+      "bitfile": "/home/xilinx/jupyter_notebooks/gesture_block_accel_v1/overlay/gesture_blocks56.bit",
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "completed_kernel_commands": 27,
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      }
+    },
+    {
+      "index": 2,
+      "version": "v2",
+      "bitfile": "/home/xilinx/jupyter_notebooks/gesture_block_accel_v2/overlay/gesture_blocks56.bit",
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "completed_kernel_commands": 27,
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      }
+    },
+    {
+      "index": 3,
+      "version": "v2",
+      "bitfile": "/home/xilinx/jupyter_notebooks/gesture_block_accel_v2/overlay/gesture_blocks56.bit",
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "completed_kernel_commands": 27,
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      }
+    },
+    {
+      "index": 4,
+      "version": "v1",
+      "bitfile": "/home/xilinx/jupyter_notebooks/gesture_block_accel_v1/overlay/gesture_blocks56.bit",
+      "system_before": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      },
+      "completed_kernel_commands": 27,
+      "system_after": {
+        "cpu_frequency_khz": {
+          "/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq": 1199999,
+          "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq": 1199999
+        },
+        "thermal_raw": {}
+      }
+    }
+  ],
+  "numeric_checks": [
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "black",
+      "max_abs_error": 5.811452865600586e-07
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "gradient",
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "seeded_noise",
+      "max_abs_error": 1.2516975402832031e-06
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "real_frame",
+      "max_abs_error": 1.9073486328125e-06
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "zeros",
+      "max_abs_error": 4.470348358154297e-07
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "random",
+      "max_abs_error": 5.960464477539062e-07
+    },
+    {
+      "phase": 1,
+      "version": "v1",
+      "case": "reload_zero_identity",
+      "max_abs_error": 0.0
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "black",
+      "max_abs_error": 4.917383193969727e-07
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "gradient",
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "seeded_noise",
+      "max_abs_error": 1.385807991027832e-06
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "real_frame",
+      "max_abs_error": 1.9073486328125e-06
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "zeros",
+      "max_abs_error": 4.3958425521850586e-07
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "random",
+      "max_abs_error": 5.662441253662109e-07
+    },
+    {
+      "phase": 2,
+      "version": "v2",
+      "case": "reload_zero_identity",
+      "max_abs_error": 0.0
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "black",
+      "max_abs_error": 4.917383193969727e-07
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "gradient",
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "seeded_noise",
+      "max_abs_error": 1.385807991027832e-06
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "real_frame",
+      "max_abs_error": 1.9073486328125e-06
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "zeros",
+      "max_abs_error": 4.3958425521850586e-07
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "random",
+      "max_abs_error": 5.662441253662109e-07
+    },
+    {
+      "phase": 3,
+      "version": "v2",
+      "case": "reload_zero_identity",
+      "max_abs_error": 0.0
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "black",
+      "max_abs_error": 5.811452865600586e-07
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "gradient",
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "seeded_noise",
+      "max_abs_error": 1.2516975402832031e-06
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "real_frame",
+      "max_abs_error": 1.9073486328125e-06
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "zeros",
+      "max_abs_error": 4.470348358154297e-07
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "random",
+      "max_abs_error": 5.960464477539062e-07
+    },
+    {
+      "phase": 4,
+      "version": "v1",
+      "case": "reload_zero_identity",
+      "max_abs_error": 0.0
+    }
+  ],
+  "error": null,
+  "cleanup_errors": [],
+  "scope": "Same original FP32 model and saved tensors. v1/v2/v2/v1 at four CPU threads; each phase loads one overlay. Includes paired CPU block and full-network logits references. Classifier time excludes preprocessing/top-k. Excludes camera, detector, network and UI latency.",
+  "same_model_artifacts_sha256": {
+    "source/hagrid_mobilenetv3_large.onnx": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+    "export/params/block0.bin": "95cb1161adab4c8a051c169ee673e120a39f2c5c0a708c6ad542cd9f64f95573",
+    "export/params/block1.bin": "3c3020489689b0d6b37c59cbc9de270909e1cd2a390a52c5bda0bff311aac034",
+    "export/models/prefix.onnx": "6b6542c9f3783412a8400cf62fda05ba8ca6e30e84758ef327ded3429e16a199",
+    "export/models/blocks.onnx": "8c8aca5ee8d07af35d464951acc249e1432218292af2fca64f42ed237375bcb9",
+    "export/models/suffix.onnx": "869824e016eba03111836fb2b69363de8135bf55340c6036e782dc9f6a8f998e"
+  },
+  "frame_tensor_sha256": "f838585a3172b07bfcb87f5e31612d4c9de87382e85e2579846b8bbb8ca0b6ff",
+  "model_input_sha256": "d733ab64baafc6c4fcd83cfdb7a97cd7adbc8fb08f48b5fa7ef1ef9e5ec8bb65",
+  "cv_threads": 4,
+  "summary": {
+    "v1": {
+      "kernel_with_transfer_ms": 7.541830000008076,
+      "classifier_ms": 75.07587500003865,
+      "cpu_blocks_ms": 11.852605000001404,
+      "cpu_classifier_ms": 78.18839000000821,
+      "samples": 16,
+      "cpu_to_fpga_blocks_speedup": 1.5715820961210623,
+      "cpu_to_fpga_classifier_speedup": 1.0414582580618337
+    },
+    "v2": {
+      "kernel_with_transfer_ms": 6.542385000017248,
+      "classifier_ms": 73.92200500001422,
+      "cpu_blocks_ms": 11.847684999992225,
+      "cpu_classifier_ms": 78.19925499998703,
+      "samples": 16,
+      "cpu_to_fpga_blocks_speedup": 1.810912228485635,
+      "cpu_to_fpga_classifier_speedup": 1.0578616610841656
+    }
+  },
+  "fpga_call_speedup": 1.1527646263538744,
+  "fpga_call_reduction_percent": 13.25202238700366,
+  "classifier_speedup": 1.0156092898186975,
+  "recommend_new_hardware": true,
+  "kernel_restart_required": false
+}

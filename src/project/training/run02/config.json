@@ -1,0 +1,58 @@
+{
+  "seed": 2026,
+  "architecture": "mobilenet_v3_large",
+  "labels": [
+    "open_palm",
+    "fist",
+    "victory",
+    "thumbs_up"
+  ],
+  "train_images": 338,
+  "validation_images": 384,
+  "train_sessions": [
+    "20221007_032131_f45bc27c",
+    "20221007_064646_df63fc7a",
+    "20221007_065424_0c5f8b10",
+    "20221007_065955_ac852267",
+    "20221007_070845_f2727042",
+    "20221007_071006_59eff710",
+    "20221007_071124_609dec9f",
+    "20221007_071236_2267e175"
+  ],
+  "validation_sessions": [
+    "20221007_072016_3f657e3e",
+    "20221007_072222_3bf281d3",
+    "20221007_073648_4d56a7bb",
+    "20221007_073802_923b0848",
+    "20221007_073929_5d150631",
+    "20221007_074048_35633323",
+    "20221007_074340_3d01f2e6",
+    "20221007_074458_63215be7"
+  ],
+  "train_class_counts": {
+    "open_palm": 76,
+    "fist": 94,
+    "victory": 90,
+    "thumbs_up": 78
+  },
+  "train_zip_sha256": "1e382652410d90dc0a25da9fea84ec44dffe5ca01123c1bf88b4dd8c772e5dd2",
+  "validation_zip_sha256": "5fc83b1d239d1f5f12157def4c2f7f9f533f0a84fe8e707fffd097786eddfa63",
+  "source_checkpoint_sha256": "1dbbae25e891ead69497bcde5985d87adbe511c26d5e392898c0c3e7abaa3301",
+  "torch": "2.7.1+cpu",
+  "torchvision": "0.22.1+cpu",
+  "device": "cpu",
+  "augmentation": [
+    "horizontal flip p=0.5",
+    "affine +/-12 deg, translate +/-3.5%, scale .92-1.04",
+    "brightness .22, contrast .18, saturation .12"
+  ],
+  "warmup_epochs": 3,
+  "finetune_max_epochs": 24,
+  "batch": 16,
+  "threads": 4,
+  "patience": 7,
+  "all_network_parameters": 4207156,
+  "batchnorm": "pretrained running statistics frozen; affine weights trainable in full stage",
+  "selection": "validation macro recall, tie lower unsmoothed cross entropy",
+  "independent_test_available": false
+}

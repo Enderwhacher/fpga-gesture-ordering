@@ -1,0 +1,8 @@
+{
+  "package": "gesture_order_v4_code",
+  "new_board_test": false,
+  "source_package": "gesture_order_project_v4_startup",
+  "excluded_build_caches": true,
+  "source_project_manifest_sha256": "fe4c4df6f02e75488ac0f3c776d11edf7c2ab782e753432e9ed8148f31d7f046",
+  "note": "Code submission package. Original complete archive is retained separately."
+}

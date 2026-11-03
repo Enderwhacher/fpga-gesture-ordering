@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "scope": "Offline PYNQ 3 parser, DMA, addresses, PL0 clock and both reset inputs",
+  "hwh_sha256": "8ed7017eb013a49bdb08b0150f4c625106dada999220d38ae8dd64c7d8e3be3f",
+  "parser_git_blob": "3318efd1e2cb0697a2ef0de55859cb461eb3f80e",
+  "dma_address": "0xa0000000",
+  "kernel_address": "0xa0010000",
+  "both_resets_from_ps_and_active_low": true
+}

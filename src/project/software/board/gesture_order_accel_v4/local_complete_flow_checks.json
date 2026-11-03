@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "checks": [
+    "validated live run exports after clean stop without claiming order verification",
+    "validation failure still exports and is not marked passed",
+    "startup failure cannot be misreported as a running board service"
+  ],
+  "scope": "Control-flow fixtures; no board, model or performance test"
+}

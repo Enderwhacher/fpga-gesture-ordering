@@ -1,0 +1,905 @@
+{
+  "new_board_test": false,
+  "files": {
+    ".gitignore": {
+      "bytes": 49,
+      "sha256": "5b0a62da6c7ec5cad904cd08311578394e3155649520691ae9fb792fed2a8e2a"
+    },
+    "board/readme.md": {
+      "bytes": 440,
+      "sha256": "dafbc1c8d212fde4429c41bd98617393b22780c86c9c3f7cd9185486f798440b"
+    },
+    "board/validated_runtime.rar": {
+      "bytes": 80545868,
+      "sha256": "46f11359eb079907b24591e8a6e70a98bd6cfc9b43474e03bbffb6f2cd9a5c24"
+    },
+    "build/generated_ip.zip": {
+      "bytes": 662299,
+      "sha256": "cd63662258612012b695ecb056358e62bda3a7102a4379440ba750b92a4231e7"
+    },
+    "build/readme.md": {
+      "bytes": 541,
+      "sha256": "2325c856cad9389774ca875c5b74cc5161d66d72d7287e41a839734a791bc2ba"
+    },
+    "build/vivado_sources.zip": {
+      "bytes": 722576,
+      "sha256": "0540d73a06130fa3fa5b9547fe8b382f6d766f6dc7d117409efec7164b187b97"
+    },
+    "data/evidence/final/benchmark_report.json": {
+      "bytes": 569130,
+      "sha256": "defa664e6ac9b55577ac1b3e482880f4baebf94e7ef0d456eae5faa999f97969"
+    },
+    "data/evidence/final/board_session.json": {
+      "bytes": 767304,
+      "sha256": "187a2ed8986afd54f9895d4371aff525ab83353abb94c75fc14ebd05ecdc782e"
+    },
+    "data/evidence/final/evidence_manifest.json": {
+      "bytes": 647,
+      "sha256": "9d324846e8f72bb0daa54732f90655445e7b6ad10296027650203997b8f989e0"
+    },
+    "data/evidence/final/installed_manifest.json": {
+      "bytes": 8700,
+      "sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74"
+    },
+    "data/evidence/final/laptop_session.json": {
+      "bytes": 11221,
+      "sha256": "b0355dd0946e7e54fbfdd53214b4f2991335eb385cca8d458eb9760d145971ce"
+    },
+    "data/evidence/final/readme.md": {
+      "bytes": 2378,
+      "sha256": "8dc9076cf3d448d32bb646fea795cd498c299a9585d371c1dc559575e389502a"
+    },
+    "data/evidence/final/review.json": {
+      "bytes": 15762,
+      "sha256": "b2176903cd9b19be18763b4b30a14b8bd25b5cc3ae1690e6577ffbc9df472b6c"
+    },
+    "data/evidence/final/saved_order.json": {
+      "bytes": 583,
+      "sha256": "687eddf9f6f98ed1578bf313a53be3794e78ac8f5f4541bb4f5bee667b2ee0ae"
+    },
+    "data/evidence/hardware/archive_reopen.log": {
+      "bytes": 20121,
+      "sha256": "438f00bc3c844d16838efe213327282ab2c72d3620225fc2ca9b44f5f0427b2a"
+    },
+    "data/evidence/hardware/archive_reopen_check.tsv": {
+      "bytes": 334,
+      "sha256": "511c070f2e38a0ee67aeb20805220884d80dbdb190fff8fdfe5e2cba1eef58d7"
+    },
+    "data/evidence/hardware/hls/reports/direct_rtl.json": {
+      "bytes": 3140,
+      "sha256": "e785c35417839a0d92ed1f6b9e5bb15deede7df6d51d7d7538647b86025ab0a2"
+    },
+    "data/evidence/hardware/hls/reports/fp_equivalence.json": {
+      "bytes": 84,
+      "sha256": "f24afacd69f3af2489d52c0f986726b32a1adfc81ec5903f721d7dd6855ecf73"
+    },
+    "data/evidence/hardware/hls/reports/summary.json": {
+      "bytes": 493,
+      "sha256": "eb30745b858ca19022f70a230ffbb458aacc37efa05a11462e3532862ae1d273"
+    },
+    "data/evidence/hardware/process_scheduling_board_comparison.json": {
+      "bytes": 38933,
+      "sha256": "856ff9315947878616487d3892f91de3fb13488561546236fd0dfe01f4dcbcb7"
+    },
+    "data/evidence/hardware/pw16_v1_v2_board_comparison.json": {
+      "bytes": 37046,
+      "sha256": "c7711278ec1822cb24086dd1940e856c7455cb337ca4b03568624ece21e7b5f6"
+    },
+    "data/evidence/hardware/vivado/reports/build.jou": {
+      "bytes": 1296,
+      "sha256": "7b23822930e433ad1a040ad398129f62cf2612f3f460e157ce273e2dcc57c478"
+    },
+    "data/evidence/hardware/vivado/reports/build.log": {
+      "bytes": 128500,
+      "sha256": "38def15ab4384297538387850d824574a9501fab3cec4cbe3af758474ce617eb"
+    },
+    "data/evidence/hardware/vivado/reports/build_result.tsv": {
+      "bytes": 194,
+      "sha256": "ff3185ac56be0fc9ac7f179484d86b19b3f989bf0eb3c9758ab86dc263f30822"
+    },
+    "data/evidence/hardware/vivado/reports/drc.rpt": {
+      "bytes": 3269481,
+      "sha256": "90ab1a08b3ad51d688b267f328a56178217c28507b7a995e26cc0371df780376"
+    },
+    "data/evidence/hardware/vivado/reports/gblock_generated.tcl": {
+      "bytes": 57656,
+      "sha256": "ca1a2a81bbd4823177b94e651df9f624166442a5fb9df9125d433d01d430ed29"
+    },
+    "data/evidence/hardware/vivado/reports/hwh_compat.json": {
+      "bytes": 401,
+      "sha256": "35206fdf805ccbfc5403302bb6985b9f81533dfe323d2dcd4bf3f8d58d8672fb"
+    },
+    "data/evidence/hardware/vivado/reports/methodology.rpt": {
+      "bytes": 1335,
+      "sha256": "62efe7c4f148563d04a4b022ac784a8cf20ac9523a81965ff7287515dc43d494"
+    },
+    "data/evidence/hardware/vivado/reports/ps_final_properties.txt": {
+      "bytes": 144188,
+      "sha256": "16c1dca89402d1fbfb869899380ae24242b54580e458b39ca4b3e8aef67e6300"
+    },
+    "data/evidence/hardware/vivado/reports/ps_readonly_skipped.txt": {
+      "bytes": 338,
+      "sha256": "8b23da8bf71112de70bef31f7dc90ae04b7074c1f0ed9a7f484e0e3da7bef991"
+    },
+    "data/evidence/hardware/vivado/reports/ps_restore.tsv": {
+      "bytes": 77729,
+      "sha256": "2178cd86dbfaa76c5d82ec9e60c6eca0da0e7c11507f75604245f283d5dab04d"
+    },
+    "data/evidence/hardware/vivado/reports/timing_summary.rpt": {
+      "bytes": 53924,
+      "sha256": "b9f970d812ed3922bed2a19caccac9ced54aed385fae73ee32c6bd49cfa633dc"
+    },
+    "data/evidence/hardware/vivado/reports/utilization.rpt": {
+      "bytes": 12985,
+      "sha256": "f044886c48ab40404d875959b583b7600556acad19b61892eece7637f577dc08"
+    },
+    "data/evidence/integration_checks.json": {
+      "bytes": 1045,
+      "sha256": "70bd9dd136716c283f1d250e1b5a814215199bb4d2694bd3090c0d67716d8e00"
+    },
+    "data/evidence/integration_local/check_order_transport_windows.py": {
+      "bytes": 7654,
+      "sha256": "77a20a67a644facc441f64cd0fa7c8084146af66e515dd02f965681bcf91c4c2"
+    },
+    "data/evidence/integration_local/http_checks.json": {
+      "bytes": 3527,
+      "sha256": "99aee8640120454806aae130ac4b3677ed8e85e05fd668d87ee28f3f2c2de02d"
+    },
+    "data/evidence/integration_source.json": {
+      "bytes": 261,
+      "sha256": "3d9607cb4006f11b70820cd729a5683cd112fa819f4502d6902f4bab1d35c773"
+    },
+    "data/evidence/local/runtime_recovery_checks.json": {
+      "bytes": 536,
+      "sha256": "4d173b5ad34eea7fd21f29033186d75ad375fbf53a03d6303a01f37e54d8068b"
+    },
+    "data/evidence/local/v4_install_checks.json": {
+      "bytes": 323,
+      "sha256": "cb033e4d07b262afdcc5e583360da851cab54c3017b686be7c5241d105ca7bb7"
+    },
+    "data/evidence/local/v4_local_checks.json": {
+      "bytes": 179115,
+      "sha256": "ea1ed6f73749149234d31c98d91ec9058457128378e4a74a72d4443b333e3581"
+    },
+    "data/evidence/raw/board_results_v3_original.zip": {
+      "bytes": 82099,
+      "sha256": "48e79e63028eb4b6acb18fda2a1abb98078449263b9f8736294e029dcf225472"
+    },
+    "data/evidence/raw/board_results_v4_original.zip": {
+      "bytes": 172977,
+      "sha256": "5c83e7214acf0a5a8c12699c3ccabff2221de7eefdc254d8328c47944b5aac90"
+    },
+    "data/evidence/raw/hardware_v1_reference_original.zip": {
+      "bytes": 537901,
+      "sha256": "1a3aa8e40cc976d5ff8d88547cb231fb745954fb23ea4e90e5d4ffab1de10d46"
+    },
+    "data/evidence/raw/laptop_logs_v4_original.zip": {
+      "bytes": 39127,
+      "sha256": "fae2ddf28c46a49d384d3265cd17d7b5a0ea29f2882c03e356bac219b6ec78e2"
+    },
+    "data/evidence/raw/pw16_and_scheduling_original.zip": {
+      "bytes": 523758,
+      "sha256": "2965b0c47e0a1e3c05215965ceb79e4587f200198aef891884b65b8f58f43b83"
+    },
+    "data/evidence/startup/integration_checks.json": {
+      "bytes": 894,
+      "sha256": "32f2509db6a2accb13309615fb79ff47a2276978346c47e65d70ebadda9f4f78"
+    },
+    "data/evidence/startup/source_checks.json": {
+      "bytes": 13163,
+      "sha256": "ffe93293242a6b839c3b4ec3ea71c0d49ae76bd2aef76d75ed051e1b891de4f0"
+    },
+    "data/readme.md": {
+      "bytes": 278,
+      "sha256": "1d4b3599e4827084e5275f47e9631f2a261903e64e22f7c9b9128b68a53698db"
+    },
+    "readme.md": {
+      "bytes": 3498,
+      "sha256": "7dedb25d7542c7a96f14e7c0d1f899e154835480aaeb39036683c386d3472360"
+    },
+    "report/ai_records/corrections/fix_v3_notebook_check.py": {
+      "bytes": 4354,
+      "sha256": "1364083449e90ea1dee7915978448bf7f354e3ee20105e618077d48676a6f57c"
+    },
+    "report/ai_records/corrections/repair_v4_runtime.py": {
+      "bytes": 5489,
+      "sha256": "a386fcd67dd62fa617f9361c92aebf25b17c41d9a20a6910d9135c8a32117b03"
+    },
+    "report/ai_records/summary.md": {
+      "bytes": 2210,
+      "sha256": "ef5f157c5067d7f7827e68b7c100375fef40a71dff863bd3e407b32719ce5522"
+    },
+    "report/ai_records/verified_excerpts.md": {
+      "bytes": 3752,
+      "sha256": "47bc3a1685afe065b428e6a912c03379638ab302c4acc04a29e7a67e65c5b81f"
+    },
+    "report/design_report_source.md": {
+      "bytes": 8614,
+      "sha256": "396aecd1e0c836ca83c05da2184e156ccfb42661938df6d83f9b994ee326e7c0"
+    },
+    "sim/readme.md": {
+      "bytes": 460,
+      "sha256": "7260310d077e9b344a80ccaebf60e62595c192b4b4afe6b5e1cdd9555f0523a1"
+    },
+    "skill/edge-preview-latency/SKILL.md": {
+      "bytes": 2044,
+      "sha256": "96664f41ef57320116a9f16e4fe5f71684f9ed9338142efd0d0bb88b09b87698"
+    },
+    "skill/fpga-fair-benchmark/SKILL.md": {
+      "bytes": 2215,
+      "sha256": "6f90658d5183a17afeadf8b2e9a821cfee4fde8f0bcea197fbb8b9fe2dba01f0"
+    },
+    "skill/fpga-model-partition/SKILL.md": {
+      "bytes": 2225,
+      "sha256": "f61da512bdd1c20a2b2d945c2b46426a273106c0246fd2dd42a5d626e7090427"
+    },
+    "skill/fpga-project-handoff/SKILL.md": {
+      "bytes": 2192,
+      "sha256": "0795470e0f506ef3d81af644ddf22bbed41679734030936776c536f68f7ad5e4"
+    },
+    "skill/gesture-action-gate/SKILL.md": {
+      "bytes": 2087,
+      "sha256": "3f04774e6522c57f2fc8145e49aebfac197b267f9caf309d82e0003857868791"
+    },
+    "skill/gesture-model-training/SKILL.md": {
+      "bytes": 2724,
+      "sha256": "bfb39cb6a8ddca437d3792d9a4e3c4ef3a5b4b9b899ad400930ab83d25b87fd1"
+    },
+    "skill/golden_check.py": {
+      "bytes": 1750,
+      "sha256": "0fc1d64271a7555b71fe34a426f4b6cf3da5b4c8aa112b7deb69f4e2d1a044c0"
+    },
+    "skill/prompt_templates.md": {
+      "bytes": 1327,
+      "sha256": "b92e23cc8e35a969650e72f5196039a4d28f85db3cfb548070f034a96bc580ee"
+    },
+    "skill/pynq-accelerator-bringup/SKILL.md": {
+      "bytes": 2245,
+      "sha256": "764dc4de85c7c8c763c3e2788f2cd18e21e0304f2cf79a1e9a6b3a6a3d5257c7"
+    },
+    "skill/pynq-board-workflow/references/delivery.md": {
+      "bytes": 1170,
+      "sha256": "0d81f9ae1f84ff4727264ca6c8004857dd49e7226ff224bb7affb427d0d199d9"
+    },
+    "skill/pynq-board-workflow/references/environment.md": {
+      "bytes": 2099,
+      "sha256": "335faa54a2624a7ec0b685dc3f175fe412c12c474d3a5213dfe675330092196d"
+    },
+    "skill/pynq-board-workflow/references/io-network.md": {
+      "bytes": 1619,
+      "sha256": "bda6cbceacb71e5d54063e05c32cf25d8b3cbd5e06757b981ae9b0c2871457b6"
+    },
+    "skill/pynq-board-workflow/references/overlay-dma.md": {
+      "bytes": 2580,
+      "sha256": "d6be153b3dd874726c7f2fd9c141f67d478405e3ddf117164caa585596e958a0"
+    },
+    "skill/pynq-board-workflow/references/troubleshooting.md": {
+      "bytes": 1566,
+      "sha256": "1bca50c16b46292e42cd08203b51c2decfec689481ee411f27176418dfc8a9a1"
+    },
+    "skill/pynq-board-workflow/scripts/inspect_pynq.py": {
+      "bytes": 3025,
+      "sha256": "91bde474a26e1c7c030ea1ee5394c5c3e8b8a4054442585fde421270047aa2e3"
+    },
+    "skill/pynq-board-workflow/SKILL.md": {
+      "bytes": 3346,
+      "sha256": "a54e7a2162319ee5d88904f9cdb05866c236d163335a0801c20851f7aee50a6c"
+    },
+    "skill/pynq-notebook-deploy/SKILL.md": {
+      "bytes": 2045,
+      "sha256": "c9b6793c2cc23d36fecbd3a683c52f7e7a751cd6470a3f9480857b14690c772c"
+    },
+    "skill/readme.md": {
+      "bytes": 5610,
+      "sha256": "dbcf7049bf40256e661751653b98a60d0f60cd29082c877f91b01e1c46fd739a"
+    },
+    "skill/troubleshooting.md": {
+      "bytes": 1898,
+      "sha256": "6abfa3811689135d95a14eb00cfd7c84c0da0b3cea772c3141d3b4aad9fe3f5d"
+    },
+    "skill/validation_report.json": {
+      "bytes": 1223,
+      "sha256": "f60d4ebdc9a91c20483fb14497ee0f89fe36b7e175378758bd421ed15f9c27f1"
+    },
+    "source_map.json": {
+      "bytes": 23461,
+      "sha256": "415cede92e149bf029fe759f1ccae78357ada437e881085c372b3b11a87d9b69"
+    },
+    "src/project/data/performance_summary.csv": {
+      "bytes": 1461,
+      "sha256": "057b859bbd4dd30211b3a4d86f0f119f538326f658ed9f1f051d1e7b38a69c36"
+    },
+    "src/project/data/readme.md": {
+      "bytes": 380,
+      "sha256": "cee121b393794e3667fcfc3dec9219875ae48573137c50f7e0d7b05d637d7f9c"
+    },
+    "src/project/deployment/02_restart_v4.ipynb": {
+      "bytes": 4776,
+      "sha256": "c348a0f31e878d06c04a68ca9ccdf78f065cbb354c9c68d29440410cbec6c3f1"
+    },
+    "src/project/deployment/collect_board_dependencies.py": {
+      "bytes": 3680,
+      "sha256": "9d1e6cbc2d31aedbc78a5bd12381aff2fd8a6e58f41249fd80eafb9cb885890d"
+    },
+    "src/project/deployment/install_board_assets.py": {
+      "bytes": 1478,
+      "sha256": "8da09c2eb8d5b577cae12c01d37256cfb674255e801a9d250f98a3a76f471593"
+    },
+    "src/project/deployment/install_gesture_order_accel_v4_r1.py": {
+      "bytes": 1704,
+      "sha256": "41c87f9dd7cf3fbbbbbac6c9a48603b233a2fd06a31901f877d57f98b74a7ef1"
+    },
+    "src/project/deployment/install_hardware_v2.py": {
+      "bytes": 1296,
+      "sha256": "49c73e38a8029307d4e61815b5d9a6da8a899e81bb926ba33361891501f2c1e5"
+    },
+    "src/project/deployment/repair_v4_runtime.py": {
+      "bytes": 5489,
+      "sha256": "a386fcd67dd62fa617f9361c92aebf25b17c41d9a20a6910d9135c8a32117b03"
+    },
+    "src/project/deployment/restore_validation_report.py": {
+      "bytes": 1473,
+      "sha256": "edb94196f0c27f96e411cc9c2eb4558de7d858de4fbdc8768cbdf8ae170c7b7a"
+    },
+    "src/project/docs/architecture_and_interfaces.md": {
+      "bytes": 3744,
+      "sha256": "d0fe293f9998b5712eea4446cc6bd1a901d1fdd1418f7c64b6ac6c9f0f4542aa"
+    },
+    "src/project/docs/environment_and_versions.md": {
+      "bytes": 3105,
+      "sha256": "7f26cc3ef37fa9919b16ef2d3e585bb3757ac50e24c6ea033666d9109b4a8101"
+    },
+    "src/project/docs/hardware_rebuild.md": {
+      "bytes": 3962,
+      "sha256": "45f0c685c446d3530f285a75c3327808e1bcdadfc6355e8368548e5ebc5f646c"
+    },
+    "src/project/docs/host_tests.md": {
+      "bytes": 1115,
+      "sha256": "c2db0a5506a22c76ce0493c456927e1cd9836d6d5f69b6b155762245dda40b0c"
+    },
+    "src/project/docs/integration_v4.md": {
+      "bytes": 1803,
+      "sha256": "1888c593c522db470ba15e2194c670b189dc7cd01e83d1ca82f2556cdfaedde8"
+    },
+    "src/project/docs/quickstart.md": {
+      "bytes": 2219,
+      "sha256": "a2096cf118e3fd7661ec9eb7da6b519d661709ca43dc6bf1bc2376da950930d0"
+    },
+    "src/project/docs/source_and_license_inventory.md": {
+      "bytes": 2105,
+      "sha256": "dba92c467bda980d33cef58540a458b234164b4d26999b99bb7163e760628457"
+    },
+    "src/project/docs/startup_update.md": {
+      "bytes": 2664,
+      "sha256": "a9cddaba234a3d83b6b90dfdd3fd882aa12e82c62d2687f4e19c99b306affdf9"
+    },
+    "src/project/docs/submission_checklist.md": {
+      "bytes": 3478,
+      "sha256": "c0760131d73c3f8dcccbdd33aa71989d3a913d9cab6340187c678449809f5556"
+    },
+    "src/project/final_version.json": {
+      "bytes": 1014,
+      "sha256": "5a5f4972e89274a7bca2740f3f3394cd86c02be538eeae0fef5440613141045e"
+    },
+    "src/project/handoff_checks.json": {
+      "bytes": 1195,
+      "sha256": "2580b3b10cb469fb5e5f99a59c35cc171677429e0a2bec0b2da7b6f29e6e2ad3"
+    },
+    "src/project/handoff_manifest.json": {
+      "bytes": 86044,
+      "sha256": "f553bc3d476a00dac5b60d2584b0ea0973c7017ae3432e9d3f5dfec8e13aaaf2"
+    },
+    "src/project/hardware/archive_original_command.tcl": {
+      "bytes": 370,
+      "sha256": "d1dab16253fb4105d78b48a06879932705d3c54865e13e1a625dd34d3fd9423d"
+    },
+    "src/project/hardware/gesture_block_accel_v2/blocks16_driver/__init__.py": {
+      "bytes": 61,
+      "sha256": "f6d6267389eb6075f617451e653f612ec74bee3c2dbcc660bd71fe8995f35e71"
+    },
+    "src/project/hardware/gesture_block_accel_v2/blocks16_driver/accelerator.py": {
+      "bytes": 9977,
+      "sha256": "72d95f5bd3fb4fe9ec90b472596c45493a5935c693aefc7a1742cf6e4f921e89"
+    },
+    "src/project/hardware/gesture_block_accel_v2/blocks16_driver/packet.py": {
+      "bytes": 1386,
+      "sha256": "5c92734258cee8ee8a8c42ca403cf15fb6e84a34a31b3cee5e23ca4107ecb1b4"
+    },
+    "src/project/hardware/gesture_block_accel_v2/blocks16_runtime.py": {
+      "bytes": 3685,
+      "sha256": "38b36a02830d3ce4929edd49ee2230179f57d7ad865b78af6370b6cb647d4961"
+    },
+    "src/project/hardware/gesture_block_accel_v2/board/environment.py": {
+      "bytes": 2207,
+      "sha256": "8616ef8df9910942fafb6f87c37ca4a9ab721f2d152e7d80e738d91bb7b69685"
+    },
+    "src/project/hardware/gesture_block_accel_v2/board/validate_hardware.py": {
+      "bytes": 10495,
+      "sha256": "bbda995301296abc54d321d495af934597cc8d2317e805a5a2036bf8edf2faee"
+    },
+    "src/project/hardware/gesture_block_accel_v2/board/verify_package.py": {
+      "bytes": 1117,
+      "sha256": "c5023371f89e1676759b2e5516122b102ab20f0c72e4f112dd53fe6210c112f4"
+    },
+    "src/project/hardware/gesture_block_accel_v2/board_baseline/ps_2022_1_parameters.tsv": {
+      "bytes": 52420,
+      "sha256": "ccf99e06a594e97d3f80d1b492f3f668449e8a8387a674f0b6dab76e305a6545"
+    },
+    "src/project/hardware/gesture_block_accel_v2/compat/pynq3_hwh_parser.py": {
+      "bytes": 24267,
+      "sha256": "bbb9ffebc4d01a52c6e8b5265aeb70b25e99ee8fb6a30dd0cb20cbbc081e2f27"
+    },
+    "src/project/hardware/gesture_block_accel_v2/export/block_params.json": {
+      "bytes": 810,
+      "sha256": "88d2d5146fc3db362b4083920e9eb53d66796f49dea7f5b4fa483e8f0afeb7be"
+    },
+    "src/project/hardware/gesture_block_accel_v2/export/case_list.txt": {
+      "bytes": 58,
+      "sha256": "7d9e04e9887b016d3c7078731d8977054af828aacd322a633a2691ad02656e1a"
+    },
+    "src/project/hardware/gesture_block_accel_v2/export/export_manifest.json": {
+      "bytes": 4641,
+      "sha256": "682874a2e40b7f34c4fc3c6ee7f987dbf3696ba083134b5d6ea00634e824f97d"
+    },
+    "src/project/hardware/gesture_block_accel_v2/export/validation_report.json": {
+      "bytes": 4481,
+      "sha256": "e6ac5b74b081e96cf47d69a7dcc7f79485875c85ab2e013eefb747c4d30aa8e8"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/reports/direct_rtl.json": {
+      "bytes": 3140,
+      "sha256": "e785c35417839a0d92ed1f6b9e5bb15deede7df6d51d7d7538647b86025ab0a2"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/reports/fp_equivalence.json": {
+      "bytes": 84,
+      "sha256": "f24afacd69f3af2489d52c0f986726b32a1adfc81ec5903f721d7dd6855ecf73"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/reports/summary.json": {
+      "bytes": 493,
+      "sha256": "eb30745b858ca19022f70a230ffbb458aacc37efa05a11462e3532862ae1d273"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/run_hls.tcl": {
+      "bytes": 860,
+      "sha256": "02aa56325f6a7350d1d67516873cff1b32dc299ad0b55edfe93a320cb2fa20fe"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/setup_rtl.tcl": {
+      "bytes": 521,
+      "sha256": "ac1f22bd72f4fab8bee5a90f93f349fb46c4cd069ea7e77a8cddc6416caa828e"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/src/blocks56_axis.cpp": {
+      "bytes": 16566,
+      "sha256": "0c23d7755917bfdcb81082d9e7e6d5fd6f33118d9db4ae1dc3d92d0dbe037ff7"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/src/blocks56_axis.h": {
+      "bytes": 1094,
+      "sha256": "21bc7009ab438f730699b66a0d05278502643c0e895c0e1d3f015ef48d7d58f5"
+    },
+    "src/project/hardware/gesture_block_accel_v2/hls/tb/test_blocks.cpp": {
+      "bytes": 4697,
+      "sha256": "6c23af93de2294ded36589c15165be570082def084a6d9e93aff75bb46b16b2a"
+    },
+    "src/project/hardware/gesture_block_accel_v2/operation_guide.md": {
+      "bytes": 1885,
+      "sha256": "0970707b8aaec7082e51bc775894d9e54bc82ee9d8aed4fb23fa5b652df4471a"
+    },
+    "src/project/hardware/gesture_block_accel_v2/optimization_plan.json": {
+      "bytes": 407,
+      "sha256": "1897fc755b0c2ee6fed848f80f8a93d5f6e3906df0844078fc5d171db4768b96"
+    },
+    "src/project/hardware/gesture_block_accel_v2/overlay/build_manifest.json": {
+      "bytes": 1914,
+      "sha256": "63753d939788fd3b34170a15d20f47adb118cb96158cdd9a3327c2eadab8e50a"
+    },
+    "src/project/hardware/gesture_block_accel_v2/package_manifest.json": {
+      "bytes": 11421,
+      "sha256": "562cd06bb240af69459f0fa7240c59b5bbd6a879c364aecd9e8a99ac06a1a73f"
+    },
+    "src/project/hardware/gesture_block_accel_v2/reports/driver_host_tests.json": {
+      "bytes": 183,
+      "sha256": "65e28cfcc114e90453c7342eb60cee66999111f96ef03464798e91d5789965d4"
+    },
+    "src/project/hardware/gesture_block_accel_v2/reports/runtime_host_tests.json": {
+      "bytes": 242,
+      "sha256": "d629d01002eacb54ce38affc3359d45308821c6ede5e9a35813f16b09c32ca54"
+    },
+    "src/project/hardware/gesture_block_accel_v2/reports/source_checks.json": {
+      "bytes": 174,
+      "sha256": "a9e7421a6ae13ad38bcef06d232c7f6bdeb7a479653f2ba182ff57f76dc0e214"
+    },
+    "src/project/hardware/gesture_block_accel_v2/source/hagrid_runtime.py": {
+      "bytes": 2181,
+      "sha256": "065f0ba1f30908b223d148178a22bd29c7eeaae58ff58a2b1611b529a298d24f"
+    },
+    "src/project/hardware/gesture_block_accel_v2/source/model_meta.json": {
+      "bytes": 868,
+      "sha256": "eb1bb16df09fb57d8a29e98b6789a482fa4e292e98a5febb6afea8e03ae6b15c"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tests/test_driver.py": {
+      "bytes": 11055,
+      "sha256": "057db8d680c0ffc2c145d02bca9c34efa4b459c4acefbffec625110b8dc8f9f1"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tests/test_runtime.py": {
+      "bytes": 4026,
+      "sha256": "a3eb3495095040b2e6c33b192241b6e8d2c9304c246a360152d1a8d3718a5713"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/analyze_target.py": {
+      "bytes": 2079,
+      "sha256": "d3a8cfd3cfaf9bea65c6b3aacd2d1635e22aaca1652b5dcbbad3b92acdee3cab"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/audit_hwh.py": {
+      "bytes": 2382,
+      "sha256": "0e588479673e76436c824f7b0bfc849307eed768c28a3530a26f0f9dc3544730"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/audit_returned_run.py": {
+      "bytes": 6097,
+      "sha256": "0c74a7d8ff2130cd9db32464f5c4466d297925dccabe56c8908c1fd9e576ded6"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/build_local.py": {
+      "bytes": 1911,
+      "sha256": "68037546e226e14db1814e9b41c8e560758cb92f65263b821856a5e9d6ef44c1"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/check_sources.py": {
+      "bytes": 1019,
+      "sha256": "41bf2d714faf43c16ddaf0e53716c4de8f7d7f2215ba033a2fd1617c28c0f9e4"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/check_stable_baseline.py": {
+      "bytes": 1135,
+      "sha256": "593f39e357e4bfd348f87237dd4457185af3921f400324f17c5c48a21d2bb9ce"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/direct_rtl.py": {
+      "bytes": 6182,
+      "sha256": "29885f5bab78fd0ed9ca8c1a67e1943c0ede6a0a841c82866d519c40f003edcf"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/export_blocks.py": {
+      "bytes": 10289,
+      "sha256": "34566723c10bdebcc120fcd46331ebc367615688e33267cfde0d800e0771f0a1"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/fast_rtl.py": {
+      "bytes": 6261,
+      "sha256": "274bdf8b1ae106030304d956b18306137336738ae574cc775d00db2ed933c11b"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/finalize_release.py": {
+      "bytes": 5243,
+      "sha256": "527c9403c8394d4bc87e37f4c61bf188e665c983aafbc3dee63e6046105464df"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/inspect_progress.py": {
+      "bytes": 872,
+      "sha256": "8dff96af75c8a727add558ec192e2bc7c2d7dabb9fdc7f01be1a7097be8c70e1"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/make_notebook.py": {
+      "bytes": 3984,
+      "sha256": "8166133100694cab548eac4e6dd9ef039f06152bc3d99ed63be4e0e0cce45e12"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/prepare_vivado.py": {
+      "bytes": 2824,
+      "sha256": "5371eba5e16f49ac845b50cd521549762864fa39eeeb0d36f51eb228a6c77d09"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/record_native_partial.py": {
+      "bytes": 873,
+      "sha256": "8f3f363577a604077d72332aedd8c85498daeea9af4c056fe1654c4d1cd03045"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/review_board_return.py": {
+      "bytes": 1518,
+      "sha256": "dad802bedeac1b8a817d6ca5be89f126a5e7bde9cc7b11f2646cda20a84034e8"
+    },
+    "src/project/hardware/gesture_block_accel_v2/tools/summarize_resources.py": {
+      "bytes": 496,
+      "sha256": "5652e1ac07ee34e32c84ab2e3de27e1f920671ab992d4eb07b4407dfd8a62d42"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/build.tcl": {
+      "bytes": 9924,
+      "sha256": "abd13c33fee672dd0e17a6c03346f046ee663f78e9b9c0b0ff781ba23d9972e8"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/build_result.tsv": {
+      "bytes": 194,
+      "sha256": "ff3185ac56be0fc9ac7f179484d86b19b3f989bf0eb3c9758ab86dc263f30822"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/drc.rpt": {
+      "bytes": 3269481,
+      "sha256": "90ab1a08b3ad51d688b267f328a56178217c28507b7a995e26cc0371df780376"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/gblock_generated.tcl": {
+      "bytes": 57656,
+      "sha256": "ca1a2a81bbd4823177b94e651df9f624166442a5fb9df9125d433d01d430ed29"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/hwh_compat.json": {
+      "bytes": 401,
+      "sha256": "35206fdf805ccbfc5403302bb6985b9f81533dfe323d2dcd4bf3f8d58d8672fb"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/methodology.rpt": {
+      "bytes": 1335,
+      "sha256": "62efe7c4f148563d04a4b022ac784a8cf20ac9523a81965ff7287515dc43d494"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/ps_final_properties.txt": {
+      "bytes": 144188,
+      "sha256": "16c1dca89402d1fbfb869899380ae24242b54580e458b39ca4b3e8aef67e6300"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/ps_readonly_skipped.txt": {
+      "bytes": 338,
+      "sha256": "8b23da8bf71112de70bef31f7dc90ae04b7074c1f0ed9a7f484e0e3da7bef991"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/ps_restore.tsv": {
+      "bytes": 77729,
+      "sha256": "2178cd86dbfaa76c5d82ec9e60c6eca0da0e7c11507f75604245f283d5dab04d"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/timing_summary.rpt": {
+      "bytes": 53924,
+      "sha256": "b9f970d812ed3922bed2a19caccac9ced54aed385fae73ee32c6bd49cfa633dc"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/reports/utilization.rpt": {
+      "bytes": 12985,
+      "sha256": "f044886c48ab40404d875959b583b7600556acad19b61892eece7637f577dc08"
+    },
+    "src/project/hardware/gesture_block_accel_v2/vivado/restore_ps.tcl": {
+      "bytes": 1539,
+      "sha256": "9b58a763785df13214eb24bdb199bd18d00386f8c7c9b1b9b842d789e80be037"
+    },
+    "src/project/packaging/omitted_files.json": {
+      "bytes": 1814,
+      "sha256": "aa0de0576c98a550e3142785d9b9824c43a19164d2feaf175067460e7a51c6e4"
+    },
+    "src/project/packaging/scope.json": {
+      "bytes": 357,
+      "sha256": "8f49768be5c13557b11d9d732d60d04a2a1d7bb2b807dcc4e6826cf257b3abaf"
+    },
+    "src/project/packaging/source_snapshot.json": {
+      "bytes": 55041,
+      "sha256": "cd2b9b4e523029362f4a0bd79bbe4c6c0708a443c3982f3eb0736ac6b7e239ce"
+    },
+    "src/project/readme.md": {
+      "bytes": 2785,
+      "sha256": "3f6a15b3b33b5bdcd3508ad27de0f44c93a293bec60e27c223edd2469628aea3"
+    },
+    "src/project/requirements_host.txt": {
+      "bytes": 86,
+      "sha256": "278ac2df56c5c932546c01a975377ff311cc2e67e7c584fb570f7a77a0f54dae"
+    },
+    "src/project/software/board/gesture_order_accel_v4/00_final_candidate_v4.ipynb": {
+      "bytes": 7119,
+      "sha256": "067ab1fba64e4e0b6e812267d23ac180bff70cc0c0eac8614cfc3a6041d16516"
+    },
+    "src/project/software/board/gesture_order_accel_v4/01_one_run_v4.ipynb": {
+      "bytes": 3578,
+      "sha256": "c1f27ccff2000e7b655555efb5992341dd5c6ed9df19858a877014e5404cb08f"
+    },
+    "src/project/software/board/gesture_order_accel_v4/02_restart_v4.ipynb": {
+      "bytes": 4776,
+      "sha256": "c348a0f31e878d06c04a68ca9ccdf78f065cbb354c9c68d29440410cbec6c3f1"
+    },
+    "src/project/software/board/gesture_order_accel_v4/board_server.py": {
+      "bytes": 22376,
+      "sha256": "40a013e07ed00107d70bde56a23b3d04c9573c474ecde6d381ecca0a69f4027d"
+    },
+    "src/project/software/board/gesture_order_accel_v4/local_benchmark_checks.json": {
+      "bytes": 602,
+      "sha256": "51a49689381597d5413a2b23d3c38df4d90849e2d3edafda3825247e494b0b7e"
+    },
+    "src/project/software/board/gesture_order_accel_v4/local_complete_flow_checks.json": {
+      "bytes": 371,
+      "sha256": "25ee5add559c6a853d7216b462ef1385d2555ba078e421ea6631b92e29a707a4"
+    },
+    "src/project/software/board/gesture_order_accel_v4/local_concurrency_checks.json": {
+      "bytes": 227,
+      "sha256": "1b4822d0e0a6b7934fac3bfb688597695a87de461f8bfafe3f214ba13972839e"
+    },
+    "src/project/software/board/gesture_order_accel_v4/local_model_checks.json": {
+      "bytes": 163637,
+      "sha256": "5eef3550e7d9c23566f6ab1b25af3750d08b9d1ceb10d7272faa9953c8e62b4d"
+    },
+    "src/project/software/board/gesture_order_accel_v4/local_order_transport_checks.json": {
+      "bytes": 3528,
+      "sha256": "4d3d8688a5273885de2ee0afdf50544afc3469d7d244e13d78d736cc55368c5a"
+    },
+    "src/project/software/board/gesture_order_accel_v4/manifest.json": {
+      "bytes": 8700,
+      "sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74"
+    },
+    "src/project/software/board/gesture_order_accel_v4/order_core.py": {
+      "bytes": 9796,
+      "sha256": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62"
+    },
+    "src/project/software/board/gesture_order_accel_v4/pipeline_runtime.py": {
+      "bytes": 7119,
+      "sha256": "72267d9320d8bc3a3a18727cfcb97e1f2871858408754379859dd62d9ca31059"
+    },
+    "src/project/software/board/gesture_order_accel_v4/readme.md": {
+      "bytes": 8250,
+      "sha256": "4b1774ee8a31c25660f9d0680416d025653c95be4885a6e773eb99446ab01e87"
+    },
+    "src/project/software/board/gesture_order_accel_v4/run_complete.py": {
+      "bytes": 3894,
+      "sha256": "bfacb22c13da46c4e1c6f6cd5e2ab187fb436d2c0c339d6340fca603b62b14a8"
+    },
+    "src/project/software/board/gesture_order_accel_v4/session_guard.py": {
+      "bytes": 748,
+      "sha256": "f0879e3a34747c6a7541a9822b44cba66b486de2740264db8a10c12455e8cec4"
+    },
+    "src/project/software/board/gesture_order_accel_v4/setup_runtime.py": {
+      "bytes": 4055,
+      "sha256": "10a79d7677d9b1da568c5e4cb60e1f58ebddbe404641723f14af6d646e8eb5be"
+    },
+    "src/project/software/board/gesture_order_accel_v4/start_v4.py": {
+      "bytes": 3701,
+      "sha256": "af6db1eff9e83189631c031fe43762218a53e8e99e56bce81deb4e4f1eaf2ceb"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/check_benchmark.py": {
+      "bytes": 1843,
+      "sha256": "3e2962a459f8390a461b0190d6e2d3fad0c5f2bfaef975d3c7543812da3aaa06"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/check_complete_flow.py": {
+      "bytes": 3098,
+      "sha256": "82b3b860ead8690a9f7a59f29c0b0e4f9ab06749dba4981d19bdd468f23d9d28"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/check_models.py": {
+      "bytes": 3758,
+      "sha256": "82bc6c1d167750867f895cb7431d34de91123c19326d619ec4f64526a5122ba9"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/check_order_transport.py": {
+      "bytes": 7433,
+      "sha256": "7f5fbb8367cfcaaa1da02459805d9efbeaa09f47cc0e64f5a480645d60224965"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/mp_palmdet_reference.py": {
+      "bytes": 93560,
+      "sha256": "f06ce44a9b77e12b49d72416388829fd1a481ffe7a516d914e5a8c6ca50710be"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/remote_client_reference.py": {
+      "bytes": 8969,
+      "sha256": "e26b66cac02a9861a1b66262bf9622c3b72244764d18cb1b269bd1b36a725a24"
+    },
+    "src/project/software/board/gesture_order_accel_v4/tests/test_pipeline.py": {
+      "bytes": 7272,
+      "sha256": "b6cb1392d8c10a588029c6b716249013734eb54d57aaa8a50d8fbb3324810fea"
+    },
+    "src/project/software/board/gesture_order_accel_v4/v3_runtime.py": {
+      "bytes": 8167,
+      "sha256": "14e965c6bb4231595fa216fced0cca04d272f83a53c8db4f793ae9691c735721"
+    },
+    "src/project/software/board/gesture_order_accel_v4/v4_runtime.py": {
+      "bytes": 4716,
+      "sha256": "e26a2d8e694439ecf9156f1439bea62bf8ad2dc448db5f6946dc06523e2ee3cb"
+    },
+    "src/project/software/board/gesture_order_accel_v4/validate_v4.py": {
+      "bytes": 19249,
+      "sha256": "a3caf26afacb1eab0690babcba17347374fc9b1c5b67bd4d5424a57f77bc6f66"
+    },
+    "src/project/software/laptop/app_manifest.json": {
+      "bytes": 1417,
+      "sha256": "10b1316920314ab1ea25e391b049f140b02731593d46ec19eea5ee64f04d41d0"
+    },
+    "src/project/software/laptop/final_version_readme.md": {
+      "bytes": 568,
+      "sha256": "80b5731345f5b834a2b5d242735b9d5681b918f3aa8139571f522379e8da0fff"
+    },
+    "src/project/software/laptop/laptop_app.py": {
+      "bytes": 17852,
+      "sha256": "1ac6b6bae9c27a4d2e161b75c837f280bf44d4acdde6732291616b913cef5b4b"
+    },
+    "src/project/software/laptop/order_core.py": {
+      "bytes": 9796,
+      "sha256": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62"
+    },
+    "src/project/software/laptop/order_ui.py": {
+      "bytes": 8094,
+      "sha256": "003faaf230f86d7d69814faf10c5934b212f631b781b30851d0b8529c8880c99"
+    },
+    "src/project/software/laptop/README_laptop.md": {
+      "bytes": 5311,
+      "sha256": "c1be1f7c3c747699c88b893567f051c73cd842f48d7ec39118b29a8a3df3c8a5"
+    },
+    "src/project/software/laptop/remote_client.py": {
+      "bytes": 8969,
+      "sha256": "e26b66cac02a9861a1b66262bf9622c3b72244764d18cb1b269bd1b36a725a24"
+    },
+    "src/project/software/laptop/requirements-laptop.txt": {
+      "bytes": 51,
+      "sha256": "ab99b64988ce9433c25229834315204a5c6cf5e865de468d709fa42081111989"
+    },
+    "src/project/software/laptop/start_demo.bat": {
+      "bytes": 508,
+      "sha256": "c256a85e7c64aa93bfb65f25fb4059db61dffd95476ca6c80a0aeacd9d44968d"
+    },
+    "src/project/software/laptop/start_laptop.bat": {
+      "bytes": 624,
+      "sha256": "1d8fcf3f8ccfb46afee5cb7d885204ecc2ed0265c1abee401de8f50da0dbb8b8"
+    },
+    "src/project/software/laptop/start_laptop_portable.bat": {
+      "bytes": 333,
+      "sha256": "afe852474e85be7891e51fef9dd0fd0689f4d3b2a272dcc8776902ed43e6b819"
+    },
+    "src/project/software/laptop/verify_remote_app.py": {
+      "bytes": 660,
+      "sha256": "128d136bd4eeba424561476c41e8d7e91e30644523c51d89a49f37e6fe6d593f"
+    },
+    "src/project/software/laptop/web/index.html": {
+      "bytes": 6658,
+      "sha256": "2e5e08336583762197ad8d80d74288aeb99297e64100294ffa6e2f8c0bfa60f7"
+    },
+    "src/project/START_HERE.md": {
+      "bytes": 2785,
+      "sha256": "3f6a15b3b33b5bdcd3508ad27de0f44c93a293bec60e27c223edd2469628aea3"
+    },
+    "src/project/tools/audit_sources/review_pw16_live.py": {
+      "bytes": 10348,
+      "sha256": "bd1e89209f793e4eb6d9fd0f4a25c4dca9fd9d928ebbf2963ff274cf8b7f0730"
+    },
+    "src/project/tools/audit_sources/review_v4_board.py": {
+      "bytes": 10599,
+      "sha256": "c2cc90628a2ef34d42885c13399754ee58d8dd638a24921d851cdeef0edc0ffa"
+    },
+    "src/project/tools/collect_board_dependencies.py": {
+      "bytes": 3680,
+      "sha256": "9d1e6cbc2d31aedbc78a5bd12381aff2fd8a6e58f41249fd80eafb9cb885890d"
+    },
+    "src/project/tools/install_board_assets.py": {
+      "bytes": 1478,
+      "sha256": "8da09c2eb8d5b577cae12c01d37256cfb674255e801a9d250f98a3a76f471593"
+    },
+    "src/project/tools/install_hardware_v2.py": {
+      "bytes": 1296,
+      "sha256": "49c73e38a8029307d4e61815b5d9a6da8a899e81bb926ba33361891501f2c1e5"
+    },
+    "src/project/tools/integration_build_source.py": {
+      "bytes": 10160,
+      "sha256": "4dd8977a32597f8b0c766f63a599f3daeff1cc3849f4b003ad0a6fa196f44f36"
+    },
+    "src/project/tools/prepare_host_workspace.py": {
+      "bytes": 1480,
+      "sha256": "39abd20ba27f726c44d86e6118282568a40f0c5f1a87d065ec339afe1949a8bf"
+    },
+    "src/project/tools/restore_validation_report.py": {
+      "bytes": 1473,
+      "sha256": "edb94196f0c27f96e411cc9c2eb4558de7d858de4fbdc8768cbdf8ae170c7b7a"
+    },
+    "src/project/tools/verify_handoff.py": {
+      "bytes": 1521,
+      "sha256": "406cf6a27c09b5aff3caaa07cc1b3d0c90aef3ee38e8349735b83ba1acf42f6c"
+    },
+    "src/project/tools/verify_project_v4.py": {
+      "bytes": 1011,
+      "sha256": "ffb581dd9582feb8610433c175a877cac86bf84f267d334bd9b21a0596362d27"
+    },
+    "src/project/training/readme.md": {
+      "bytes": 1556,
+      "sha256": "6c8ba274d9aa09faf354891c21a3088ce1bc542912aedd5f8c2adee97af2f273"
+    },
+    "src/project/training/run02/config.json": {
+      "bytes": 1790,
+      "sha256": "e828184b55815be7f69da1558da1ce2101f06fb63240971f8c69d26463bf0970"
+    },
+    "src/project/training/run02/export_verification.json": {
+      "bytes": 470,
+      "sha256": "edb4e631a69be42b7b55ba2659241c5a7c179939410a12f4fc223c99e0699d4a"
+    },
+    "src/project/training/run02/history.json": {
+      "bytes": 28544,
+      "sha256": "80b84eb54c83c7cdb1944fae4d3f456c10df60d4a0d4479e3490ab51f1dbbd6d"
+    },
+    "src/project/training/run02/model_meta.json": {
+      "bytes": 681,
+      "sha256": "0ca46a41bba930b223185e934b2fde881c6400f7a2eea5184061356e96feb27f"
+    },
+    "src/project/training/run02/report.json": {
+      "bytes": 5699,
+      "sha256": "a92380d20b3f49990288ceb1718d0e48d090343873628bf7f877820e19cd98b8"
+    },
+    "src/project/training/run02/validation_predictions.csv": {
+      "bytes": 46634,
+      "sha256": "668e5a2333816f4a041163beb7a592f130c26548a680f04c405c710569c77ca9"
+    },
+    "src/project/training/scripts/export_gesture4_full.py": {
+      "bytes": 4719,
+      "sha256": "6352bf17f3141fcde1e4539b218825eda1f77bb1726e4699010eb2e53619c382"
+    },
+    "src/project/training/scripts/package_gesture4_full.py": {
+      "bytes": 8012,
+      "sha256": "d953a7fb4fd3f4fd9845b712aa3f427334364ae6af3dbfeafc7a726bf94465f0"
+    },
+    "src/project/training/scripts/train_gesture4.py": {
+      "bytes": 10156,
+      "sha256": "54c10f163e2052b7fb60492102546b7b3e543ec5a78e70a2c571d7e97bfb5e3d"
+    },
+    "src/project/training/scripts/train_gesture4_full.py": {
+      "bytes": 12784,
+      "sha256": "56c375f381b22365fb67378ecc7ca1bddb4a50fe7014d865a74bae584730afdd"
+    }
+  }
+}

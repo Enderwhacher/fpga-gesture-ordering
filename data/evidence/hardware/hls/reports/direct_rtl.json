@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "kind": "Generated HLS RTL with cycle-matched functional FP32 primitive simulation models",
+  "native_hls_cosim_run": false,
+  "vendor_full_design_simulation_completed": false,
+  "scope": "Actual generated control, RAM, addressing, pipelines and AXIS/AXI-Lite. Only three vendor floating-point primitive simulation bindings replaced; model arithmetic/latency checked separately against original vendor IP. Does not constitute full vendor-model end-to-end simulation.",
+  "primitive_equivalence": {
+    "passed": true,
+    "bitwise_cycle_checks": 3567,
+    "cycles": 1200,
+    "clock_enable_gaps": true
+  },
+  "cases": [
+    {
+      "case": "dense_real_frame_trained_coefficients",
+      "passed": true,
+      "elements": 31360,
+      "max_abs_error": 1.9073486328125e-06,
+      "bad_elements": 0
+    },
+    {
+      "case": "second_dense_frame_reuses_resident_trained_coefficients",
+      "passed": true,
+      "elements": 31360,
+      "max_abs_error": 5.662441253662109e-07,
+      "bad_elements": 0
+    },
+    {
+      "case": "dense_changed_zero_coefficients_identity",
+      "passed": true,
+      "elements": 31360,
+      "max_abs_error": 0.0,
+      "bad_elements": 0
+    }
+  ],
+  "interface": {
+    "transactions": [
+      {
+        "command": 0,
+        "input_beats": 4,
+        "output_beats": 1,
+        "cycles_with_stalls": 22
+      },
+      {
+        "command": 1,
+        "input_beats": 20716,
+        "output_beats": 1,
+        "cycles_with_stalls": 23588
+      },
+      {
+        "command": 2,
+        "input_beats": 20716,
+        "output_beats": 1,
+        "cycles_with_stalls": 23588
+      },
+      {
+        "command": 3,
+        "input_beats": 4,
+        "output_beats": 1,
+        "cycles_with_stalls": 22
+      },
+      {
+        "command": 4,
+        "input_beats": 31364,
+        "output_beats": 31360,
+        "cycles_with_stalls": 472233
+      },
+      {
+        "command": 5,
+        "input_beats": 31364,
+        "output_beats": 31360,
+        "cycles_with_stalls": 472233
+      },
+      {
+        "command": 6,
+        "input_beats": 20716,
+        "output_beats": 1,
+        "cycles_with_stalls": 23588
+      },
+      {
+        "command": 7,
+        "input_beats": 20716,
+        "output_beats": 1,
+        "cycles_with_stalls": 23588
+      },
+      {
+        "command": 8,
+        "input_beats": 31364,
+        "output_beats": 31360,
+        "cycles_with_stalls": 472233
+      }
+    ],
+    "interface_passed": true
+  },
+  "simulation_models_sha256": "be5aa5bb94d870f200d99df204813744d5261703aaf0ae5000a88e92f226ed8a",
+  "vendor_primitive_sources_sha256": {
+    "gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip.vhd": "098638980d80fbf62fc1bd785013e3f43eacecb19a5e5cd0a4b32288331c58dc",
+    "gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd": "04430e44ce02bee25e6b0b807c84474560c8e7da40ddc8ed9707145694dfee6c",
+    "gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd": "710768f4f5e174d93a5fee94243511fe2a53b200310b80d81298b461fbc9644c"
+  }
+}

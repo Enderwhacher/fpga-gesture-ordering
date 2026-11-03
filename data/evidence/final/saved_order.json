@@ -1,0 +1,29 @@
+{
+  "number": 1,
+  "created_seconds": 8459.265,
+  "items": [
+    {
+      "id": "burger",
+      "name": "BURGER",
+      "quantity": 1,
+      "unit_price_fen": 1800
+    },
+    {
+      "id": "cola",
+      "name": "COLA",
+      "quantity": 1,
+      "unit_price_fen": 600
+    },
+    {
+      "id": "fries",
+      "name": "FRIES",
+      "quantity": 1,
+      "unit_price_fen": 900
+    }
+  ],
+  "total_fen": 3300,
+  "simulated": true,
+  "paid": false,
+  "laptop_session": "6f3f4342f8d443c2953b7c5a87cb9bd2",
+  "saved_at_utc": "2026-11-01T03:37:41.443762+00:00"
+}

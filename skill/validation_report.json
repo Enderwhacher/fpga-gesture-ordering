@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "skill": "edge-preview-latency",
+      "schema_valid": true
+    },
+    {
+      "skill": "fpga-fair-benchmark",
+      "schema_valid": true
+    },
+    {
+      "skill": "fpga-model-partition",
+      "schema_valid": true
+    },
+    {
+      "skill": "fpga-project-handoff",
+      "schema_valid": true
+    },
+    {
+      "skill": "gesture-action-gate",
+      "schema_valid": true
+    },
+    {
+      "skill": "gesture-model-training",
+      "schema_valid": true
+    },
+    {
+      "skill": "pynq-accelerator-bringup",
+      "schema_valid": true
+    },
+    {
+      "skill": "pynq-board-workflow",
+      "schema_valid": true
+    },
+    {
+      "skill": "pynq-notebook-deploy",
+      "schema_valid": true
+    }
+  ],
+  "local_reference_links": "passed",
+  "helper_checks": [
+    "namespaced HWH parsing",
+    "bit SHA256",
+    "JSON CLI output",
+    "refuses overwrite",
+    "rejects malformed XML",
+    "rejects DTD",
+    "rejects missing HWH",
+    "reads project HWH without PL access"
+  ],
+  "project_hwh_module_count": 8,
+  "validation_environment": "Windows host Python; no PYNQ device or hardware access",
+  "new_training_or_board_test": false
+}

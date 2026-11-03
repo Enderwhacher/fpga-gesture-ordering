@@ -1,0 +1,20 @@
+{
+  "handoff_files_verified": 445,
+  "matched_session": "5789afd2bf4549819084467a54836a07",
+  "replayed_actions": 23,
+  "fpga_classifications": 171,
+  "numeric_checks": 714,
+  "saved_order_fen": 3300,
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+  "new_board_test": false,
+  "vivado_rebuilt": false,
+  "original_runtime_files_unchanged": true,
+  "local_pipeline_tests": 10,
+  "local_http_checks": 7,
+  "local_http_harness_change": "Independent test copy explicitly delivers duplicate packets; original 25ms polling could phase-lock with fake 25ms camera and yield no duplicates on Windows. Application bytes unchanged.",
+  "local_http_initial_failures": [
+    "Sandbox temporary directory permissions prevented order save; rerun outside sandbox.",
+    "Original duplicate-count assertion failed with periodic polling; deterministic duplicate delivery added to test copy."
+  ],
+  "local_tests_scope": "Local camera and inference fixtures only. No newly executed board or FPGA test."
+}

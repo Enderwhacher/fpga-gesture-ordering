@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "board_tested": false,
+  "scope": "Real Python worker threads; fixture engine, original GestureGate and selection rules; not hardware performance."
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "checks": [
+    "expanded software and hardware byte-identical to the verified deployment archives",
+    "original application, hardware and laptop integrity verifiers pass",
+    "Vivado archive CRC passes; XPR, relocated custom-IP repository and exact deployed bit present",
+    "archived project and routed implementation already reopened in Vivado 2025.2",
+    "Python 3.10 syntax and Markdown control-character checks pass",
+    "model/assets install is idempotent and preserves existing food images",
+    "hardware restore installs 108 exact files and safely repeats without PL access",
+    "historical report restore preserves current reports and exact app identity",
+    "mismatched model aborts before partial writes",
+    "board dependency collector tested with a filesystem/module fixture, no camera or PL",
+    "generic golden comparator accepts matching values and rejects wrong values, shapes and NaN"
+  ],
+  "final_board_validation_already_recorded": true,
+  "missing_exact_board_opencv_snapshot": true,
+  "note": "Packaging checks do not create new board performance/accuracy or feature-regression evidence."
+}

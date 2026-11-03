@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>非接触手势点餐</title>
+  <style>
+    :root{color-scheme:light;--ink:#26372e;--muted:#6b786f;--green:#3e7659;--line:#d9e1d9}
+    *{box-sizing:border-box}body{margin:0;background:#edf1eb;color:var(--ink);font:14px/1.5 "Microsoft YaHei",system-ui,sans-serif}
+    header{max-width:1120px;margin:auto;padding:18px 24px 14px;display:flex;align-items:center;gap:16px;justify-content:space-between}
+    h1{margin:0;font-size:23px;font-weight:650;letter-spacing:.04em}.subtitle{color:var(--muted);font-size:12px;margin-top:3px}
+    .tools{display:flex;align-items:center;gap:10px}.chip{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:#fff}
+    .chip.live{background:#e1efdf;border-color:#b3ceb0;color:#285c37}.chip.off{background:#fff1de;border-color:#e5cda8;color:#7a5021}
+    button{border:1px solid #b8c8bc;background:white;color:var(--ink);border-radius:7px;padding:7px 13px;cursor:pointer;font:inherit}
+    button:hover{background:#e1ebdf}button:focus-visible{outline:3px solid #6d9f74;outline-offset:3px}
+    main{display:flex;flex-direction:column;align-items:center;padding:0 16px 12px;gap:12px}
+    .screen{width:min(1040px,calc((100dvh - 168px)*4/3),96vw);min-width:300px;aspect-ratio:4/3;background:#28352d;border:1px solid #d0d9d0;border-radius:12px;overflow:hidden;box-shadow:0 14px 42px #23362c12}
+    .screen img{display:block;width:100%;height:100%;object-fit:contain}.hint{text-align:center;color:var(--muted);font-size:12px;margin:0}
+    #demo{max-width:1040px;padding:9px 14px;background:#fff0d6;border:1px solid #dab57b;border-radius:8px}#demo strong{margin-right:12px}#demo button{margin:3px}
+    details{max-width:1040px;width:100%;font-size:12px;color:var(--muted)}summary{cursor:pointer;list-style:none;text-align:center}summary::-webkit-details-marker{display:none}
+    .stats{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px}.stats span{padding:5px 10px;border-radius:5px;background:#fff}
+    #detail{white-space:pre-wrap;text-align:center;margin:8px 0 0;font-size:12px}body:fullscreen{overflow:auto}
+    @media(max-width:600px){header{padding:12px 16px;gap:10px;align-items:flex-start}h1{font-size:18px}.tools{flex-direction:column;gap:5px}.screen{width:100%;min-width:0}.subtitle{max-width:220px}.hint{font-size:11px}}
+  </style>
+</head>
+<body>
+<header><div><h1>非接触手势点餐</h1><div class="subtitle">保持手势完成操作 · 移开手后继续下一步</div></div><div class="tools"><span id="status" class="chip off">正在连接识别服务</span><button id="fullscreen" type="button">全屏显示</button></div></header>
+<main>
+  <div id="demo" hidden><strong>离线演练：未使用摄像头或 FPGA</strong><button data-label="open_palm">张手</button><button data-label="thumbs_up">点赞</button><button data-label="fist">握拳</button><button data-label="victory">V 手势</button><button data-label="release">移开手</button></div>
+  <div class="screen"><img id="screen" src="/stream.mjpg" alt="手势点餐画面"></div>
+  <p class="hint">张手：开始 / 下一项　　点赞：加菜　　握拳：核对订单　　V：返回 / 退出　｜　核对页再次点赞才提交模拟订单</p>
+  <details><summary>查看运行状态</summary><div class="stats"><span id="backend">识别后端：等待</span><span id="ai">识别速度：—</span><span id="age">结果时效：—</span><span id="fpga">FPGA 完成次数：—</span></div><p id="detail"></p></details>
+</main>
+<script>
+  const statusEl=document.getElementById('status');
+  document.getElementById('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){document.getElementById('detail').textContent='可按 F11，或使用浏览器全屏菜单。'}});
+  document.querySelectorAll('[data-label]').forEach(button=>button.addEventListener('click',async()=>{
+    const value=button.dataset.label==='release'?null:button.dataset.label;
+    try{const r=await fetch('/api/demo',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({label:value})});if(!r.ok)throw Error('gesture rejected')}catch(e){document.getElementById('detail').textContent='演练输入未送达，请检查本机程序。'}
+  }));
+  let imageFailures=0;
+  document.getElementById('screen').addEventListener('error',()=>{if(imageFailures++<12)setTimeout(()=>{document.getElementById('screen').src='/stream.mjpg?retry='+Date.now()},1000)});
+  async function refresh(){
+    try{
+      const response=await fetch('/api/state',{cache:'no-store'});if(!response.ok)throw Error('local app unavailable');
+      const data=await response.json(),t=data.transport,o=data.observation||{},b=data.backend||{},demo=data.mode==='DEMO';
+      document.getElementById('demo').hidden=!demo;
+      const healthy=t.connected&&t.status==='CONNECTED';statusEl.className='chip '+(healthy?'live':'off');
+      statusEl.textContent=demo?'离线演练 · 无 FPGA':healthy?'识别已连接':t.status==='AI RESULT STALE'?'识别结果已过期':t.status==='STARTING'?'摄像头启动中':'等待板卡识别';
+      document.getElementById('backend').textContent='识别后端：'+(demo?'离线演练':b.fpga_enabled?'CPU + FPGA':b.name?'纯 CPU':'等待');
+      document.getElementById('ai').textContent='识别速度：'+Number((data.board_metrics||{}).ai_hz||0).toFixed(2)+' 次/秒';
+      document.getElementById('age').textContent='结果时效：'+(o.current_age_seconds===undefined?'—':Number(o.current_age_seconds).toFixed(2)+' 秒');
+      document.getElementById('fpga').textContent='FPGA 完成次数：'+(o.fpga_completed_frames===undefined?'—':o.fpga_completed_frames);
+      document.getElementById('detail').textContent=data.storage_error?'订单未保存成功，请检查本机目录，移开手后再确认。':healthy?'每次操作后请把手移出画面，等待 READY。显示帧率与识别速度分别统计。':demo?'点击一个手势后稍作保持；每次操作后点击“移开手”。此模式仅用于检查界面和订单流程。':'请保持板卡端识别程序运行。连接中断或结果过期时不会执行点餐操作。';
+    }catch(e){statusEl.className='chip off';statusEl.textContent='本机程序已停止';document.getElementById('detail').textContent='请重新运行 start_laptop.bat，并刷新页面。'}
+    setTimeout(refresh,500);
+  }
+  refresh();
+</script>
+</body></html>

@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "cases": [
+    {
+      "name": "black",
+      "checks": {
+        "numpy_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 4.917383193969727e-07,
+          "bad_elements": 0
+        },
+        "ort_prefix": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "ort_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 2.60770320892334e-07,
+          "bad_elements": 0
+        },
+        "ort_suffix": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "opencv_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 1.6838312149047852e-06,
+          "bad_elements": 0
+        },
+        "opencv_split_logits": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 1.7881393432617188e-06,
+          "bad_elements": 0
+        }
+      }
+    },
+    {
+      "name": "gradient",
+      "checks": {
+        "numpy_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 7.152557373046875e-07,
+          "bad_elements": 0
+        },
+        "ort_prefix": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "ort_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 7.152557373046875e-07,
+          "bad_elements": 0
+        },
+        "ort_suffix": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "opencv_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 2.6226043701171875e-06,
+          "bad_elements": 0
+        },
+        "opencv_split_logits": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 2.384185791015625e-07,
+          "bad_elements": 0
+        }
+      }
+    },
+    {
+      "name": "seeded_noise",
+      "checks": {
+        "numpy_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 9.5367431640625e-07,
+          "bad_elements": 0
+        },
+        "ort_prefix": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "ort_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 5.364418029785156e-07,
+          "bad_elements": 0
+        },
+        "ort_suffix": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "opencv_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 2.384185791015625e-06,
+          "bad_elements": 0
+        },
+        "opencv_split_logits": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 2.384185791015625e-07,
+          "bad_elements": 0
+        }
+      }
+    },
+    {
+      "name": "real_frame",
+      "checks": {
+        "numpy_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 9.5367431640625e-07,
+          "bad_elements": 0
+        },
+        "ort_prefix": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "ort_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 7.152557373046875e-07,
+          "bad_elements": 0
+        },
+        "ort_suffix": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 0.0,
+          "bad_elements": 0
+        },
+        "opencv_blocks": {
+          "passed": true,
+          "elements": 31360,
+          "max_abs_error": 4.172325134277344e-06,
+          "bad_elements": 0
+        },
+        "opencv_split_logits": {
+          "passed": true,
+          "elements": 4,
+          "max_abs_error": 7.152557373046875e-07,
+          "bad_elements": 0
+        }
+      }
+    }
+  ],
+  "reference": "Independent NumPy full-block equations + ORT + OpenCV split"
+}

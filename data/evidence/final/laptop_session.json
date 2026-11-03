@@ -1,0 +1,454 @@
+{
+  "state": {
+    "page": "DONE",
+    "selected": 2,
+    "cart": [
+      1,
+      1,
+      1
+    ],
+    "review_selected": 2,
+    "total_fen": 3300,
+    "message": "DEMO ORDER SAVED - NO PAYMENT",
+    "order_count": 1,
+    "last_order": {
+      "number": 1,
+      "created_seconds": 8459.265,
+      "items": [
+        {
+          "id": "burger",
+          "name": "BURGER",
+          "quantity": 1,
+          "unit_price_fen": 1800
+        },
+        {
+          "id": "cola",
+          "name": "COLA",
+          "quantity": 1,
+          "unit_price_fen": 600
+        },
+        {
+          "id": "fries",
+          "name": "FRIES",
+          "quantity": 1,
+          "unit_price_fen": 900
+        }
+      ],
+      "total_fen": 3300,
+      "simulated": true,
+      "paid": false
+    }
+  },
+  "gate": {
+    "status": "READY",
+    "progress": 0.0,
+    "armed": true,
+    "candidate": null,
+    "count": 0
+  },
+  "transport": {
+    "connected": true,
+    "status": "CONNECTED",
+    "session_id": "5789afd2bf4549819084467a54836a07",
+    "last_seq": 8567,
+    "processed_results": 712,
+    "duplicates_ignored": 716,
+    "last_error": null
+  },
+  "mode": "LIVE",
+  "backend": {
+    "name": "CPU palm + FPGA complete blocks 5+6",
+    "app_release": "gesture_order_accel_v4",
+    "cv_threads": 1,
+    "hardware_release": "gesture_blocks56_fp32_pw16_v2",
+    "fpga_enabled": true,
+    "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+    "labels": [
+      "open_palm",
+      "fist",
+      "victory",
+      "thumbs_up"
+    ],
+    "opencv": "4.10.0",
+    "detector_score_threshold": 0.6,
+    "classifier_input": "full corrected BGR frame, not a detected-box crop",
+    "ps_route": "hybrid_ort3",
+    "capture_process": false,
+    "palm_engine": "ONNX Runtime FP32",
+    "ort_threads": 3,
+    "classifier_engine": "ORT prefix -> FPGA v2 blocks 5+6 -> ORT suffix",
+    "ps_config": "serial_cv1_t3",
+    "build_revision": "r1",
+    "scheduling": "serial",
+    "classifier_threads": 3,
+    "detector_threads": 3,
+    "quantized": false,
+    "detection_reused": false
+  },
+  "board_metrics": {
+    "capture_hz": 26.992077394260917,
+    "ai_hz": 5.1278655189563285,
+    "classification_hz": 0.5379539900254798
+  },
+  "observation": {
+    "detected": false,
+    "detected_hands": 0,
+    "label": null,
+    "score": 0.0,
+    "predictions": [],
+    "detector_ms": 187.7274700000271,
+    "classifier_ms": 0.0,
+    "fpga_call_ms": null,
+    "split_timing": null,
+    "fpga_completed_frames": 171,
+    "seq": 8567,
+    "age_seconds": 0.3087444600005256,
+    "current_age_seconds": 1.0117444600018644
+  },
+  "storage_error": null,
+  "actions": [
+    {
+      "seq": 4204,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "start",
+      "page": "MENU"
+    },
+    {
+      "seq": 4316,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4518,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4735,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4844,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 5050,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 5430,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 5535,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 5737,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 5845,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 5946,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 6087,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 6395,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 6623,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 6878,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 7022,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 7127,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "remove_one",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 7238,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 7349,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 7484,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 8211,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 8335,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "remove_one",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 8460,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "submit_demo_order",
+      "page": "DONE"
+    }
+  ],
+  "display": {
+    "backend_label": "CPU + FPGA",
+    "display_fps": 17.775331070128694,
+    "preview_fps": 15.707639569049896,
+    "preview_transport": "independent",
+    "preview_age_ms": 536.695350001537,
+    "preview_rtt_ms": 15.000000001236913,
+    "preview_error": null,
+    "ai_hz": 5.1278655189563285,
+    "detector_ms": 187.7274700000271,
+    "classifier_ms": 0.0,
+    "fpga_call_ms": null
+  },
+  "laptop_session": "6f3f4342f8d443c2953b7c5a87cb9bd2",
+  "food_thumbnails_ready": [
+    "burger.png",
+    "cola.png",
+    "fries.png"
+  ],
+  "all_actions": [
+    {
+      "seq": 4204,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "start",
+      "page": "MENU"
+    },
+    {
+      "seq": 4316,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4518,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4735,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 4844,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 5050,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "ignored",
+      "page": "MENU"
+    },
+    {
+      "seq": 5430,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 5535,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 5737,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 5845,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 5946,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 6087,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 6395,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 6623,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 6878,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 7022,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 7127,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "remove_one",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 7238,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 7349,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 7484,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 8211,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 8335,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "fist",
+      "action": "remove_one",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 8460,
+      "session_id": "5789afd2bf4549819084467a54836a07",
+      "gesture": "thumbs_up",
+      "action": "submit_demo_order",
+      "page": "DONE"
+    }
+  ]
+}

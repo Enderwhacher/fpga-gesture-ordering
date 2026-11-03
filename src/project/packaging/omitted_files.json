@@ -1,0 +1,57 @@
+[
+  {
+    "path": "deployment/board_assets_v4.zip",
+    "bytes": 21638791,
+    "sha256": "94707b23c65ef07ed1d9379c6573a94b8a6f0d43a53ae06467966f994ecda99f"
+  },
+  {
+    "path": "deployment/gesture_blocks56_pw16_hw_v2.zip",
+    "bytes": 38058534,
+    "sha256": "8fbe457d717db78673674c90edd92247765e7b70c749dd7c779de329a4242100"
+  },
+  {
+    "path": "deployment/gesture_order_accel_v4_r1.zip",
+    "bytes": 45120617,
+    "sha256": "861dc87c22a27077d2752208e5e6c069f607a08723f8f91b212a8298a2b0888e"
+  },
+  {
+    "path": "deployment/laptop_final_v4.zip",
+    "bytes": 3741068,
+    "sha256": "60479a646849b862eacfead0ce185022d2985c526f0a2b682880874f7f0f4a6f"
+  },
+  {
+    "path": "hardware/vivado_project_archive.zip",
+    "bytes": 595556451,
+    "sha256": "39aec3ed97d20e295e86b09bec95d0e5d5b39c700c852a7fe29ae018ee2e54ca"
+  },
+  {
+    "path": "presentation/build_source.mjs",
+    "bytes": 10526,
+    "sha256": "92af52c9a712fc8e4b012a304f9314194d705e8cd6767c32d4761f3ffad8af64"
+  },
+  {
+    "path": "presentation/gesture_order_v4_demo.pptx",
+    "bytes": 3763315,
+    "sha256": "cf1e96e3c53701a7773952d0326e8d867b7cde0c15feac32368a8a75cbde0a6e"
+  },
+  {
+    "path": "presentation/rehearsal.md",
+    "bytes": 2474,
+    "sha256": "c5e31d0fd7d8f34c8629da598671ab7c803d4f4a0eea3566c9c2be91379e79aa"
+  },
+  {
+    "path": "presentation/speaker_script.md",
+    "bytes": 3693,
+    "sha256": "048519b14ffd7088ae80180fa6b51510587be8f74b41590b2c3892a7654ae435"
+  },
+  {
+    "path": "recovery/previous_board_opencv.zip",
+    "bytes": 29329574,
+    "sha256": "91c929041d63adadbff25c90bab780590bfa2e8d4b768058af7fe0af4c35fd1c"
+  },
+  {
+    "path": "recovery/readme.md",
+    "bytes": 433,
+    "sha256": "64d834dfc0eff4c01be63aa89242153911537c2f9afa1d38de8dd9510498dbb1"
+  }
+]

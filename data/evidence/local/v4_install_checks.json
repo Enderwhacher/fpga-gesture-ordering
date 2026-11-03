@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "package_sha256": "861dc87c22a27077d2752208e5e6c069f607a08723f8f91b212a8298a2b0888e",
+  "fresh_install": true,
+  "reinstall_preserves_outputs": true,
+  "notebook_autosave_regression": true,
+  "changed_executable_refused": true,
+  "python310_notebook_syntax": true
+}

@@ -1,0 +1,597 @@
+{
+  "passed": true,
+  "board_session": "5789afd2bf4549819084467a54836a07",
+  "laptop_session": "6f3f4342f8d443c2953b7c5a87cb9bd2",
+  "selected_config": "serial_cv1_t3",
+  "scheduling": "serial",
+  "cv_threads": 1,
+  "ort_threads": 3,
+  "numeric_comparisons": 714,
+  "balanced_blocks": 28,
+  "samples_per_configuration": 24,
+  "processing_reduction_vs_v2_percent": 35.70099805282359,
+  "processing_reduction_vs_v3_percent": 22.864475522787465,
+  "frame_age_reduction_vs_v2_percent": 34.51801451876656,
+  "frame_age_reduction_vs_v3_percent": 21.92245766194446,
+  "latency_25percent_vs_v3_met": false,
+  "processing_25percent_vs_v2_met": true,
+  "summary": {
+    "v2_reference": {
+      "frame_age_ms": 487.19605499991303,
+      "result_interval_ms": 472.9877449999549,
+      "detector_ms": 324.57892999946125,
+      "classifier_ms": 144.48947499977294,
+      "frame_age_p95_ms": 544.53454050049,
+      "detector_plus_classifier_ms": 470.46061500077485,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 478.2064450000689,
+          "result_interval_ms": 466.1276050005654
+        },
+        {
+          "frame_age_ms": 502.8804449998461,
+          "result_interval_ms": 480.9976550004649
+        }
+      ]
+    },
+    "v3_reference": {
+      "frame_age_ms": 408.6010400005762,
+      "result_interval_ms": 394.95962499995585,
+      "detector_ms": 232.8594399996291,
+      "classifier_ms": 157.85956000036094,
+      "frame_age_p95_ms": 456.3275139999405,
+      "detector_plus_classifier_ms": 392.1688250002262,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 408.6010400005762,
+          "result_interval_ms": 401.1674100001983
+        },
+        {
+          "frame_age_ms": 408.0174500004432,
+          "result_interval_ms": 387.4240650002321
+        }
+      ]
+    },
+    "serial_cv1_t1": {
+      "frame_age_ms": 660.6182300006367,
+      "result_interval_ms": 646.744740000031,
+      "detector_ms": 398.03219499981424,
+      "classifier_ms": 246.3392249997014,
+      "frame_age_p95_ms": 677.5690370001939,
+      "detector_plus_classifier_ms": 644.2232700001114,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 661.9938399999228,
+          "result_interval_ms": 646.4046000000963
+        },
+        {
+          "frame_age_ms": 660.6182300006367,
+          "result_interval_ms": 647.0631199999843
+        }
+      ]
+    },
+    "serial_cv1_t2": {
+      "frame_age_ms": 402.8063550003935,
+      "result_interval_ms": 385.9390450002138,
+      "detector_ms": 226.77456999963397,
+      "classifier_ms": 153.10716500016497,
+      "frame_age_p95_ms": 417.58633200006443,
+      "detector_plus_classifier_ms": 383.4330700001374,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 410.93315000034636,
+          "result_interval_ms": 388.18366000032256
+        },
+        {
+          "frame_age_ms": 399.818740000228,
+          "result_interval_ms": 380.17344499985484
+        }
+      ]
+    },
+    "serial_cv1_t3": {
+      "frame_age_ms": 319.0256500001851,
+      "result_interval_ms": 305.0395350001054,
+      "detector_ms": 181.3185999999405,
+      "classifier_ms": 121.1126799998965,
+      "frame_age_p95_ms": 341.14406249996136,
+      "detector_plus_classifier_ms": 302.5014800000463,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 318.08526000031634,
+          "result_interval_ms": 304.42507000043406
+        },
+        {
+          "frame_age_ms": 325.10449499977767,
+          "result_interval_ms": 306.64044000013746
+        }
+      ]
+    },
+    "serial_cv1_t4": {
+      "frame_age_ms": 382.7734500000588,
+      "result_interval_ms": 374.51327999997375,
+      "detector_ms": 223.49529000030088,
+      "classifier_ms": 147.2665199999028,
+      "frame_age_p95_ms": 409.4695200003116,
+      "detector_plus_classifier_ms": 371.91635499993936,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 376.0937800002466,
+          "result_interval_ms": 369.11276000000726
+        },
+        {
+          "frame_age_ms": 399.6063550002873,
+          "result_interval_ms": 379.31479000053514
+        }
+      ]
+    },
+    "pipe_cv1_d2_c2": {
+      "frame_age_ms": 527.3587549995682,
+      "result_interval_ms": 293.7612099999569,
+      "detector_ms": 299.14299000074607,
+      "classifier_ms": 202.78284999994867,
+      "frame_age_p95_ms": 553.1180080000468,
+      "detector_plus_classifier_ms": 503.96050999961517,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 509.89807999985715,
+          "result_interval_ms": 284.3318699997326
+        },
+        {
+          "frame_age_ms": 534.7265550003613,
+          "result_interval_ms": 303.5306099995978
+        }
+      ]
+    },
+    "pipe_cv1_d1_c2": {
+      "frame_age_ms": 573.8713500004451,
+      "result_interval_ms": 406.0094599999502,
+      "detector_ms": 405.565624999781,
+      "classifier_ms": 164.55439999981536,
+      "frame_age_p95_ms": 582.2932210001,
+      "detector_plus_classifier_ms": 570.1983749995634,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 573.8014799999291,
+          "result_interval_ms": 406.5064500000517
+        },
+        {
+          "frame_age_ms": 573.9094350005871,
+          "result_interval_ms": 405.83202500010884
+        }
+      ]
+    },
+    "pipe_cv1_d2_c1": {
+      "frame_age_ms": 607.8586699995867,
+      "result_interval_ms": 260.5145799998354,
+      "detector_ms": 252.0061700001861,
+      "classifier_ms": 258.294664999994,
+      "frame_age_p95_ms": 655.231557000161,
+      "detector_plus_classifier_ms": 510.8227649998298,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 611.8298099995627,
+          "result_interval_ms": 260.1713550002387
+        },
+        {
+          "frame_age_ms": 606.5714299998035,
+          "result_interval_ms": 260.71455000010246
+        }
+      ]
+    },
+    "pipe_cv1_d3_c1": {
+      "frame_age_ms": 691.3941650000197,
+      "result_interval_ms": 275.23008500020296,
+      "detector_ms": 294.7028799999316,
+      "classifier_ms": 273.02058499981285,
+      "frame_age_p95_ms": 812.9106320000574,
+      "detector_plus_classifier_ms": 570.8508100001382,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 647.4224099997627,
+          "result_interval_ms": 276.0809850001351
+        },
+        {
+          "frame_age_ms": 745.4568499997549,
+          "result_interval_ms": 273.80752000044595
+        }
+      ]
+    },
+    "cpu_serial_cv1_t2": {
+      "frame_age_ms": 415.7596950003608,
+      "result_interval_ms": 398.47731500003647,
+      "detector_ms": 232.43018499988466,
+      "classifier_ms": 164.60333500026536,
+      "frame_age_p95_ms": 435.0045415000295,
+      "detector_plus_classifier_ms": 395.96497000002273,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 425.5380800000239,
+          "result_interval_ms": 401.365480000095
+        },
+        {
+          "frame_age_ms": 414.33387000006405,
+          "result_interval_ms": 395.84776500032604
+        }
+      ]
+    },
+    "cpu_serial_cv1_t3": {
+      "frame_age_ms": 321.7173949997232,
+      "result_interval_ms": 309.10752499994487,
+      "detector_ms": 178.9543350000713,
+      "classifier_ms": 126.08265999961077,
+      "frame_age_p95_ms": 342.0110214997294,
+      "detector_plus_classifier_ms": 305.84125999939715,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 317.8945049999129,
+          "result_interval_ms": 299.2653999999675
+        },
+        {
+          "frame_age_ms": 331.75340999969194,
+          "result_interval_ms": 309.8486399999274
+        }
+      ]
+    },
+    "cpu_pipe_cv1_t2": {
+      "frame_age_ms": 569.9848050003311,
+      "result_interval_ms": 327.41480999993655,
+      "detector_ms": 330.31312000048274,
+      "classifier_ms": 215.34886500012362,
+      "frame_age_p95_ms": 585.9594500006096,
+      "detector_plus_classifier_ms": 544.9131249993115,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 561.8059399998856,
+          "result_interval_ms": 327.3906949998491
+        },
+        {
+          "frame_age_ms": 575.3729099997145,
+          "result_interval_ms": 331.0738449999917
+        }
+      ]
+    },
+    "cpu_pipe_cv1_d3_c1": {
+      "frame_age_ms": 788.6536500000147,
+      "result_interval_ms": 291.0081749996607,
+      "detector_ms": 296.7998149997584,
+      "classifier_ms": 287.9577850003443,
+      "frame_age_p95_ms": 855.2061204994516,
+      "detector_plus_classifier_ms": 584.8868700004459,
+      "results": 24,
+      "background_ok": true,
+      "rounds": [
+        {
+          "frame_age_ms": 827.7497550002408,
+          "result_interval_ms": 290.61205500011056
+        },
+        {
+          "frame_age_ms": 707.8612499999508,
+          "result_interval_ms": 297.49571000002106
+        }
+      ]
+    }
+  },
+  "matched_serial_cpu_processing_reduction_percent": 1.0919978551479415,
+  "matched_serial_cpu_interval_speedup": 1.01333594348627,
+  "live_results": 1736,
+  "live_fpga_classifications": 171,
+  "live_detected_medians": {
+    "detector_ms": 182.56361999920045,
+    "classifier_ms": 128.46412999897439,
+    "fpga_call_ms": 6.653340000411845
+  },
+  "live_detected_processing_median_ms": 312.6956299984158,
+  "capture_hz": 26.985535440289997,
+  "preview_hz": 19.535720118035595,
+  "verified_action_count": 23,
+  "action_trace": [
+    {
+      "seq": 4204,
+      "action": "start",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 4316,
+      "action": "ignored",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 4518,
+      "action": "ignored",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 4735,
+      "action": "ignored",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 4844,
+      "action": "ignored",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 5050,
+      "action": "ignored",
+      "page": "MENU",
+      "cart": [
+        0,
+        0,
+        0
+      ],
+      "total_fen": 0
+    },
+    {
+      "seq": 5430,
+      "action": "add",
+      "page": "MENU",
+      "cart": [
+        1,
+        0,
+        0
+      ],
+      "total_fen": 1800
+    },
+    {
+      "seq": 5535,
+      "action": "next",
+      "page": "MENU",
+      "cart": [
+        1,
+        0,
+        0
+      ],
+      "total_fen": 1800
+    },
+    {
+      "seq": 5737,
+      "action": "add",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 5845,
+      "action": "next",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 5946,
+      "action": "review",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 6087,
+      "action": "back_to_menu",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 6395,
+      "action": "review",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 6623,
+      "action": "back_to_menu",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 6878,
+      "action": "add",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        1
+      ],
+      "total_fen": 3300
+    },
+    {
+      "seq": 7022,
+      "action": "review",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        1
+      ],
+      "total_fen": 3300
+    },
+    {
+      "seq": 7127,
+      "action": "remove_one",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 7238,
+      "action": "back_to_menu",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        0
+      ],
+      "total_fen": 2400
+    },
+    {
+      "seq": 7349,
+      "action": "add",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        1
+      ],
+      "total_fen": 3300
+    },
+    {
+      "seq": 7484,
+      "action": "add",
+      "page": "MENU",
+      "cart": [
+        1,
+        1,
+        2
+      ],
+      "total_fen": 4200
+    },
+    {
+      "seq": 8211,
+      "action": "review",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        2
+      ],
+      "total_fen": 4200
+    },
+    {
+      "seq": 8335,
+      "action": "remove_one",
+      "page": "REVIEW",
+      "cart": [
+        1,
+        1,
+        1
+      ],
+      "total_fen": 3300
+    },
+    {
+      "seq": 8460,
+      "action": "submit_demo_order",
+      "page": "DONE",
+      "cart": [
+        1,
+        1,
+        1
+      ],
+      "total_fen": 3300
+    }
+  ],
+  "order_saved": true,
+  "total_fen": 3300,
+  "simulated": true,
+  "paid": false,
+  "workers_closed": true,
+  "board_error": null,
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+  "bit_sha256": "a7732997d677c89e16f6981625c796d4d9e5e34fe235dfbbb95328f03b91f89a",
+  "package_manifest_sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74",
+  "limitations": [
+    "Target met versus V2; reduction versus V3 is 22.86%, below 25%.",
+    "V4 retains the V2 PL bitstream. Main end-to-end improvement is PS execution and thread configuration.",
+    "Matched tuned serial CPU differs by about 1.1% processing time; no statistically significant whole-system FPGA advantage established.",
+    "Best CPU result-interval control is a high-latency pipeline; raw fpga_vs_cpu_interval_speedup is not a matched latency comparison.",
+    "Fixed-image benchmark excludes HTTP, display, gesture hold, camera exposure and USB transfer latency.",
+    "Live labels are not an independently labelled accuracy dataset.",
+    "No cancel_exit event or transport-fault history in the matching laptop session. Hold/exit-cancel/offline recovery require separate user confirmation."
+  ],
+  "source_archives": [
+    {
+      "path": "E:\\gesture_order_accel_v4_results.zip",
+      "sha256": "5c83e7214acf0a5a8c12699c3ccabff2221de7eefdc254d8328c47944b5aac90"
+    },
+    {
+      "path": "D:\\hand\\output\\gesture_order_laptop_v1\\gesture_order_laptop_v1\\logs (4).zip",
+      "sha256": "fae2ddf28c46a49d384d3265cd17d7b5a0ea29f2882c03e356bac219b6ec78e2"
+    }
+  ],
+  "deployment_archive_sha256": "861dc87c22a27077d2752208e5e6c069f607a08723f8f91b212a8298a2b0888e"
+}

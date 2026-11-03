@@ -1,0 +1,12 @@
+{
+  "source_release": "gesture_blocks56_fp32_v1",
+  "target_release": "gesture_blocks56_fp32_pw16_v2",
+  "pointwise_input_lanes": 16,
+  "pointwise_output_lanes": 8,
+  "depthwise_lanes": 2,
+  "fp32": true,
+  "weights_storage": "BRAM instead of URAM",
+  "board_tested": false,
+  "performance_measured": false,
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741"
+}

@@ -1,0 +1,282 @@
+{
+  "method": "Original HaGRID initialization; new head warmup then full-network fine-tuning",
+  "selected_epoch": 21,
+  "selected_stage": "full_finetune",
+  "epochs_run": 27,
+  "validation": {
+    "samples": 384,
+    "accuracy": 0.9479166666666666,
+    "macro_recall": 0.9479166666666666,
+    "per_class_recall": {
+      "open_palm": 0.9375,
+      "fist": 0.9791666666666666,
+      "victory": 0.9583333333333334,
+      "thumbs_up": 0.9166666666666666
+    },
+    "confusion_matrix_rows_true_columns_predicted": [
+      [
+        90,
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        94,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        92,
+        2
+      ],
+      [
+        0,
+        6,
+        2,
+        88
+      ]
+    ],
+    "loss": 0.2329414039850235,
+    "by_hand": {
+      "left": {
+        "samples": 192,
+        "accuracy": 0.921875,
+        "macro_recall": 0.9218750000000001,
+        "per_class_recall": {
+          "open_palm": 0.8958333333333334,
+          "fist": 0.9583333333333334,
+          "victory": 0.9375,
+          "thumbs_up": 0.8958333333333334
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            43,
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            46,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            45,
+            1
+          ],
+          [
+            0,
+            5,
+            0,
+            43
+          ]
+        ]
+      },
+      "right": {
+        "samples": 192,
+        "accuracy": 0.9739583333333334,
+        "macro_recall": 0.9739583333333333,
+        "per_class_recall": {
+          "open_palm": 0.9791666666666666,
+          "fist": 1.0,
+          "victory": 0.9791666666666666,
+          "thumbs_up": 0.9375
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            47,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            48,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            47,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            45
+          ]
+        ]
+      }
+    }
+  },
+  "training_original": {
+    "samples": 338,
+    "accuracy": 1.0,
+    "macro_recall": 1.0,
+    "per_class_recall": {
+      "open_palm": 1.0,
+      "fist": 1.0,
+      "victory": 1.0,
+      "thumbs_up": 1.0
+    },
+    "confusion_matrix_rows_true_columns_predicted": [
+      [
+        76,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        94,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        90,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        78
+      ]
+    ],
+    "loss": 0.04466862976551056
+  },
+  "old_model_validation": {
+    "samples": 384,
+    "accuracy": 0.8958333333333334,
+    "macro_recall": 0.8958333333333334,
+    "per_class_recall": {
+      "open_palm": 0.9270833333333334,
+      "fist": 0.9270833333333334,
+      "victory": 0.8229166666666666,
+      "thumbs_up": 0.90625
+    },
+    "confusion_matrix_rows_true_columns_predicted": [
+      [
+        89,
+        0,
+        5,
+        2
+      ],
+      [
+        1,
+        89,
+        2,
+        4
+      ],
+      [
+        1,
+        5,
+        79,
+        11
+      ],
+      [
+        2,
+        2,
+        5,
+        87
+      ]
+    ],
+    "loss": 0.5887008905410767,
+    "by_hand": {
+      "left": {
+        "samples": 192,
+        "accuracy": 0.84375,
+        "macro_recall": 0.84375,
+        "per_class_recall": {
+          "open_palm": 0.875,
+          "fist": 0.875,
+          "victory": 0.6458333333333334,
+          "thumbs_up": 0.9791666666666666
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            42,
+            0,
+            4,
+            2
+          ],
+          [
+            1,
+            42,
+            1,
+            4
+          ],
+          [
+            1,
+            5,
+            31,
+            11
+          ],
+          [
+            0,
+            1,
+            0,
+            47
+          ]
+        ]
+      },
+      "right": {
+        "samples": 192,
+        "accuracy": 0.9479166666666666,
+        "macro_recall": 0.9479166666666666,
+        "per_class_recall": {
+          "open_palm": 0.9791666666666666,
+          "fist": 0.9791666666666666,
+          "victory": 1.0,
+          "thumbs_up": 0.8333333333333334
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            47,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            47,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            48,
+            0
+          ],
+          [
+            2,
+            1,
+            5,
+            40
+          ]
+        ]
+      }
+    }
+  },
+  "validation_accuracy_delta": 0.05208333333333326,
+  "wall_seconds": 730.4086871,
+  "board_tested": false,
+  "limitations": [
+    "Validation is used for model selection, NOT an independent test.",
+    "Only existing 722 images; consecutive frames correlated and backgrounds limited.",
+    "No additional samples or labels were invented; all validation images retained.",
+    "Full-frame four-class classification; no empty/unknown class; palm detector unchanged.",
+    "No board accuracy or latency claim."
+  ]
+}

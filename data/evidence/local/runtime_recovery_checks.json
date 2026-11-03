@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "files_verified": 2100,
+  "checks": [
+    "interrupted extraction preserves original vendor and never activates partial staging",
+    "all 8 real ARM64 wheels recovered and verified; old incomplete directory backed up",
+    "app manifest and source fingerprints unchanged; no benchmark migration required",
+    "repeated repair detects completed runtime safely"
+  ],
+  "scope": "Real offline wheel extraction on Windows; does not load ARM binaries or test board performance"
+}

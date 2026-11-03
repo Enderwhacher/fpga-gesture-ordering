@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "scope": "Real models with CPU PL substitute, simulated background counters; orchestration only, not performance evidence",
+  "blocks": [
+    {
+      "config": "v3_reference",
+      "records": 12,
+      "workers_closed": true
+    },
+    {
+      "config": "serial_cv1_t3",
+      "records": 12,
+      "workers_closed": true
+    },
+    {
+      "config": "pipe_cv1_d2_c2",
+      "records": 12,
+      "workers_closed": true
+    },
+    {
+      "config": "pipe_cv1_d3_c1",
+      "records": 12,
+      "workers_closed": true
+    }
+  ]
+}

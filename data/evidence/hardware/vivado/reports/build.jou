@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Oct 31 16:52:43 2026
+# Process ID         : 25272
+# Current directory  : D:/hand/gesture_block_accel_v2
+# Command line       : vivado.exe -mode batch -log D:/hand/gesture_block_accel_v2/vivado/reports/build.log -journal D:/hand/gesture_block_accel_v2/vivado/reports/build.jou -source D:/hand/gesture_block_accel_v2/vivado/build.tcl -tclargs bitstream 4
+# Log file           : D:/hand/gesture_block_accel_v2/vivado/reports/build.log
+# Journal file       : D:/hand/gesture_block_accel_v2/vivado/reports/build.jou
+# Running On         : ljh159
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen 7 8745H with Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33618 MB
+# Swap memory        : 15287 MB
+# Total Virtual      : 48905 MB
+# Available Virtual  : 33761 MB
+#-----------------------------------------------------------
+source D:/hand/gesture_block_accel_v2/vivado/build.tcl

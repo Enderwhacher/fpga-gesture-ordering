@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "checks": [
+    "continuous thumbs-up 5 seconds adds once",
+    "two burgers minus one via released fist",
+    "V returns and cancels exit preserving cart",
+    "offline input ignored and reconnect-held hand cannot fire",
+    "complete 33-yuan simulated order saved through original OrderStore",
+    "duplicate polls never become duplicate actions",
+    "independent preview endpoint remains functional"
+  ],
+  "workers_closed": true,
+  "scope": "Actual loopback HTTP, original laptop client/gate/order store, real pipeline threads; camera and inference are fixtures. Not board performance or recognition accuracy.",
+  "runtime_metrics": {
+    "detector_frames": 1139,
+    "pending_replaced": 0,
+    "overlap_detector_starts": 835,
+    "overlap_classifier_starts": 0,
+    "pending_slots": 1,
+    "fpga_owners": 1,
+    "dma_cross_frame_double_buffering": false,
+    "note": "CPU detector/classifier overlap; each result uses one exact source frame. Latest pending detection replaces older pending work; FPGA calls remain serial."
+  },
+  "actions": [
+    {
+      "seq": 68,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "open_palm",
+      "action": "start",
+      "page": "MENU"
+    },
+    {
+      "seq": 127,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 346,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 406,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 466,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "fist",
+      "action": "remove_one",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 527,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "victory",
+      "action": "back_to_menu",
+      "page": "MENU"
+    },
+    {
+      "seq": 584,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "victory",
+      "action": "ask_exit",
+      "page": "EXIT_CONFIRM"
+    },
+    {
+      "seq": 642,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "victory",
+      "action": "cancel_exit",
+      "page": "MENU"
+    },
+    {
+      "seq": 828,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 886,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 943,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "open_palm",
+      "action": "next",
+      "page": "MENU"
+    },
+    {
+      "seq": 1004,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "thumbs_up",
+      "action": "add",
+      "page": "MENU"
+    },
+    {
+      "seq": 1062,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "fist",
+      "action": "review",
+      "page": "REVIEW"
+    },
+    {
+      "seq": 1120,
+      "session_id": "a5547c603c5b4dc88338f7b1640e4daa",
+      "gesture": "thumbs_up",
+      "action": "submit_demo_order",
+      "page": "DONE"
+    }
+  ]
+}

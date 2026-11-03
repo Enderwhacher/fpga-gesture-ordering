@@ -1,0 +1,1796 @@
+{
+  "release": "gesture_order_v4_teammate_handoff",
+  "final_config": "serial_cv1_t3",
+  "app_build": "r1",
+  "hardware_release": "gesture_blocks56_fp32_pw16_v2",
+  "verified_scope": "Exact deployed app and hardware; current matched laptop core, model/assets, source/reports, skill and report source.",
+  "missing_materials": [
+    "Exact deployed OpenCV runtime snapshot: collect_board_dependencies.py supplied",
+    "Model-owner training/data/accuracy/source-license information",
+    "Team-specific report cover, actual photos/video and portal forms",
+    "Actual final-round hold/exit-cancel/disconnect confirmation beyond available logs"
+  ],
+  "ai_record_scope": "Verified excerpts and summary, not a full export of every historical conversation.",
+  "files": {
+    "board_assets/gesture4_model_v2/hagrid_mobilenetv3_large.onnx": {
+      "bytes": 16823956,
+      "sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741"
+    },
+    "board_assets/gesture4_model_v2/hagrid_runtime.py": {
+      "bytes": 2181,
+      "sha256": "065f0ba1f30908b223d148178a22bd29c7eeaae58ff58a2b1611b529a298d24f"
+    },
+    "board_assets/gesture4_model_v2/model_meta.json": {
+      "bytes": 868,
+      "sha256": "eb1bb16df09fb57d8a29e98b6789a482fa4e292e98a5febb6afea8e03ae6b15c"
+    },
+    "board_assets/gesture_assets/mp_palmdet.py": {
+      "bytes": 93560,
+      "sha256": "f06ce44a9b77e12b49d72416388829fd1a481ffe7a516d914e5a8c6ca50710be"
+    },
+    "board_assets/gesture_assets/palm_detection_mediapipe_2023feb.onnx": {
+      "bytes": 3905734,
+      "sha256": "78ff51c38496b7fc8b8ebdb6cc8c1abb02fa6c38427c6848254cdaba57fcce7c"
+    },
+    "board_assets/gesture_order_demo_v2/assets/burger.png": {
+      "bytes": 31626,
+      "sha256": "8fe1b35ad11a1524939ab3890351a988e1208c9f35c494fd3532242efd457672"
+    },
+    "board_assets/gesture_order_demo_v2/assets/cola.png": {
+      "bytes": 2081179,
+      "sha256": "c7d537df06b4c0965ea5f4bbe16b662d26d11cf3e5843a2362caba24226a2795"
+    },
+    "board_assets/gesture_order_demo_v2/assets/fries.png": {
+      "bytes": 1890249,
+      "sha256": "294351d22220a8aee65830d72b8d111898d4435f75f9a907a59c15a140a7457a"
+    },
+    "data/performance_summary.csv": {
+      "bytes": 1461,
+      "sha256": "057b859bbd4dd30211b3a4d86f0f119f538326f658ed9f1f051d1e7b38a69c36"
+    },
+    "data/readme.md": {
+      "bytes": 380,
+      "sha256": "cee121b393794e3667fcfc3dec9219875ae48573137c50f7e0d7b05d637d7f9c"
+    },
+    "deployment/board_assets_v4.zip": {
+      "bytes": 21638791,
+      "sha256": "94707b23c65ef07ed1d9379c6573a94b8a6f0d43a53ae06467966f994ecda99f"
+    },
+    "deployment/collect_board_dependencies.py": {
+      "bytes": 3680,
+      "sha256": "9d1e6cbc2d31aedbc78a5bd12381aff2fd8a6e58f41249fd80eafb9cb885890d"
+    },
+    "deployment/gesture_blocks56_pw16_hw_v2.zip": {
+      "bytes": 38058534,
+      "sha256": "8fbe457d717db78673674c90edd92247765e7b70c749dd7c779de329a4242100"
+    },
+    "deployment/gesture_order_accel_v4_r1.zip": {
+      "bytes": 45120617,
+      "sha256": "861dc87c22a27077d2752208e5e6c069f607a08723f8f91b212a8298a2b0888e"
+    },
+    "deployment/install_board_assets.py": {
+      "bytes": 1478,
+      "sha256": "8da09c2eb8d5b577cae12c01d37256cfb674255e801a9d250f98a3a76f471593"
+    },
+    "deployment/install_gesture_order_accel_v4_r1.py": {
+      "bytes": 1704,
+      "sha256": "41c87f9dd7cf3fbbbbbac6c9a48603b233a2fd06a31901f877d57f98b74a7ef1"
+    },
+    "deployment/install_hardware_v2.py": {
+      "bytes": 1296,
+      "sha256": "49c73e38a8029307d4e61815b5d9a6da8a899e81bb926ba33361891501f2c1e5"
+    },
+    "deployment/laptop_final_v4.zip": {
+      "bytes": 3741068,
+      "sha256": "60479a646849b862eacfead0ce185022d2985c526f0a2b682880874f7f0f4a6f"
+    },
+    "deployment/repair_v4_runtime.py": {
+      "bytes": 5489,
+      "sha256": "a386fcd67dd62fa617f9361c92aebf25b17c41d9a20a6910d9135c8a32117b03"
+    },
+    "deployment/restore_validation_report.py": {
+      "bytes": 1473,
+      "sha256": "edb94196f0c27f96e411cc9c2eb4558de7d858de4fbdc8768cbdf8ae170c7b7a"
+    },
+    "deployment/validated_report_v4.zip": {
+      "bytes": 56935,
+      "sha256": "b0caa2dc7128aa594b5333d2a7918d91982613bb1fadd6691a7b23bb710684b5"
+    },
+    "docs/architecture_and_interfaces.md": {
+      "bytes": 3744,
+      "sha256": "d0fe293f9998b5712eea4446cc6bd1a901d1fdd1418f7c64b6ac6c9f0f4542aa"
+    },
+    "docs/environment_and_versions.md": {
+      "bytes": 3105,
+      "sha256": "7f26cc3ef37fa9919b16ef2d3e585bb3757ac50e24c6ea033666d9109b4a8101"
+    },
+    "docs/hardware_rebuild.md": {
+      "bytes": 3929,
+      "sha256": "59fb7485706b8b048c6403638bd7e20b69277bdb3085731346a1566b021ea83a"
+    },
+    "docs/host_tests.md": {
+      "bytes": 1115,
+      "sha256": "c2db0a5506a22c76ce0493c456927e1cd9836d6d5f69b6b155762245dda40b0c"
+    },
+    "docs/quickstart.md": {
+      "bytes": 5041,
+      "sha256": "b847d931c6f59ba50723c0b65abffaa20c1bed74a0c6c034b88826bbaad1b0b6"
+    },
+    "docs/source_and_license_inventory.md": {
+      "bytes": 2105,
+      "sha256": "dba92c467bda980d33cef58540a458b234164b4d26999b99bb7163e760628457"
+    },
+    "docs/submission_checklist.md": {
+      "bytes": 3478,
+      "sha256": "c0760131d73c3f8dcccbdd33aa71989d3a913d9cab6340187c678449809f5556"
+    },
+    "evidence/final/benchmark_report.json": {
+      "bytes": 569130,
+      "sha256": "defa664e6ac9b55577ac1b3e482880f4baebf94e7ef0d456eae5faa999f97969"
+    },
+    "evidence/final/board_session.json": {
+      "bytes": 767304,
+      "sha256": "187a2ed8986afd54f9895d4371aff525ab83353abb94c75fc14ebd05ecdc782e"
+    },
+    "evidence/final/evidence_manifest.json": {
+      "bytes": 647,
+      "sha256": "9d324846e8f72bb0daa54732f90655445e7b6ad10296027650203997b8f989e0"
+    },
+    "evidence/final/installed_manifest.json": {
+      "bytes": 8700,
+      "sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74"
+    },
+    "evidence/final/laptop_session.json": {
+      "bytes": 11221,
+      "sha256": "b0355dd0946e7e54fbfdd53214b4f2991335eb385cca8d458eb9760d145971ce"
+    },
+    "evidence/final/readme.md": {
+      "bytes": 2378,
+      "sha256": "8dc9076cf3d448d32bb646fea795cd498c299a9585d371c1dc559575e389502a"
+    },
+    "evidence/final/review.json": {
+      "bytes": 15762,
+      "sha256": "b2176903cd9b19be18763b4b30a14b8bd25b5cc3ae1690e6577ffbc9df472b6c"
+    },
+    "evidence/final/saved_order.json": {
+      "bytes": 583,
+      "sha256": "687eddf9f6f98ed1578bf313a53be3794e78ac8f5f4541bb4f5bee667b2ee0ae"
+    },
+    "evidence/hardware/archive_reopen.log": {
+      "bytes": 20121,
+      "sha256": "438f00bc3c844d16838efe213327282ab2c72d3620225fc2ca9b44f5f0427b2a"
+    },
+    "evidence/hardware/archive_reopen_check.tsv": {
+      "bytes": 334,
+      "sha256": "511c070f2e38a0ee67aeb20805220884d80dbdb190fff8fdfe5e2cba1eef58d7"
+    },
+    "evidence/hardware/hls/reports/direct_rtl.json": {
+      "bytes": 3140,
+      "sha256": "e785c35417839a0d92ed1f6b9e5bb15deede7df6d51d7d7538647b86025ab0a2"
+    },
+    "evidence/hardware/hls/reports/fp_equivalence.json": {
+      "bytes": 84,
+      "sha256": "f24afacd69f3af2489d52c0f986726b32a1adfc81ec5903f721d7dd6855ecf73"
+    },
+    "evidence/hardware/hls/reports/summary.json": {
+      "bytes": 493,
+      "sha256": "eb30745b858ca19022f70a230ffbb458aacc37efa05a11462e3532862ae1d273"
+    },
+    "evidence/hardware/process_scheduling_board_comparison.json": {
+      "bytes": 38933,
+      "sha256": "856ff9315947878616487d3892f91de3fb13488561546236fd0dfe01f4dcbcb7"
+    },
+    "evidence/hardware/pw16_v1_v2_board_comparison.json": {
+      "bytes": 37046,
+      "sha256": "c7711278ec1822cb24086dd1940e856c7455cb337ca4b03568624ece21e7b5f6"
+    },
+    "evidence/hardware/vivado/reports/build.jou": {
+      "bytes": 1296,
+      "sha256": "7b23822930e433ad1a040ad398129f62cf2612f3f460e157ce273e2dcc57c478"
+    },
+    "evidence/hardware/vivado/reports/build.log": {
+      "bytes": 128500,
+      "sha256": "38def15ab4384297538387850d824574a9501fab3cec4cbe3af758474ce617eb"
+    },
+    "evidence/hardware/vivado/reports/build_result.tsv": {
+      "bytes": 194,
+      "sha256": "ff3185ac56be0fc9ac7f179484d86b19b3f989bf0eb3c9758ab86dc263f30822"
+    },
+    "evidence/hardware/vivado/reports/drc.rpt": {
+      "bytes": 3269481,
+      "sha256": "90ab1a08b3ad51d688b267f328a56178217c28507b7a995e26cc0371df780376"
+    },
+    "evidence/hardware/vivado/reports/gblock_generated.tcl": {
+      "bytes": 57656,
+      "sha256": "ca1a2a81bbd4823177b94e651df9f624166442a5fb9df9125d433d01d430ed29"
+    },
+    "evidence/hardware/vivado/reports/hwh_compat.json": {
+      "bytes": 401,
+      "sha256": "35206fdf805ccbfc5403302bb6985b9f81533dfe323d2dcd4bf3f8d58d8672fb"
+    },
+    "evidence/hardware/vivado/reports/methodology.rpt": {
+      "bytes": 1335,
+      "sha256": "62efe7c4f148563d04a4b022ac784a8cf20ac9523a81965ff7287515dc43d494"
+    },
+    "evidence/hardware/vivado/reports/ps_final_properties.txt": {
+      "bytes": 144188,
+      "sha256": "16c1dca89402d1fbfb869899380ae24242b54580e458b39ca4b3e8aef67e6300"
+    },
+    "evidence/hardware/vivado/reports/ps_readonly_skipped.txt": {
+      "bytes": 338,
+      "sha256": "8b23da8bf71112de70bef31f7dc90ae04b7074c1f0ed9a7f484e0e3da7bef991"
+    },
+    "evidence/hardware/vivado/reports/ps_restore.tsv": {
+      "bytes": 77729,
+      "sha256": "2178cd86dbfaa76c5d82ec9e60c6eca0da0e7c11507f75604245f283d5dab04d"
+    },
+    "evidence/hardware/vivado/reports/timing_summary.rpt": {
+      "bytes": 53924,
+      "sha256": "b9f970d812ed3922bed2a19caccac9ced54aed385fae73ee32c6bd49cfa633dc"
+    },
+    "evidence/hardware/vivado/reports/utilization.rpt": {
+      "bytes": 12985,
+      "sha256": "f044886c48ab40404d875959b583b7600556acad19b61892eece7637f577dc08"
+    },
+    "evidence/local/runtime_recovery_checks.json": {
+      "bytes": 536,
+      "sha256": "4d173b5ad34eea7fd21f29033186d75ad375fbf53a03d6303a01f37e54d8068b"
+    },
+    "evidence/local/v4_install_checks.json": {
+      "bytes": 323,
+      "sha256": "cb033e4d07b262afdcc5e583360da851cab54c3017b686be7c5241d105ca7bb7"
+    },
+    "evidence/local/v4_local_checks.json": {
+      "bytes": 179115,
+      "sha256": "ea1ed6f73749149234d31c98d91ec9058457128378e4a74a72d4443b333e3581"
+    },
+    "evidence/raw/board_results_v3_original.zip": {
+      "bytes": 82099,
+      "sha256": "48e79e63028eb4b6acb18fda2a1abb98078449263b9f8736294e029dcf225472"
+    },
+    "evidence/raw/board_results_v4_original.zip": {
+      "bytes": 172977,
+      "sha256": "5c83e7214acf0a5a8c12699c3ccabff2221de7eefdc254d8328c47944b5aac90"
+    },
+    "evidence/raw/hardware_v1_reference_original.zip": {
+      "bytes": 537901,
+      "sha256": "1a3aa8e40cc976d5ff8d88547cb231fb745954fb23ea4e90e5d4ffab1de10d46"
+    },
+    "evidence/raw/laptop_logs_v4_original.zip": {
+      "bytes": 39127,
+      "sha256": "fae2ddf28c46a49d384d3265cd17d7b5a0ea29f2882c03e356bac219b6ec78e2"
+    },
+    "evidence/raw/pw16_and_scheduling_original.zip": {
+      "bytes": 523758,
+      "sha256": "2965b0c47e0a1e3c05215965ceb79e4587f200198aef891884b65b8f58f43b83"
+    },
+    "final_version.json": {
+      "bytes": 1014,
+      "sha256": "5a5f4972e89274a7bca2740f3f3394cd86c02be538eeae0fef5440613141045e"
+    },
+    "handoff_checks.json": {
+      "bytes": 1195,
+      "sha256": "2580b3b10cb469fb5e5f99a59c35cc171677429e0a2bec0b2da7b6f29e6e2ad3"
+    },
+    "hardware/archive_creation.log": {
+      "bytes": 19834,
+      "sha256": "17b12b3b8e7da8ebc67a53fe975b45c64d13ba1607faf1e3be8721b508ec546c"
+    },
+    "hardware/archive_original_command.tcl": {
+      "bytes": 370,
+      "sha256": "d1dab16253fb4105d78b48a06879932705d3c54865e13e1a625dd34d3fd9423d"
+    },
+    "hardware/generated_ip/component.xml": {
+      "bytes": 130183,
+      "sha256": "8c5d08841c5dcddf673d056d4e7008c6bb4d3417f8e72a0420612d852b9c2ab1"
+    },
+    "hardware/generated_ip/constraints/gesture_blocks56_axis_ooc.xdc": {
+      "bytes": 395,
+      "sha256": "bc275c403c2beeec95b0c3664ecc37842f82207b326bf93c35acb6c465ed2485"
+    },
+    "hardware/generated_ip/doc/ReleaseNotes.txt": {
+      "bytes": 117,
+      "sha256": "1566cc6aad108ec3f889f8307040e5d5e089ba60b91df04b8b87261d1a39ace6"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.mdd": {
+      "bytes": 641,
+      "sha256": "1fdf76d544a2faea3dc118b781fd447d4acc551e07efa4456639ee2fcbaf0fbf"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.tcl": {
+      "bytes": 950,
+      "sha256": "b313c87a002a061939835f456539278f295b0a6fde6e5034d49f49d3bda9b0a1"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/data/gesture_blocks56_axis.yaml": {
+      "bytes": 690,
+      "sha256": "2ac447fd675082e23feeabd7f0587767bd3b1fa13f652736c373ce82a8d850cd"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/CMakeLists.txt": {
+      "bytes": 1298,
+      "sha256": "39c34087cf7becc697a8b107f8611d7a733a9a40cf758010cabebbe11970cde9"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/Makefile": {
+      "bytes": 1514,
+      "sha256": "f4ed5400c65c7bc590173564cdafb357acdc91f14cce6b1f66212921d3fd270a"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.c": {
+      "bytes": 5884,
+      "sha256": "306eee356dd4858d0b88ca5973ed4ccebebe40ca8d900ed6b62d0c1019d68d61"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis.h": {
+      "bytes": 4215,
+      "sha256": "54230a171eeb935086e068db7a5ff51e1d083a89e9de16ffd47e378cf76c24fa"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_hw.h": {
+      "bytes": 1480,
+      "sha256": "d3cd2d31ff1763a190c5d6c9c22fa9ce0d483b88783b9098641df2c70ead51b0"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_linux.c": {
+      "bytes": 4998,
+      "sha256": "8be8499a8a9b9868396d407fdbd472e55286afa5b44166c9c341f9ecc64c0ce9"
+    },
+    "hardware/generated_ip/drivers/gesture_blocks56_axis_v2_0/src/xgesture_blocks56_axis_sinit.c": {
+      "bytes": 2334,
+      "sha256": "58cf8b0c0c40682389a14be393baf731b93f29a718155456bb4f8c14a73d6aa5"
+    },
+    "hardware/generated_ip/hdl/ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci": {
+      "bytes": 26544,
+      "sha256": "3a8be1be7145d7f20393f73ca4b08b59aa7c15e736f9f187510a396a54c791a0"
+    },
+    "hardware/generated_ip/hdl/ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci": {
+      "bytes": 28831,
+      "sha256": "b63c6d9763af90340b25f4d7ffe66f19999b19ac43bbcb83f86f53354d337eb8"
+    },
+    "hardware/generated_ip/hdl/ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci": {
+      "bytes": 26536,
+      "sha256": "d3f586a479a083e00b166ff0e316e5770a8c9777dc4d8e423ab6fe89e4883bf0"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis.v": {
+      "bytes": 1149244,
+      "sha256": "94f5a036d0d13563b935897f8228f33170a1ca3e14552792de73919529915860"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.v": {
+      "bytes": 768,
+      "sha256": "163b5fb433998453bc21b1e8f366a98de2ad52d7894044cc9de9439a7de02be9"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.v": {
+      "bytes": 767,
+      "sha256": "a781c189d457e958b2edcbf501e12d9f5164b563530bfbf02c5646fa511e157a"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_block_unpack.v": {
+      "bytes": 1101,
+      "sha256": "0eb3dde98112de6566ab4c4bf10839e925791ad10150d7cbf55623efbb90d371"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_control_s_axi.v": {
+      "bytes": 11440,
+      "sha256": "c3c53c2fcd932333969a6fdc23a7510c98c9403ed5fe39e644e934175312548b"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_depthwise.v": {
+      "bytes": 207126,
+      "sha256": "2d1aa6e1d490ab777b279b1ff3c492f0e2f14df7619f63d54883ed7625b020d7"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.v": {
+      "bytes": 1112,
+      "sha256": "02f1533770df7eea1b738a4703d38caeea81270d2a24a32f7885c3b700de8a9b"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.v": {
+      "bytes": 215514,
+      "sha256": "70edd9e00170d101175937aa2d8d343a6257dc7369b3024fc4935fca4cd2aa7a"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.v": {
+      "bytes": 11968,
+      "sha256": "d7a7dda442628961ea36e85c851f08b3fd2b383a969a79d40ae087bf3ab00fc9"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.v": {
+      "bytes": 2326,
+      "sha256": "86e5fe1f7d6b4dff3b7e903d17d800b0ab3c35cd7dca584d2bc5e90554221a33"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.v": {
+      "bytes": 3292,
+      "sha256": "3935d39a674f9f9710fad29a11652c69b639be7d3670846553ebe91b053fcfdc"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.v": {
+      "bytes": 2939,
+      "sha256": "84e955d094ac2c89395aaba075edb330352a03771608bc44c65ffaa08dff288e"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.v": {
+      "bytes": 2323,
+      "sha256": "dcca5bf346cfba8ee4713c852390c5cb74a2ba1fc2514e9497c81e5a275a4b59"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.v": {
+      "bytes": 139214,
+      "sha256": "349abe7391518e89c04553c061c2e2f64ba4662e0007689daa215607c2ef41bb"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.v": {
+      "bytes": 8689,
+      "sha256": "2fa1b76453e5feb091d0855bfb40dbf991435ff1cbd7cf538b4e16d647a1e5f6"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.v": {
+      "bytes": 22187,
+      "sha256": "4227f3904f1064eca71757cf0b0bce2628a74bbbd7c840bffde8b0a191388260"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.v": {
+      "bytes": 15075,
+      "sha256": "4b2282acb17d0dfa29d4ce525d713f1a688346c5283aa2c309040ef5762c8399"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.v": {
+      "bytes": 8492,
+      "sha256": "957270d82f061c9c7626fe674c305aa9f459a83b534ed134156fcd8c641b24dd"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.v": {
+      "bytes": 8581,
+      "sha256": "9a2433cc5422ac82d71bd4ae6414ec7e02c3183e679d4fd8b22af98600cfd59f"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.v": {
+      "bytes": 22190,
+      "sha256": "1d794e4014453aeb6df683d1b65b5654cc581b6f0761de460f4ec78fc56b83dd"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.v": {
+      "bytes": 28746,
+      "sha256": "3cec6d7dc14dc8007dbf816a7a4fce667ba1a919a967e4e5b18ff5812968e541"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.v": {
+      "bytes": 33304,
+      "sha256": "f4416001839ff98cb3ee2bd3b8af31d11461c221452bfb10fa2d196a0d79b9fb"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.v": {
+      "bytes": 24059,
+      "sha256": "dd50a7e502cf376cbf3ee9538ebd0326b12b176ee12e4ed301325f6e33f1f1c3"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.dat": {
+      "bytes": 17640,
+      "sha256": "e6ac863da5575533a4d9b0274f6b2d5b8ce63ad2d9848182902c6807a9b04b42"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.v": {
+      "bytes": 1408,
+      "sha256": "0a0c821b315b2f92dd2e5f4e5ef93568b9071f18f41291e59999d38416dcd802"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.dat": {
+      "bytes": 180,
+      "sha256": "b4e514f567d80a5895d3daef715510c186d17f6eb5f41c942bd0672b2b4b376a"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.v": {
+      "bytes": 1149,
+      "sha256": "30b4c0261c25a27fae25646f498e54dce05038832431cbd4e4baf5ed3aa7f5f6"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.dat": {
+      "bytes": 90,
+      "sha256": "7551f4e68bb470dd686c4a10d4b4a770f66700add8801daf9b05d48d57f699bb"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.v": {
+      "bytes": 1149,
+      "sha256": "18266f95aa62427ff7fab9b4b4c7ceef1006a15486f1d39e04a12b3318f47d2f"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.dat": {
+      "bytes": 30,
+      "sha256": "96eac8f4a4aa2ccbc320015bb9d1f67f9689bc4d22863f8156bc4ad1c6270a3c"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.v": {
+      "bytes": 1149,
+      "sha256": "560c355f5a886ee1414e299e45e0c5f777c6aa5c0f1264bdb41ed9737ff96871"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.dat": {
+      "bytes": 5880,
+      "sha256": "3aeab019f801f272b6391bd886a9a48bdc09f8f8ce3754b537cdea417968174f"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.v": {
+      "bytes": 1295,
+      "sha256": "a1fb4543c6cf3c0907252568fd6f51af5e83a5d3d378518452da9f08ed1a8597"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_hls_deadlock_idx0_monitor.v": {
+      "bytes": 2072,
+      "sha256": "c5ddf5993a4d7006e0deb561ab6a7e69a8e6b8141d4527696642858a0840fb6e"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_hls_deadlock_kernel_monitor_top.vh": {
+      "bytes": 3326,
+      "sha256": "fa6ee1e43cac87de21b02d748ba4ea2c738ef85129e86da6be8f0b0b63abcb92"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.v": {
+      "bytes": 2004,
+      "sha256": "5cf004e42220074d6f0b0a095ce878639f01046310c085c3c19f4d193eb49500"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.v": {
+      "bytes": 2021,
+      "sha256": "77e8663de6907bea189491d85b3b8ced7fdf30b822197f7339ad03e4e0a82ab5"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.v": {
+      "bytes": 2021,
+      "sha256": "da50d225d0b5b33a9c63b256b8aba4fb570b687ea32a6b93b6586c0a8191cb81"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.v": {
+      "bytes": 714,
+      "sha256": "b09b96e6c288b8f655a8dca1d245cc4b9f0a1009d2dfe5e3fdfd066babd864d4"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_mul_8s_7ns_13_1_1.v": {
+      "bytes": 704,
+      "sha256": "632207df76da2de10149f05b2fefeaee845bcbc28214bc1592b63bc6b4ebb285"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.dat": {
+      "bytes": 1020,
+      "sha256": "f08e73182081bbe4aa7821e618621a16c06e87ab45446705b59171f2ffa1dfdf"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.v": {
+      "bytes": 1399,
+      "sha256": "74e87344e93c4f5ac278f737fda7ebfd7679f5e367869fb4f2efe93f7c926143"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.dat": {
+      "bytes": 360,
+      "sha256": "89cc3fa958d05ff334a8dee5e704856a7958874149ba3b416cd2412862b3af39"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.v": {
+      "bytes": 1319,
+      "sha256": "62157f044a2a45236d5783946f017cb3f97efe2d3267bbad00ed3ec1aa3b564e"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_pointwise.v": {
+      "bytes": 280179,
+      "sha256": "59ce606b2ede8729966aad2726405a100d8ba01d94220d73ec85093d763efa5d"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.v": {
+      "bytes": 1111,
+      "sha256": "b9750e58dfcf486d9fd61ee016756a604f0f75de284e7f3e4ebf2dd924ed2e08"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.v": {
+      "bytes": 345296,
+      "sha256": "b8160cb740c32e93be39fb81654bfeca491967a13278409684448511719fdd36"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_init.v": {
+      "bytes": 15640,
+      "sha256": "e2d0f4cfb6fad1b5c1d38b2b335485866623a6d0368d43a95650ad03525d2960"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_pointwise_Pipeline_pw_store.v": {
+      "bytes": 77480,
+      "sha256": "abb768bc766778b215968ea595c735b123341df71bdd583b8580429d67a63ea8"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_read_pw.v": {
+      "bytes": 118872,
+      "sha256": "5f9c8feeeefb9d5caf056bc367e0b287d74deffd87ff91dac11a52fdf3d96f8e"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.v": {
+      "bytes": 102496,
+      "sha256": "a17c009dd61c6c5c4909837fa1cb2ec6e21e4d8a049478db919b1d846fd41581"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_regslice_both.v": {
+      "bytes": 3372,
+      "sha256": "cdde1ebb30325b987bf96b3bdc0c3885e35e0bf7dfe5d70f33b231421f85eb07"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.dat": {
+      "bytes": 192,
+      "sha256": "b04501064652715342346791af9527096db2bfd12466920167a63c3855a95e68"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.v": {
+      "bytes": 1061,
+      "sha256": "52ba9898fe85ba78f6aab190811e3134d8398d330ede4f516dc7e2951597e335"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.dat": {
+      "bytes": 720,
+      "sha256": "af09aeda73d89efdf97a992a4da2a620c23d92d2b2b8984d92807dd59df4d294"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.v": {
+      "bytes": 1062,
+      "sha256": "cf35f77725ae4e66305d125f0c18e99b96193f3d5ed1cf340beacaba66530940"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_scale.v": {
+      "bytes": 73380,
+      "sha256": "8283bd2ecccef13279a50699a3847ef6ab53b5c345c27d3b5fa6e16d802a870c"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_se_layer.v": {
+      "bytes": 169363,
+      "sha256": "a3ddf936df8e810e081469c5ce414509c42b0e9b1bf5e764235e972e01db2d79"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.v": {
+      "bytes": 47583,
+      "sha256": "3a13dc84906972fb2eea3872055ae971ad47511e5b943793c28a37ff522ceb7a"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.dat": {
+      "bytes": 46080,
+      "sha256": "0c591fbff7f74422c8a60fc19de76ae3f91b490e2fb0617d87b1b8e3a6074b1d"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.v": {
+      "bytes": 1194,
+      "sha256": "43eb699fe7e6e99521e4449129ab95a2ea387a67f821d0041369611e7dc17c12"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_32_1_1.v": {
+      "bytes": 1985,
+      "sha256": "1146d30fcfa45dec738347c2ab3483117f66552d2401bd62241e8f13846b3c12"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_17_3_64_1_1.v": {
+      "bytes": 1985,
+      "sha256": "5bae6946145fc6fef6aa32a8a6b052fd7f3e966996c2ccb2c9750e5de579daf4"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_241_7_32_1_1.v": {
+      "bytes": 18800,
+      "sha256": "91f5c85135ffa485a48676e4c8b54fe761456f31fa53c5f27fb5529fcfcb9119"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_31_4_32_1_1.v": {
+      "bytes": 3014,
+      "sha256": "7b9a288b6f02463740da54781fb90ef88e28eb6920cca59bbcd4d99d1f31e7ef"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_57_5_32_1_1.v": {
+      "bytes": 4951,
+      "sha256": "a9e724abdb7985d57c56fcc97a3f9c63a48b00ae1e6060c88f2edb9151131557"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_sparsemux_9_2_64_1_1.v": {
+      "bytes": 1416,
+      "sha256": "8559fb3874cb95291dd7b0997088aa784b5031d82dc6ca53e2f773b8bc76289e"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_squeeze.v": {
+      "bytes": 223455,
+      "sha256": "1739ab57b710d6ce5541c778958ca7fb513d52abca397bbac8896e005f2d40f1"
+    },
+    "hardware/generated_ip/hdl/verilog/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.v": {
+      "bytes": 369492,
+      "sha256": "ee1f7223356c368c0284a6a2e7ca38d7b52ffa16dccf94eac296a3f398e4a5ec"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis.vhd": {
+      "bytes": 1761765,
+      "sha256": "9fb2478593dacb15fd90ceb9aebd85a708c2213c8b9e3e7e059dc711fb39f56a"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1ns_2_1_1.vhd": {
+      "bytes": 1362,
+      "sha256": "d6151cadc4cd91158dffd1ca945ff3182c445a336a1fc6fb407a7c192fb961f4"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_bitset_2ns_2ns_1ns_1s_2_1_1.vhd": {
+      "bytes": 1360,
+      "sha256": "affbbe306d2ff2490493277245920119e8bea7ee8b1358341acb64a620a7222a"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_block_unpack.vhd": {
+      "bytes": 1752,
+      "sha256": "d35f17a53caf05e669a7be16a253dacdec24e50d65ceed2ffab8d5906e9087a3"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_control_s_axi.vhd": {
+      "bytes": 15247,
+      "sha256": "c98f5ff096071c0ff42442ddcd3edb291bbf20527a90d3ea4009a27218b15a2c"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_depthwise.vhd": {
+      "bytes": 263542,
+      "sha256": "df36d7308c2492eb4b2f99d1d0cd154fbb7c37667beafdd805ac2bf9b957286f"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_depthwise_lines_RAM_S2P_BRAM_1R1W.vhd": {
+      "bytes": 2506,
+      "sha256": "c2db02d0568fa432a210b23c66871e6830dc36c48a586570ca4adf0e465e0db1"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_dw_rows_dw_columns.vhd": {
+      "bytes": 289710,
+      "sha256": "f9e33032a294707ee20aa2763705932c98e40daa1a0c28621f4ab61a767dd8e9"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_depthwise_Pipeline_VITIS_LOOP_175_3.vhd": {
+      "bytes": 19084,
+      "sha256": "d7d86a00ec27cb06181142a82ae263dc0623c54118cacf8477f95798437e23bb"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_fadd_32ns_32ns_32_5_full_dsp_1.vhd": {
+      "bytes": 3938,
+      "sha256": "39814827bf01da31efe17788aa6b3fe3c8eab2a27ff0ee93fa8d081be1648f76"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_fcmp_32ns_32ns_1_2_no_dsp_1.vhd": {
+      "bytes": 5743,
+      "sha256": "a7d92356bff54273e06e50bfccaba110c0610a3746fff758c46a053ee7d7514c"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_flow_control_loop_pipe_sequential_init.vhd": {
+      "bytes": 3601,
+      "sha256": "1e2c3b88a84367b982a08ca4722cedfc7a617e2abf01a72bf0c5c542ae9d459b"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_fmul_32ns_32ns_32_4_max_dsp_1.vhd": {
+      "bytes": 3933,
+      "sha256": "901a93db5c13e75c3c9fb3d2801244f012043a01550cad5c10e0f9dcb74fb7da"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2.vhd": {
+      "bytes": 166561,
+      "sha256": "71f29a7ab1c547d1b69096781bf37b02da03888ea5ba09f29a53e6fd3fd0c006"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_369_3.vhd": {
+      "bytes": 14725,
+      "sha256": "b3ee1f4d5314901dd99cff4ddc2279af465fc40a35a4817ee608d7ad945ab6cf"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_374_4.vhd": {
+      "bytes": 31647,
+      "sha256": "6118532e5c5c1b61173d98721277a4ee3ec45e45568f708fa42c60f535d1f69f"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_378_5.vhd": {
+      "bytes": 22695,
+      "sha256": "249df12a08cb9abe2e44a4d132886a849354c954eb3d99c0267dccaf984ce071"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_382_6.vhd": {
+      "bytes": 14325,
+      "sha256": "97fce8915e5c6b2270dc0ffaff7240eb6ecd740804c737ab07c9219fcb78fa5d"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_386_7.vhd": {
+      "bytes": 14499,
+      "sha256": "b3b80e0868773e9399168fdd886c591f6d4e9183e7c65acc1d72551b05b262d9"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_390_8.vhd": {
+      "bytes": 31647,
+      "sha256": "318828b02ddb123497e608370c9f1c4b5192cc99fe5afefb433de479ff08f648"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_397_9_VITIS_LOOP_398_10.vhd": {
+      "bytes": 43264,
+      "sha256": "1bc5665295d0cb596be3af010b660831529a951f7192d194117574dc604bb308"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_407_12_VITIS_LOOP_408_13.vhd": {
+      "bytes": 44454,
+      "sha256": "4f82293dd49248959c8354cc7304f4bafab99aecc92da7dc01a74cad124b7bd0"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_Pipeline_VITIS_LOOP_428_15_VITIS_LOOP_429_16.vhd": {
+      "bytes": 37563,
+      "sha256": "9ec7911690217b1a49af172ef3f87bcd1e912c241e113eecddeb24ffba493230"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_a_7_RAM_2P_URAM_1R1W.vhd": {
+      "bytes": 3231,
+      "sha256": "49ea138284ec9d434f1b2e1957dbf45844e1ce9ca1e6c1a8aaf05c257afc63d5"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_db_3_RAM_AUTO_1R1W.vhd": {
+      "bytes": 2361,
+      "sha256": "15f78cf49cb1f822b3a3f2f840c449d0fdee2886fc79cb6d1d059a790cb7ff43"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_eb_7_RAM_AUTO_1R1W.vhd": {
+      "bytes": 2361,
+      "sha256": "b075e5d60daccd230902adba08f91d59a3dff389a49c4f562d3efea6056f6fc4"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_pb_7_RAM_AUTO_1R1W.vhd": {
+      "bytes": 2361,
+      "sha256": "21239ddd2f1f112972bde298bad73603f9b2f4ab8e0898857b98e1b905864b7c"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_gesture_blocks56_axis_stream_stream_axis_0_residual_7_RAM_2P_BRAM_1R1W.vhd": {
+      "bytes": 2616,
+      "sha256": "f75d84615edfa2d3576982cdd755ffb071a23849a067dc9b63a104d49a333277"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_mac_muladd_8s_7ns_7s_8_4_1.vhd": {
+      "bytes": 3288,
+      "sha256": "49d2f2718efcb5ab660b237b588a472bea9ddfc6d451d6b8df34560b25b4420c"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_3ns_9ns_12_4_1.vhd": {
+      "bytes": 3315,
+      "sha256": "7b3e8efa6ac5d16e296ac0e58f1775c740923cce8d3a31919279c81c70ab9d0e"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_mac_muladd_9ns_4ns_9ns_13_4_1.vhd": {
+      "bytes": 3315,
+      "sha256": "47c60117174da4080aa712adada7f65216d549348d20934caa42193ce83f3bb1"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_mul_4ns_10ns_13_1_1.vhd": {
+      "bytes": 1363,
+      "sha256": "58b376f23cc25ded35113c915cb16b2aabce559b2998ba42b43214d05d9633f7"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_mul_8s_7ns_13_1_1.vhd": {
+      "bytes": 1389,
+      "sha256": "5e0e5ea8c34e03c6375cb45bab977fb4d82451b1a38d8116fe12e8894f95bc76"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0Ebkb.vhd": {
+      "bytes": 3156,
+      "sha256": "02e34b4165ace1875cce32d162bb2ced840a95579c52c88b164bdf785e16a487"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_p_ZZ21gesture_blocks56_axisRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0EHfu.vhd": {
+      "bytes": 2641,
+      "sha256": "453b6a06920da7052db55f083dd5574f5e70fa221ef773d3ee6f631798d32c90"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_pointwise.vhd": {
+      "bytes": 367547,
+      "sha256": "aaf5f9435e233e9285889640dd03947b18b42423f41f3d2cae5bab9561ac7d11"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_pointwise_acc_RAM_2P_BRAM_1R1W.vhd": {
+      "bytes": 2502,
+      "sha256": "b9e4782217b7f17485502600d1f66c70bec18e4f765eb650fc69737ce7b2d0a9"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_in_tiles_pw_pixels.vhd": {
+      "bytes": 445066,
+      "sha256": "9a929f86c36908ab64b33fda1a64abf7a0ebe075031a342bd200289fbd79da14"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_init.vhd": {
+      "bytes": 22511,
+      "sha256": "5b3505f97203066b8ee448b0cd8a1bc786d6b3f3daa0fc5d6775ee6b64c7c25f"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_pointwise_Pipeline_pw_store.vhd": {
+      "bytes": 108105,
+      "sha256": "6a4abce2d4d6613c854d64da10c5697d4d1be1b6e01accf7fde2f9dad17a32e0"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_read_pw.vhd": {
+      "bytes": 133400,
+      "sha256": "9d0b98ba4aeef77db638d43c1f43efd0d44df72c7a8395252a7bb33eb8aadf44"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_read_pw_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_68_2.vhd": {
+      "bytes": 126972,
+      "sha256": "10b87401284ac5cc76242658bfed88a744250af4366a928a30d747d09a827012"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_regslice_both.vhd": {
+      "bytes": 4753,
+      "sha256": "9adf12b589431a177ecf330c4a88da4f496787483bb090d5668b9d790d5b5b1d"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_s1b_RAM_AUTO_1R1W.vhd": {
+      "bytes": 2273,
+      "sha256": "37ee7afd9e2879d5a22a489b3b4bcfdd15df6823f7bd9612054a0ae44d901946"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_s2b_RAM_AUTO_1R1W.vhd": {
+      "bytes": 2274,
+      "sha256": "24fc02ae3a285a81ad4851471fff3f143541fb9081987e4428eb513eff3c6d0a"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_scale.vhd": {
+      "bytes": 97188,
+      "sha256": "9a62e2a6a6e8cd45c829322b97eea22c0f12cc1bd02f309dc28921a6b060fb38"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_se_layer.vhd": {
+      "bytes": 267193,
+      "sha256": "5958660e6439ffc868995639092fe51f11a06c704a786d410708fa2016175731"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_se_layer_Pipeline_VITIS_LOOP_285_3_VITIS_LOOP_286_4.vhd": {
+      "bytes": 88981,
+      "sha256": "0fc78eb592b8ec4760e256ae21bb225080d8f890c4fda3f107b8abf58c403a88"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_se_RAM_2P_BRAM_1R1W.vhd": {
+      "bytes": 2515,
+      "sha256": "f8b34154d514a8ef887e7d5be0afc491ef8f9e9aaf03b14d5869e8068b0b0f85"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_32_1_1.vhd": {
+      "bytes": 3081,
+      "sha256": "5d0d4e95bda83a2409489e14c3630aa93f17451a258ab51703ac825d65b00d77"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_17_3_64_1_1.vhd": {
+      "bytes": 3081,
+      "sha256": "8817006ad68b7195003f044724812a47eb20d23e6dec17e59dda24332b3280b5"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_241_7_32_1_1.vhd": {
+      "bytes": 29081,
+      "sha256": "9abb68fc0c7357f1daedcdf9448784b35dfb9bebacc613c4c40ee33a3f640ddd"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_31_4_32_1_1.vhd": {
+      "bytes": 4684,
+      "sha256": "06fc0d1a2022e107d46ca3fc568e23addc22d3aeb9fb76b541ac470aa73042b6"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_57_5_32_1_1.vhd": {
+      "bytes": 7687,
+      "sha256": "af9612163bd7d575a904d8f30be0daa16a1816ea0140fc1577795ef51667ae2f"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_sparsemux_9_2_64_1_1.vhd": {
+      "bytes": 2183,
+      "sha256": "a66c6c18a48b75779c25850674bb81b635b2ace1448ad0ff8344d3a5e00814ec"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_squeeze.vhd": {
+      "bytes": 312563,
+      "sha256": "88a14cffea26b675f998879aab65d00680957c27277907781db3c29f8046c3bc"
+    },
+    "hardware/generated_ip/hdl/vhdl/gesture_blocks56_axis_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns.vhd": {
+      "bytes": 560721,
+      "sha256": "f8732a1a02a543b353f18d247a48322c84f1159d564a802c091f7f7c7c1a2a86"
+    },
+    "hardware/generated_ip/misc/logo.png": {
+      "bytes": 2297,
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af"
+    },
+    "hardware/generated_ip/xgui/gesture_blocks56_axis_v2_0.tcl": {
+      "bytes": 621,
+      "sha256": "e1b275c6a228102bcc04e348f00f4d5460c7700b4b60eb61c75afe168551435d"
+    },
+    "hardware/gesture_block_accel_v2/blocks16_driver/__init__.py": {
+      "bytes": 61,
+      "sha256": "f6d6267389eb6075f617451e653f612ec74bee3c2dbcc660bd71fe8995f35e71"
+    },
+    "hardware/gesture_block_accel_v2/blocks16_driver/accelerator.py": {
+      "bytes": 9977,
+      "sha256": "72d95f5bd3fb4fe9ec90b472596c45493a5935c693aefc7a1742cf6e4f921e89"
+    },
+    "hardware/gesture_block_accel_v2/blocks16_driver/packet.py": {
+      "bytes": 1386,
+      "sha256": "5c92734258cee8ee8a8c42ca403cf15fb6e84a34a31b3cee5e23ca4107ecb1b4"
+    },
+    "hardware/gesture_block_accel_v2/blocks16_runtime.py": {
+      "bytes": 3685,
+      "sha256": "38b36a02830d3ce4929edd49ee2230179f57d7ad865b78af6370b6cb647d4961"
+    },
+    "hardware/gesture_block_accel_v2/board/environment.py": {
+      "bytes": 2207,
+      "sha256": "8616ef8df9910942fafb6f87c37ca4a9ab721f2d152e7d80e738d91bb7b69685"
+    },
+    "hardware/gesture_block_accel_v2/board/validate_hardware.py": {
+      "bytes": 10495,
+      "sha256": "bbda995301296abc54d321d495af934597cc8d2317e805a5a2036bf8edf2faee"
+    },
+    "hardware/gesture_block_accel_v2/board/verify_package.py": {
+      "bytes": 1117,
+      "sha256": "c5023371f89e1676759b2e5516122b102ab20f0c72e4f112dd53fe6210c112f4"
+    },
+    "hardware/gesture_block_accel_v2/board_baseline/ps_2022_1_parameters.tsv": {
+      "bytes": 52420,
+      "sha256": "ccf99e06a594e97d3f80d1b492f3f668449e8a8387a674f0b6dab76e305a6545"
+    },
+    "hardware/gesture_block_accel_v2/compat/pynq3_hwh_parser.py": {
+      "bytes": 24267,
+      "sha256": "bbb9ffebc4d01a52c6e8b5265aeb70b25e99ee8fb6a30dd0cb20cbbc081e2f27"
+    },
+    "hardware/gesture_block_accel_v2/export/block_params.json": {
+      "bytes": 810,
+      "sha256": "88d2d5146fc3db362b4083920e9eb53d66796f49dea7f5b4fa483e8f0afeb7be"
+    },
+    "hardware/gesture_block_accel_v2/export/case_list.txt": {
+      "bytes": 58,
+      "sha256": "7d9e04e9887b016d3c7078731d8977054af828aacd322a633a2691ad02656e1a"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "cc9d274b0f2589fbd70964197cc0c3ff07531f9591dcd8946a10a531d58a2b32"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "d7ccc1c9bdab5d9fd7b907a0ea39bdf935837930e9c8dec2c6c2763b4cbce3d2"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/input.bin": {
+      "bytes": 125440,
+      "sha256": "0e8ce3ef90886a58936a492b80ed2a0be8df8aa5fb33790900a434202ff35f5a"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/input.npy": {
+      "bytes": 125568,
+      "sha256": "2ac1ef11cb2c14046ec03b4217cb81437162907b366d09a9d8a0297eda140a25"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/model_input.npy": {
+      "bytes": 602240,
+      "sha256": "2c62cc4eb886907fba0489aaab639e16efddae9607ed19b8553b54ce72608a0f"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/black/model_logits.npy": {
+      "bytes": 144,
+      "sha256": "5a491123f6c4360b6ca671737cf14d1357d32440529dcd767edbce1223e46fc9"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "2fc09eb534165b78f6c406a9481e74daa29ed210b09e35f468baf70b352843de"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "6ab064be207823980f45e76dc68c7a590eaf22a97326195d6cb13d17e6986494"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/input.bin": {
+      "bytes": 125440,
+      "sha256": "51a9f1b904cd62e2f7e73c18edbcc54cfdc20bfec908ef0ce1e80927dc275e6b"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/input.npy": {
+      "bytes": 125568,
+      "sha256": "e2acd34522e5692ae0a63c352435d7ea50fdca6857f264b478eb653b83729ec5"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/model_input.npy": {
+      "bytes": 602240,
+      "sha256": "a4eebb067d486767f6007dd6a16b764471e3ee8d9cacbe3400bb87cf8598ca38"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/gradient/model_logits.npy": {
+      "bytes": 144,
+      "sha256": "76f3a665e46350b178e787604955314389be80aa421f2f0494d57996a2f83374"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/random/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "c42bece0f1a12b82386a65122288d7b3668be2e0e4675958b2863d8850982dca"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/random/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "c02176f677df1b4750b3c1791cdbf7ff60ad9445bb383a0df76a96ee20fb77db"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/random/input.bin": {
+      "bytes": 125440,
+      "sha256": "645d3ea173c332bed1cafee0f5064529a992861ccb20cb1da6cdc5e675337229"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/random/input.npy": {
+      "bytes": 125568,
+      "sha256": "26f2a4aaa794e9c64a145bed1ef4fda73839ae729a3728d1bc56836119ea1153"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "e2827fafcaa008809f8805435a06987792f0038401a7cd97c0a8313f899f93a0"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "1442cb3b9d06433748ad9966a3e22655fef9f73e00a4c512b0a672e6f86cc967"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/input.bin": {
+      "bytes": 125440,
+      "sha256": "f838585a3172b07bfcb87f5e31612d4c9de87382e85e2579846b8bbb8ca0b6ff"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/input.npy": {
+      "bytes": 125568,
+      "sha256": "9bc732fe26bd51eff8d9cbf6741c2d80357a98720082376083643c037afee358"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/model_input.npy": {
+      "bytes": 602240,
+      "sha256": "20f670bf98a94e92104f0577e224b95cfbec48fb7d7a3d8050d254a5ea07629b"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/real_frame/model_logits.npy": {
+      "bytes": 144,
+      "sha256": "77b03734990b70239b2ccd0389b888143bd3b0ee86b180dacace2ed153168fdf"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "26da8ff8be28d509591cb6f848dee4a4faa5ac5b9d578c74e2b668ed62afb4da"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "d188119987ef08960bbaee00ed847b26006dc92120f4adec08988acbc7748525"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/input.bin": {
+      "bytes": 125440,
+      "sha256": "728fff1b835ed83d5e8e7605de0eabf110107d5fbf9ef55d25f464a0425ccb2c"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/input.npy": {
+      "bytes": 125568,
+      "sha256": "f8a37d572709344733ec38f52754803b65fc5633f42ff2f6536f683a76613f6e"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/model_input.npy": {
+      "bytes": 602240,
+      "sha256": "2e89d031e71ab1e826e42c825d7c808f64c31c9ad11803a9857f24ac623ef71b"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/seeded_noise/model_logits.npy": {
+      "bytes": 144,
+      "sha256": "edb6745aff1015fde39add70b936b022ad425f06d2b32cab492748b1034a941f"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/zeros/golden_output.bin": {
+      "bytes": 125440,
+      "sha256": "920e7703e0b079e41a693862ca2e3a24a5e372e6cc0f6faacf09aac59ea07dc4"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/zeros/golden_output.npy": {
+      "bytes": 125568,
+      "sha256": "ed9ba617cd83cf3c104ddc5fd85d9d69eb80752a99fc95061f7230b767a8b03b"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/zeros/input.bin": {
+      "bytes": 125440,
+      "sha256": "bbebdd0bc688023d95131fb0a2bf6258976dc7337d39e7fe3ffd38be2df7a84e"
+    },
+    "hardware/gesture_block_accel_v2/export/cases/zeros/input.npy": {
+      "bytes": 125568,
+      "sha256": "94d0f2b74f0cca6c25de29e0c6bf4e06312eae6e60ba0d7d77e39bfa2c46446a"
+    },
+    "hardware/gesture_block_accel_v2/export/export_manifest.json": {
+      "bytes": 4641,
+      "sha256": "682874a2e40b7f34c4fc3c6ee7f987dbf3696ba083134b5d6ea00634e824f97d"
+    },
+    "hardware/gesture_block_accel_v2/export/models/blocks.onnx": {
+      "bytes": 174584,
+      "sha256": "8c8aca5ee8d07af35d464951acc249e1432218292af2fca64f42ed237375bcb9"
+    },
+    "hardware/gesture_block_accel_v2/export/models/prefix.onnx": {
+      "bytes": 84838,
+      "sha256": "6b6542c9f3783412a8400cf62fda05ba8ca6e30e84758ef327ded3429e16a199"
+    },
+    "hardware/gesture_block_accel_v2/export/models/suffix.onnx": {
+      "bytes": 16578747,
+      "sha256": "869824e016eba03111836fb2b69363de8135bf55340c6036e782dc9f6a8f998e"
+    },
+    "hardware/gesture_block_accel_v2/export/params/block0.bin": {
+      "bytes": 82848,
+      "sha256": "95cb1161adab4c8a051c169ee673e120a39f2c5c0a708c6ad542cd9f64f95573"
+    },
+    "hardware/gesture_block_accel_v2/export/params/block0.npz": {
+      "bytes": 85342,
+      "sha256": "09b14ea4edd227cf161a82888034aaaf4eceaf68aad9ec32db3adc6f027489e7"
+    },
+    "hardware/gesture_block_accel_v2/export/params/block1.bin": {
+      "bytes": 82848,
+      "sha256": "3c3020489689b0d6b37c59cbc9de270909e1cd2a390a52c5bda0bff311aac034"
+    },
+    "hardware/gesture_block_accel_v2/export/params/block1.npz": {
+      "bytes": 85342,
+      "sha256": "ebfec1ad122154b496d92759aaff9224c99ea517e69fa1046b77fe7de63a87f4"
+    },
+    "hardware/gesture_block_accel_v2/export/validation_report.json": {
+      "bytes": 4481,
+      "sha256": "e6ac5b74b081e96cf47d69a7dcc7f79485875c85ab2e013eefb747c4d30aa8e8"
+    },
+    "hardware/gesture_block_accel_v2/hls/ip/gesture_blocks56_axis.zip": {
+      "bytes": 739501,
+      "sha256": "f975b911df9d06c48bf33fd04f2596e2bebd7ed5fb185d0530cb5698c80904d7"
+    },
+    "hardware/gesture_block_accel_v2/hls/reports/direct_rtl.json": {
+      "bytes": 3140,
+      "sha256": "e785c35417839a0d92ed1f6b9e5bb15deede7df6d51d7d7538647b86025ab0a2"
+    },
+    "hardware/gesture_block_accel_v2/hls/reports/fp_equivalence.json": {
+      "bytes": 84,
+      "sha256": "f24afacd69f3af2489d52c0f986726b32a1adfc81ec5903f721d7dd6855ecf73"
+    },
+    "hardware/gesture_block_accel_v2/hls/reports/summary.json": {
+      "bytes": 493,
+      "sha256": "eb30745b858ca19022f70a230ffbb458aacc37efa05a11462e3532862ae1d273"
+    },
+    "hardware/gesture_block_accel_v2/hls/rtl_tb/axis_rtl_tb.sv": {
+      "bytes": 5810,
+      "sha256": "da52201af27b1cb3a4023c58e60885dd4414c3d3a46ecb0d8a5c2de6b0431223"
+    },
+    "hardware/gesture_block_accel_v2/hls/rtl_tb/fp_equivalence_tb.sv": {
+      "bytes": 2246,
+      "sha256": "51311c718e8ec82465971923e5c5a3d5670bb81d7a71ce45f5d3964e464352c8"
+    },
+    "hardware/gesture_block_accel_v2/hls/rtl_tb/fp_functional_models.sv": {
+      "bytes": 3214,
+      "sha256": "be5aa5bb94d870f200d99df204813744d5261703aaf0ae5000a88e92f226ed8a"
+    },
+    "hardware/gesture_block_accel_v2/hls/rtl_tb/shortreal_check.sv": {
+      "bytes": 454,
+      "sha256": "4b138ed79467ec59c3ba4fa59de2bf4bfd9e001700580b154f730292399755be"
+    },
+    "hardware/gesture_block_accel_v2/hls/run_hls.tcl": {
+      "bytes": 860,
+      "sha256": "02aa56325f6a7350d1d67516873cff1b32dc299ad0b55edfe93a320cb2fa20fe"
+    },
+    "hardware/gesture_block_accel_v2/hls/setup_rtl.tcl": {
+      "bytes": 521,
+      "sha256": "ac1f22bd72f4fab8bee5a90f93f349fb46c4cd069ea7e77a8cddc6416caa828e"
+    },
+    "hardware/gesture_block_accel_v2/hls/src/blocks56_axis.cpp": {
+      "bytes": 16566,
+      "sha256": "0c23d7755917bfdcb81082d9e7e6d5fd6f33118d9db4ae1dc3d92d0dbe037ff7"
+    },
+    "hardware/gesture_block_accel_v2/hls/src/blocks56_axis.h": {
+      "bytes": 1094,
+      "sha256": "21bc7009ab438f730699b66a0d05278502643c0e895c0e1d3f015ef48d7d58f5"
+    },
+    "hardware/gesture_block_accel_v2/hls/tb/test_blocks.cpp": {
+      "bytes": 4697,
+      "sha256": "6c23af93de2294ded36589c15165be570082def084a6d9e93aff75bb46b16b2a"
+    },
+    "hardware/gesture_block_accel_v2/optimization_plan.json": {
+      "bytes": 407,
+      "sha256": "1897fc755b0c2ee6fed848f80f8a93d5f6e3906df0844078fc5d171db4768b96"
+    },
+    "hardware/gesture_block_accel_v2/overlay/build_manifest.json": {
+      "bytes": 1914,
+      "sha256": "63753d939788fd3b34170a15d20f47adb118cb96158cdd9a3327c2eadab8e50a"
+    },
+    "hardware/gesture_block_accel_v2/overlay/gesture_blocks56.bit": {
+      "bytes": 7797826,
+      "sha256": "a7732997d677c89e16f6981625c796d4d9e5e34fe235dfbbb95328f03b91f89a"
+    },
+    "hardware/gesture_block_accel_v2/overlay/gesture_blocks56.hwh": {
+      "bytes": 350234,
+      "sha256": "8ed7017eb013a49bdb08b0150f4c625106dada999220d38ae8dd64c7d8e3be3f"
+    },
+    "hardware/gesture_block_accel_v2/package_manifest.json": {
+      "bytes": 11421,
+      "sha256": "562cd06bb240af69459f0fa7240c59b5bbd6a879c364aecd9e8a99ac06a1a73f"
+    },
+    "hardware/gesture_block_accel_v2/README_\u64cd\u4f5c\u8bf4\u660e.md": {
+      "bytes": 1885,
+      "sha256": "0970707b8aaec7082e51bc775894d9e54bc82ee9d8aed4fb23fa5b652df4471a"
+    },
+    "hardware/gesture_block_accel_v2/reports/driver_host_tests.json": {
+      "bytes": 183,
+      "sha256": "65e28cfcc114e90453c7342eb60cee66999111f96ef03464798e91d5789965d4"
+    },
+    "hardware/gesture_block_accel_v2/reports/runtime_host_tests.json": {
+      "bytes": 242,
+      "sha256": "d629d01002eacb54ce38affc3359d45308821c6ede5e9a35813f16b09c32ca54"
+    },
+    "hardware/gesture_block_accel_v2/reports/source_checks.json": {
+      "bytes": 174,
+      "sha256": "a9e7421a6ae13ad38bcef06d232c7f6bdeb7a479653f2ba182ff57f76dc0e214"
+    },
+    "hardware/gesture_block_accel_v2/source/hagrid_mobilenetv3_large.onnx": {
+      "bytes": 16823956,
+      "sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741"
+    },
+    "hardware/gesture_block_accel_v2/source/hagrid_runtime.py": {
+      "bytes": 2181,
+      "sha256": "065f0ba1f30908b223d148178a22bd29c7eeaae58ff58a2b1611b529a298d24f"
+    },
+    "hardware/gesture_block_accel_v2/source/model_meta.json": {
+      "bytes": 868,
+      "sha256": "eb1bb16df09fb57d8a29e98b6789a482fa4e292e98a5febb6afea8e03ae6b15c"
+    },
+    "hardware/gesture_block_accel_v2/tests/test_driver.py": {
+      "bytes": 11055,
+      "sha256": "057db8d680c0ffc2c145d02bca9c34efa4b459c4acefbffec625110b8dc8f9f1"
+    },
+    "hardware/gesture_block_accel_v2/tests/test_runtime.py": {
+      "bytes": 4026,
+      "sha256": "a3eb3495095040b2e6c33b192241b6e8d2c9304c246a360152d1a8d3718a5713"
+    },
+    "hardware/gesture_block_accel_v2/tools/analyze_target.py": {
+      "bytes": 2079,
+      "sha256": "d3a8cfd3cfaf9bea65c6b3aacd2d1635e22aaca1652b5dcbbad3b92acdee3cab"
+    },
+    "hardware/gesture_block_accel_v2/tools/audit_hwh.py": {
+      "bytes": 2382,
+      "sha256": "0e588479673e76436c824f7b0bfc849307eed768c28a3530a26f0f9dc3544730"
+    },
+    "hardware/gesture_block_accel_v2/tools/audit_returned_run.py": {
+      "bytes": 6097,
+      "sha256": "0c74a7d8ff2130cd9db32464f5c4466d297925dccabe56c8908c1fd9e576ded6"
+    },
+    "hardware/gesture_block_accel_v2/tools/build_local.py": {
+      "bytes": 1911,
+      "sha256": "68037546e226e14db1814e9b41c8e560758cb92f65263b821856a5e9d6ef44c1"
+    },
+    "hardware/gesture_block_accel_v2/tools/check_sources.py": {
+      "bytes": 1019,
+      "sha256": "41bf2d714faf43c16ddaf0e53716c4de8f7d7f2215ba033a2fd1617c28c0f9e4"
+    },
+    "hardware/gesture_block_accel_v2/tools/check_stable_baseline.py": {
+      "bytes": 1135,
+      "sha256": "593f39e357e4bfd348f87237dd4457185af3921f400324f17c5c48a21d2bb9ce"
+    },
+    "hardware/gesture_block_accel_v2/tools/direct_rtl.py": {
+      "bytes": 6182,
+      "sha256": "29885f5bab78fd0ed9ca8c1a67e1943c0ede6a0a841c82866d519c40f003edcf"
+    },
+    "hardware/gesture_block_accel_v2/tools/export_blocks.py": {
+      "bytes": 10289,
+      "sha256": "34566723c10bdebcc120fcd46331ebc367615688e33267cfde0d800e0771f0a1"
+    },
+    "hardware/gesture_block_accel_v2/tools/fast_rtl.py": {
+      "bytes": 6261,
+      "sha256": "274bdf8b1ae106030304d956b18306137336738ae574cc775d00db2ed933c11b"
+    },
+    "hardware/gesture_block_accel_v2/tools/finalize_release.py": {
+      "bytes": 5243,
+      "sha256": "527c9403c8394d4bc87e37f4c61bf188e665c983aafbc3dee63e6046105464df"
+    },
+    "hardware/gesture_block_accel_v2/tools/inspect_progress.py": {
+      "bytes": 872,
+      "sha256": "8dff96af75c8a727add558ec192e2bc7c2d7dabb9fdc7f01be1a7097be8c70e1"
+    },
+    "hardware/gesture_block_accel_v2/tools/make_notebook.py": {
+      "bytes": 3984,
+      "sha256": "8166133100694cab548eac4e6dd9ef039f06152bc3d99ed63be4e0e0cce45e12"
+    },
+    "hardware/gesture_block_accel_v2/tools/prepare_vivado.py": {
+      "bytes": 2824,
+      "sha256": "5371eba5e16f49ac845b50cd521549762864fa39eeeb0d36f51eb228a6c77d09"
+    },
+    "hardware/gesture_block_accel_v2/tools/record_native_partial.py": {
+      "bytes": 873,
+      "sha256": "8f3f363577a604077d72332aedd8c85498daeea9af4c056fe1654c4d1cd03045"
+    },
+    "hardware/gesture_block_accel_v2/tools/review_board_return.py": {
+      "bytes": 1518,
+      "sha256": "dad802bedeac1b8a817d6ca5be89f126a5e7bde9cc7b11f2646cda20a84034e8"
+    },
+    "hardware/gesture_block_accel_v2/tools/summarize_resources.py": {
+      "bytes": 496,
+      "sha256": "5652e1ac07ee34e32c84ab2e3de27e1f920671ab992d4eb07b4407dfd8a62d42"
+    },
+    "hardware/gesture_block_accel_v2/vivado/build.tcl": {
+      "bytes": 9924,
+      "sha256": "abd13c33fee672dd0e17a6c03346f046ee663f78e9b9c0b0ff781ba23d9972e8"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/build.log": {
+      "bytes": 128500,
+      "sha256": "38def15ab4384297538387850d824574a9501fab3cec4cbe3af758474ce617eb"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/build_result.tsv": {
+      "bytes": 194,
+      "sha256": "ff3185ac56be0fc9ac7f179484d86b19b3f989bf0eb3c9758ab86dc263f30822"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/drc.rpt": {
+      "bytes": 3269481,
+      "sha256": "90ab1a08b3ad51d688b267f328a56178217c28507b7a995e26cc0371df780376"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/gblock_generated.tcl": {
+      "bytes": 57656,
+      "sha256": "ca1a2a81bbd4823177b94e651df9f624166442a5fb9df9125d433d01d430ed29"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/hwh_compat.json": {
+      "bytes": 401,
+      "sha256": "35206fdf805ccbfc5403302bb6985b9f81533dfe323d2dcd4bf3f8d58d8672fb"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/methodology.rpt": {
+      "bytes": 1335,
+      "sha256": "62efe7c4f148563d04a4b022ac784a8cf20ac9523a81965ff7287515dc43d494"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/ps_final_properties.txt": {
+      "bytes": 144188,
+      "sha256": "16c1dca89402d1fbfb869899380ae24242b54580e458b39ca4b3e8aef67e6300"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/ps_readonly_skipped.txt": {
+      "bytes": 338,
+      "sha256": "8b23da8bf71112de70bef31f7dc90ae04b7074c1f0ed9a7f484e0e3da7bef991"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/ps_restore.tsv": {
+      "bytes": 77729,
+      "sha256": "2178cd86dbfaa76c5d82ec9e60c6eca0da0e7c11507f75604245f283d5dab04d"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/timing_summary.rpt": {
+      "bytes": 53924,
+      "sha256": "b9f970d812ed3922bed2a19caccac9ced54aed385fae73ee32c6bd49cfa633dc"
+    },
+    "hardware/gesture_block_accel_v2/vivado/reports/utilization.rpt": {
+      "bytes": 12985,
+      "sha256": "f044886c48ab40404d875959b583b7600556acad19b61892eece7637f577dc08"
+    },
+    "hardware/gesture_block_accel_v2/vivado/restore_ps.tcl": {
+      "bytes": 1539,
+      "sha256": "9b58a763785df13214eb24bdb199bd18d00386f8c7c9b1b9b842d789e80be037"
+    },
+    "hardware/vivado_project_archive.zip": {
+      "bytes": 595556451,
+      "sha256": "39aec3ed97d20e295e86b09bec95d0e5d5b39c700c852a7fe29ae018ee2e54ca"
+    },
+    "readme.md": {
+      "bytes": 6128,
+      "sha256": "bad6ee7b45347175e9f77ffe560291bc43c0a9446ef3c74063a8434a62691055"
+    },
+    "reference/amd_contest_guide.pdf": {
+      "bytes": 950952,
+      "sha256": "c6ad82acd4f7bdcd13bd412e232ed85d05f2a87dd5e2cdd04f9d219f88b569fc"
+    },
+    "reference/contest_page_23.txt": {
+      "bytes": 2250,
+      "sha256": "3ec8ee213a48e4c937c266819db08bb26943152b60244b9e20c6dd15bc165d1e"
+    },
+    "reference/contest_page_24.txt": {
+      "bytes": 2796,
+      "sha256": "065a4a0e125454d0124e28bc038b7c7f7467cbbc69c78a66f8777055b1c1a882"
+    },
+    "reference/contest_page_25.txt": {
+      "bytes": 1763,
+      "sha256": "7b8fd11a860a2e563f1cc01d4606b208466158741fd71267d4bed2324a6210d6"
+    },
+    "reference/pynq_zu_board.pdf": {
+      "bytes": 255639,
+      "sha256": "a561925ba34d08f0cd26687272c7f6a5e82645f8d1c03ff285ad4380e8c5d370"
+    },
+    "reference/v3_baseline/board_server.py": {
+      "bytes": 22334,
+      "sha256": "2e504bab77793e30cfcca82e1557bc1cc00228d60f9c6c9a79a49326654b1721"
+    },
+    "reference/v3_baseline/order_core.py": {
+      "bytes": 9796,
+      "sha256": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62"
+    },
+    "reference/v3_baseline/readme.md": {
+      "bytes": 87,
+      "sha256": "18f046d71d949454d12cf51b8cc33dd9949d952c537fb3e57351633e9b87eb21"
+    },
+    "report/ai_records/corrections/fix_v3_notebook_check.py": {
+      "bytes": 4354,
+      "sha256": "1364083449e90ea1dee7915978448bf7f354e3ee20105e618077d48676a6f57c"
+    },
+    "report/ai_records/corrections/repair_v4_runtime.py": {
+      "bytes": 5489,
+      "sha256": "a386fcd67dd62fa617f9361c92aebf25b17c41d9a20a6910d9135c8a32117b03"
+    },
+    "report/ai_records/summary.md": {
+      "bytes": 2210,
+      "sha256": "ef5f157c5067d7f7827e68b7c100375fef40a71dff863bd3e407b32719ce5522"
+    },
+    "report/ai_records/verified_excerpts.md": {
+      "bytes": 3752,
+      "sha256": "47bc3a1685afe065b428e6a912c03379638ab302c4acc04a29e7a67e65c5b81f"
+    },
+    "report/design_report_source.md": {
+      "bytes": 8614,
+      "sha256": "396aecd1e0c836ca83c05da2184e156ccfb42661938df6d83f9b994ee326e7c0"
+    },
+    "requirements_host.txt": {
+      "bytes": 86,
+      "sha256": "278ac2df56c5c932546c01a975377ff311cc2e67e7c584fb570f7a77a0f54dae"
+    },
+    "skill/golden_check.py": {
+      "bytes": 1750,
+      "sha256": "0fc1d64271a7555b71fe34a426f4b6cf3da5b4c8aa112b7deb69f4e2d1a044c0"
+    },
+    "skill/prompt_templates.md": {
+      "bytes": 1327,
+      "sha256": "b92e23cc8e35a969650e72f5196039a4d28f85db3cfb548070f034a96bc580ee"
+    },
+    "skill/readme.md": {
+      "bytes": 2996,
+      "sha256": "f11ed8571259d4d4cfc35da6e692f65f8fae3b8f0ea2d14e761e19f31af2816f"
+    },
+    "skill/troubleshooting.md": {
+      "bytes": 1898,
+      "sha256": "6abfa3811689135d95a14eb00cfd7c84c0da0b3cea772c3141d3b4aad9fe3f5d"
+    },
+    "software/board/gesture_order_accel_v4/00_final_candidate_v4.ipynb": {
+      "bytes": 7119,
+      "sha256": "067ab1fba64e4e0b6e812267d23ac180bff70cc0c0eac8614cfc3a6041d16516"
+    },
+    "software/board/gesture_order_accel_v4/01_one_run_v4.ipynb": {
+      "bytes": 3578,
+      "sha256": "c1f27ccff2000e7b655555efb5992341dd5c6ed9df19858a877014e5404cb08f"
+    },
+    "software/board/gesture_order_accel_v4/board_server.py": {
+      "bytes": 22376,
+      "sha256": "40a013e07ed00107d70bde56a23b3d04c9573c474ecde6d381ecca0a69f4027d"
+    },
+    "software/board/gesture_order_accel_v4/local_benchmark_checks.json": {
+      "bytes": 602,
+      "sha256": "51a49689381597d5413a2b23d3c38df4d90849e2d3edafda3825247e494b0b7e"
+    },
+    "software/board/gesture_order_accel_v4/local_complete_flow_checks.json": {
+      "bytes": 371,
+      "sha256": "25ee5add559c6a853d7216b462ef1385d2555ba078e421ea6631b92e29a707a4"
+    },
+    "software/board/gesture_order_accel_v4/local_concurrency_checks.json": {
+      "bytes": 227,
+      "sha256": "1b4822d0e0a6b7934fac3bfb688597695a87de461f8bfafe3f214ba13972839e"
+    },
+    "software/board/gesture_order_accel_v4/local_model_checks.json": {
+      "bytes": 163637,
+      "sha256": "5eef3550e7d9c23566f6ab1b25af3750d08b9d1ceb10d7272faa9953c8e62b4d"
+    },
+    "software/board/gesture_order_accel_v4/local_order_transport_checks.json": {
+      "bytes": 3528,
+      "sha256": "4d3d8688a5273885de2ee0afdf50544afc3469d7d244e13d78d736cc55368c5a"
+    },
+    "software/board/gesture_order_accel_v4/manifest.json": {
+      "bytes": 8700,
+      "sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74"
+    },
+    "software/board/gesture_order_accel_v4/order_core.py": {
+      "bytes": 9796,
+      "sha256": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62"
+    },
+    "software/board/gesture_order_accel_v4/pipeline_runtime.py": {
+      "bytes": 7119,
+      "sha256": "72267d9320d8bc3a3a18727cfcb97e1f2871858408754379859dd62d9ca31059"
+    },
+    "software/board/gesture_order_accel_v4/readme.md": {
+      "bytes": 8250,
+      "sha256": "4b1774ee8a31c25660f9d0680416d025653c95be4885a6e773eb99446ab01e87"
+    },
+    "software/board/gesture_order_accel_v4/run_complete.py": {
+      "bytes": 3894,
+      "sha256": "bfacb22c13da46c4e1c6f6cd5e2ab187fb436d2c0c339d6340fca603b62b14a8"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_000_open_palm.png": {
+      "bytes": 493414,
+      "sha256": "eda7ebbf91fac2ee80041049c6ebe77db912032208b47e41278462f80bff32db"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_001_open_palm.png": {
+      "bytes": 493308,
+      "sha256": "e48737223029a9662b161149049fcd86458d131405806222da53d878ca51c08f"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_002_open_palm.png": {
+      "bytes": 493699,
+      "sha256": "5e976dbd5f296c0c200cec0728cdf3002c2cad30ceb46bfa38d22e7ec6dc5a5a"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_003_fist.png": {
+      "bytes": 500281,
+      "sha256": "e481aa6cbfb2134587d515ba9da11fab5f66496678ed0e2b420aa15056e7f7a4"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_004_fist.png": {
+      "bytes": 500414,
+      "sha256": "58c480257452c6cc1a34970de70ce8a69ce1b80e38d332739fa7930880aa16f5"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_005_fist.png": {
+      "bytes": 499880,
+      "sha256": "a1047ab7a759eadb399e7e06e422d396cf9ff32bf619634ab1600fa33e09a377"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_006_victory.png": {
+      "bytes": 500665,
+      "sha256": "132528ef7f494feac5795e87157952320515320776d02614465362cfe1d6072c"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_007_victory.png": {
+      "bytes": 500155,
+      "sha256": "5aac0161541d8f63be9d4a9777d7e8e17120ee02908dfc267b4c1bd91f7514d4"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_008_victory.png": {
+      "bytes": 500285,
+      "sha256": "406987e0d19c7d3df7c99642f03a010655cb981c364cf3fc91af79c97a689a01"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_009_thumbs_up.png": {
+      "bytes": 507046,
+      "sha256": "313f1ae6b30e3de9411ab56c0a4c59c58942a7b9e3f88120fa4edf8886d54d33"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_010_thumbs_up.png": {
+      "bytes": 506901,
+      "sha256": "aa9b03da2f118f450a47e78d6015fc3b3c1c232a0679414fba2023a134b5a8c9"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_011_thumbs_up.png": {
+      "bytes": 506800,
+      "sha256": "4d180e2445a753ab67de6528637682dc8ef066ab5a0d67be9af2ea76b6331426"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_012_no_hand.png": {
+      "bytes": 514085,
+      "sha256": "8e154abdeccee7ac2a17dab9431beaab1da5a96e9dfd214d0f586f7142ea8362"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_013_no_hand.png": {
+      "bytes": 513608,
+      "sha256": "6ca72adc3fbfe4b0ad23b88fed0b34a0817e76d2de77871eaf6c4c31a14b9a25"
+    },
+    "software/board/gesture_order_accel_v4/samples/diagnostic_014_no_hand.png": {
+      "bytes": 513533,
+      "sha256": "fc3e3b8717a6662c8a65350db5a1dbcf72307c4c6edd4a0ce618c9b12f848c2c"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_left_01.png": {
+      "bytes": 449376,
+      "sha256": "82004f1d341160ba18fc4eaa9ccc72ebf6c22c996e2eed6a52e69939fc850751"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_left_02.png": {
+      "bytes": 450622,
+      "sha256": "1761cb371bec9e681e78b70df487b4b0dab2332458a42c57712b50b810cffef6"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_left_03.png": {
+      "bytes": 463001,
+      "sha256": "ae06b8b61e0898f2601c2ade2ec310b7177b067f71e57d7f9c7ceb216dfb47a1"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_left_04.png": {
+      "bytes": 459815,
+      "sha256": "68c2166234086fe606c0fd4215a8287a6807056957aa15891f7baeb2b232571b"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_right_01.png": {
+      "bytes": 442386,
+      "sha256": "fec5e3bb76cc3a49798df0049b63027f93bafa5be41264a24a8d96f849b09d5e"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_right_02.png": {
+      "bytes": 444551,
+      "sha256": "5026852d9c59b9f095aaad4b4209cba162fede46274e5c5a63a2160f3037899b"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_right_03.png": {
+      "bytes": 449806,
+      "sha256": "716c7dd56d3e25446df7a7bf35059cac1c4105c4346e2c58cfddfe4f3b36b7ac"
+    },
+    "software/board/gesture_order_accel_v4/samples/fist_right_04.png": {
+      "bytes": 454477,
+      "sha256": "ba3fba74412d768d54db4f4f2c40a11f780c64ae7a87fd69c254a73a9ffb5e73"
+    },
+    "software/board/gesture_order_accel_v4/samples/fixed_hand.png": {
+      "bytes": 482242,
+      "sha256": "213305d73f73cc254f8cc9b3b4c0c237812f474673c77eeb2d9256852570643f"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_left_01.png": {
+      "bytes": 470028,
+      "sha256": "8704986410404880243ed03a64e07068963cf281dfdf2f78d31dd353b1fb5858"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_left_02.png": {
+      "bytes": 474425,
+      "sha256": "595695574d3684d3c2f6be588186b07f0364c05687e39b565d0f5657fae2b405"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_left_03.png": {
+      "bytes": 469708,
+      "sha256": "d85c2e0599e20cd921c602b4404d42bd588d6d292d2fde458d34220c29dfcdab"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_left_04.png": {
+      "bytes": 470092,
+      "sha256": "cbcb35e131cafb93be528b908e7c8ed31a2bacf34aff2a221fd5445213dfba85"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_right_01.png": {
+      "bytes": 429777,
+      "sha256": "905e2f822611f2af933747b26ffa9a52fc8a82ce9bebfc5322eba9841b128951"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_right_02.png": {
+      "bytes": 433368,
+      "sha256": "4cc5bd6697128444aaf140c54e4d9478f3d3fb3f1c39eef7c38bb1941ebdac56"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_right_03.png": {
+      "bytes": 443689,
+      "sha256": "cda1f85b8dbe4035a032b695c9a8397aeea1b332d3c307d73ea265e75274c370"
+    },
+    "software/board/gesture_order_accel_v4/samples/open_palm_right_04.png": {
+      "bytes": 446766,
+      "sha256": "486ba85851bcdb9a84d8e346950cb0d4afff6898e4af059722e886ba5e98969b"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_left_01.png": {
+      "bytes": 462070,
+      "sha256": "221326e2b164385fef1a32b36f17fdcae04c92bd7463412111d634118bbc53e6"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_left_02.png": {
+      "bytes": 467243,
+      "sha256": "d4a886936b5582e4b1985b9e00217136986c677e5ffd94e8e9c6c15d78bfd340"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_left_03.png": {
+      "bytes": 471091,
+      "sha256": "214deeac020859283bacebea1f6de4bf9f366ed6c5f284d405e36d209de11447"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_left_04.png": {
+      "bytes": 469622,
+      "sha256": "c302b56d0cf33efcc2e5979185e69ffb38d9dd824b5e4cfaddd56361810fd2c4"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_right_01.png": {
+      "bytes": 493275,
+      "sha256": "899037742bbe15203e297c45a604a23cb8cf76ad05ec69fea6ee890a715d0edf"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_right_02.png": {
+      "bytes": 488286,
+      "sha256": "95f7afeacd674106c621a25d7cabecdebba6445204e2c4c7a88ada77ae590742"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_right_03.png": {
+      "bytes": 490161,
+      "sha256": "ef99f7f7ca362b6c155e48359bac791a007dc8e4509f36fa148433f4a2241dad"
+    },
+    "software/board/gesture_order_accel_v4/samples/thumbs_up_right_04.png": {
+      "bytes": 488513,
+      "sha256": "9fdaee319ab800e5574223daa99bcb960efcc950e6beced06d8dadf488b4ae5e"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_left_01.png": {
+      "bytes": 460985,
+      "sha256": "0f110e55da8f44fb53b07ac0eb7a660537c4d4708f468300af41c6c2d5c31cea"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_left_02.png": {
+      "bytes": 464850,
+      "sha256": "68f943892d951e6661e1bf86c9a7f6f76e04ce5971e709db24b33c43e4ed61c5"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_left_03.png": {
+      "bytes": 462262,
+      "sha256": "ee2af9e0c27e80a9ca399a9b5e81ba4423022ee45637a9d652f4aea8d524ec9e"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_left_04.png": {
+      "bytes": 465155,
+      "sha256": "5a08a1f887d1612d8c6fab9e089476927b1798c7d8381dbb95724fa58d3f51ca"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_right_01.png": {
+      "bytes": 488618,
+      "sha256": "c2ab63aa577a8917fdf33c830aed927dd3d31e53a3c320dbf48a8b96654eea79"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_right_02.png": {
+      "bytes": 488270,
+      "sha256": "d282ef520d1ec03b3dd6e77d678ba3bc2557dfce736edf1d47b8cd6dff93c86c"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_right_03.png": {
+      "bytes": 489977,
+      "sha256": "9bab6aab0c8038d8130ff7cee90058ab6a717e4310874da9cc5845f5375a5cb9"
+    },
+    "software/board/gesture_order_accel_v4/samples/victory_right_04.png": {
+      "bytes": 490457,
+      "sha256": "4bc7f9c95a492a3dd2885b8a1fe4563730119415653a99b466e6d5a1d3e48209"
+    },
+    "software/board/gesture_order_accel_v4/session_guard.py": {
+      "bytes": 748,
+      "sha256": "f0879e3a34747c6a7541a9822b44cba66b486de2740264db8a10c12455e8cec4"
+    },
+    "software/board/gesture_order_accel_v4/setup_runtime.py": {
+      "bytes": 4055,
+      "sha256": "10a79d7677d9b1da568c5e4cb60e1f58ebddbe404641723f14af6d646e8eb5be"
+    },
+    "software/board/gesture_order_accel_v4/start_v4.py": {
+      "bytes": 3701,
+      "sha256": "af6db1eff9e83189631c031fe43762218a53e8e99e56bce81deb4e4f1eaf2ceb"
+    },
+    "software/board/gesture_order_accel_v4/tests/check_benchmark.py": {
+      "bytes": 1843,
+      "sha256": "3e2962a459f8390a461b0190d6e2d3fad0c5f2bfaef975d3c7543812da3aaa06"
+    },
+    "software/board/gesture_order_accel_v4/tests/check_complete_flow.py": {
+      "bytes": 3098,
+      "sha256": "82b3b860ead8690a9f7a59f29c0b0e4f9ab06749dba4981d19bdd468f23d9d28"
+    },
+    "software/board/gesture_order_accel_v4/tests/check_models.py": {
+      "bytes": 3758,
+      "sha256": "82bc6c1d167750867f895cb7431d34de91123c19326d619ec4f64526a5122ba9"
+    },
+    "software/board/gesture_order_accel_v4/tests/check_order_transport.py": {
+      "bytes": 7433,
+      "sha256": "7f5fbb8367cfcaaa1da02459805d9efbeaa09f47cc0e64f5a480645d60224965"
+    },
+    "software/board/gesture_order_accel_v4/tests/mp_palmdet_reference.py": {
+      "bytes": 93560,
+      "sha256": "f06ce44a9b77e12b49d72416388829fd1a481ffe7a516d914e5a8c6ca50710be"
+    },
+    "software/board/gesture_order_accel_v4/tests/remote_client_reference.py": {
+      "bytes": 8969,
+      "sha256": "e26b66cac02a9861a1b66262bf9622c3b72244764d18cb1b269bd1b36a725a24"
+    },
+    "software/board/gesture_order_accel_v4/tests/test_pipeline.py": {
+      "bytes": 7272,
+      "sha256": "b6cb1392d8c10a588029c6b716249013734eb54d57aaa8a50d8fbb3324810fea"
+    },
+    "software/board/gesture_order_accel_v4/v3_runtime.py": {
+      "bytes": 8167,
+      "sha256": "14e965c6bb4231595fa216fced0cca04d272f83a53c8db4f793ae9691c735721"
+    },
+    "software/board/gesture_order_accel_v4/v4_runtime.py": {
+      "bytes": 4716,
+      "sha256": "e26a2d8e694439ecf9156f1439bea62bf8ad2dc448db5f6946dc06523e2ee3cb"
+    },
+    "software/board/gesture_order_accel_v4/validate_v4.py": {
+      "bytes": 19249,
+      "sha256": "a3caf26afacb1eab0690babcba17347374fc9b1c5b67bd4d5424a57f77bc6f66"
+    },
+    "software/board/gesture_order_accel_v4/wheels/coloredlogs-15.0.1-py2.py3-none-any.whl": {
+      "bytes": 46018,
+      "sha256": "612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934"
+    },
+    "software/board/gesture_order_accel_v4/wheels/flatbuffers-25.9.23-py2.py3-none-any.whl": {
+      "bytes": 30869,
+      "sha256": "255538574d6cb6d0a79a17ec8bc0d30985913b87513a01cce8bcdb6b4c44d0e2"
+    },
+    "software/board/gesture_order_accel_v4/wheels/humanfriendly-10.0-py2.py3-none-any.whl": {
+      "bytes": 86794,
+      "sha256": "1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477"
+    },
+    "software/board/gesture_order_accel_v4/wheels/mpmath-1.3.0-py3-none-any.whl": {
+      "bytes": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    "software/board/gesture_order_accel_v4/wheels/onnxruntime-1.23.2-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl": {
+      "bytes": 15219883,
+      "sha256": "8f7d1fe034090a1e371b7f3ca9d3ccae2fabae8c1d8844fb7371d1ea38e8e8d2"
+    },
+    "software/board/gesture_order_accel_v4/wheels/packaging-25.0-py3-none-any.whl": {
+      "bytes": 66469,
+      "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"
+    },
+    "software/board/gesture_order_accel_v4/wheels/protobuf-5.29.5-cp38-abi3-manylinux2014_aarch64.whl": {
+      "bytes": 319824,
+      "sha256": "fa18533a299d7ab6c55a238bf8629311439995f2e7eca5caaff08663606e9015"
+    },
+    "software/board/gesture_order_accel_v4/wheels/sympy-1.13.3-py3-none-any.whl": {
+      "bytes": 6189483,
+      "sha256": "54612cf55a62755ee71824ce692986f23c88ffa77207b30c1368eda4a7060f73"
+    },
+    "software/laptop/app_manifest.json": {
+      "bytes": 1417,
+      "sha256": "10b1316920314ab1ea25e391b049f140b02731593d46ec19eea5ee64f04d41d0"
+    },
+    "software/laptop/assets/cola.png": {
+      "bytes": 2081179,
+      "sha256": "c7d537df06b4c0965ea5f4bbe16b662d26d11cf3e5843a2362caba24226a2795"
+    },
+    "software/laptop/assets/fries.png": {
+      "bytes": 1890249,
+      "sha256": "294351d22220a8aee65830d72b8d111898d4435f75f9a907a59c15a140a7457a"
+    },
+    "software/laptop/download_cache/burger.png": {
+      "bytes": 31626,
+      "sha256": "8fe1b35ad11a1524939ab3890351a988e1208c9f35c494fd3532242efd457672"
+    },
+    "software/laptop/final_version_readme.md": {
+      "bytes": 568,
+      "sha256": "80b5731345f5b834a2b5d242735b9d5681b918f3aa8139571f522379e8da0fff"
+    },
+    "software/laptop/laptop_app.py": {
+      "bytes": 17852,
+      "sha256": "1ac6b6bae9c27a4d2e161b75c837f280bf44d4acdde6732291616b913cef5b4b"
+    },
+    "software/laptop/order_core.py": {
+      "bytes": 9796,
+      "sha256": "3f85a402f2117ab5de7899fc0b5175d85c67d69ece173c7c5f8d50cd0ee72c62"
+    },
+    "software/laptop/order_ui.py": {
+      "bytes": 8094,
+      "sha256": "003faaf230f86d7d69814faf10c5934b212f631b781b30851d0b8529c8880c99"
+    },
+    "software/laptop/README_laptop.md": {
+      "bytes": 5311,
+      "sha256": "c1be1f7c3c747699c88b893567f051c73cd842f48d7ec39118b29a8a3df3c8a5"
+    },
+    "software/laptop/remote_client.py": {
+      "bytes": 8969,
+      "sha256": "e26b66cac02a9861a1b66262bf9622c3b72244764d18cb1b269bd1b36a725a24"
+    },
+    "software/laptop/requirements-laptop.txt": {
+      "bytes": 51,
+      "sha256": "ab99b64988ce9433c25229834315204a5c6cf5e865de468d709fa42081111989"
+    },
+    "software/laptop/start_demo.bat": {
+      "bytes": 508,
+      "sha256": "c256a85e7c64aa93bfb65f25fb4059db61dffd95476ca6c80a0aeacd9d44968d"
+    },
+    "software/laptop/start_laptop.bat": {
+      "bytes": 624,
+      "sha256": "1d8fcf3f8ccfb46afee5cb7d885204ecc2ed0265c1abee401de8f50da0dbb8b8"
+    },
+    "software/laptop/start_laptop_portable.bat": {
+      "bytes": 333,
+      "sha256": "afe852474e85be7891e51fef9dd0fd0689f4d3b2a272dcc8776902ed43e6b819"
+    },
+    "software/laptop/verify_remote_app.py": {
+      "bytes": 660,
+      "sha256": "128d136bd4eeba424561476c41e8d7e91e30644523c51d89a49f37e6fe6d593f"
+    },
+    "software/laptop/web/index.html": {
+      "bytes": 6658,
+      "sha256": "2e5e08336583762197ad8d80d74288aeb99297e64100294ffa6e2f8c0bfa60f7"
+    },
+    "tools/audit_sources/review_pw16_live.py": {
+      "bytes": 10348,
+      "sha256": "bd1e89209f793e4eb6d9fd0f4a25c4dca9fd9d928ebbf2963ff274cf8b7f0730"
+    },
+    "tools/audit_sources/review_v4_board.py": {
+      "bytes": 10599,
+      "sha256": "c2cc90628a2ef34d42885c13399754ee58d8dd638a24921d851cdeef0edc0ffa"
+    },
+    "tools/collect_board_dependencies.py": {
+      "bytes": 3680,
+      "sha256": "9d1e6cbc2d31aedbc78a5bd12381aff2fd8a6e58f41249fd80eafb9cb885890d"
+    },
+    "tools/install_board_assets.py": {
+      "bytes": 1478,
+      "sha256": "8da09c2eb8d5b577cae12c01d37256cfb674255e801a9d250f98a3a76f471593"
+    },
+    "tools/install_hardware_v2.py": {
+      "bytes": 1296,
+      "sha256": "49c73e38a8029307d4e61815b5d9a6da8a899e81bb926ba33361891501f2c1e5"
+    },
+    "tools/prepare_host_workspace.py": {
+      "bytes": 1480,
+      "sha256": "39abd20ba27f726c44d86e6118282568a40f0c5f1a87d065ec339afe1949a8bf"
+    },
+    "tools/restore_validation_report.py": {
+      "bytes": 1473,
+      "sha256": "edb94196f0c27f96e411cc9c2eb4558de7d858de4fbdc8768cbdf8ae170c7b7a"
+    },
+    "tools/verify_handoff.py": {
+      "bytes": 1131,
+      "sha256": "f6ec1c0ae1a9c12e2ee6410be3ae7759e11c0c991a7dcb705aca0e93bb352e26"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "release": "gesture_order_v4_final_handoff",
+  "frozen_config": "serial_cv1_t3",
+  "app_build": "r1",
+  "hardware_release": "gesture_blocks56_fp32_pw16_v2",
+  "board_session": "5789afd2bf4549819084467a54836a07",
+  "laptop_session": "6f3f4342f8d443c2953b7c5a87cb9bd2",
+  "bit_sha256": "a7732997d677c89e16f6981625c796d4d9e5e34fe235dfbbb95328f03b91f89a",
+  "model_sha256": "568660b57f4cd01cacae40d64df9124e9194c7fbcc42f8245839eb691badf741",
+  "app_manifest_sha256": "c7bddd586b7a310b749256f0cf35ab8c8180ee4067c4fe95531e888eee906a74",
+  "selected_scheduling": "serial",
+  "cv_threads": 1,
+  "ort_threads": 3,
+  "fp32": true,
+  "board_hdmi": false,
+  "processing_reduction_vs_v2_percent": 35.70099805282359,
+  "processing_reduction_vs_v3_percent": 22.864475522787465,
+  "order_saved": true,
+  "total_fen": 3300,
+  "scope": "Verified performance and full order. Remaining feature confirmations and submission-owner materials listed separately.",
+  "exact_cv_runtime_snapshot_packaged": false
+}
