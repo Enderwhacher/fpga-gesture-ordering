@@ -1,0 +1,1594 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Oct 31 16:52:43 2026
+# Process ID         : 25272
+# Current directory  : D:/hand/gesture_block_accel_v2
+# Command line       : vivado.exe -mode batch -log D:/hand/gesture_block_accel_v2/vivado/reports/build.log -journal D:/hand/gesture_block_accel_v2/vivado/reports/build.jou -source D:/hand/gesture_block_accel_v2/vivado/build.tcl -tclargs bitstream 4
+# Log file           : D:/hand/gesture_block_accel_v2/vivado/reports/build.log
+# Journal file       : D:/hand/gesture_block_accel_v2/vivado/reports/build.jou
+# Running On         : ljh159
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen 7 8745H with Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33618 MB
+# Swap memory        : 15287 MB
+# Total Virtual      : 48905 MB
+# Available Virtual  : 33761 MB
+#-----------------------------------------------------------
+source D:/hand/gesture_block_accel_v2/vivado/build.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set stage [expr {$argc ? [lindex $argv 0] : "bitstream"}]
+# if {$stage ni {create bitstream reports}} {error "Stage must be create, bitstream or reports"}
+# set jobs [expr {$argc > 1 ? [lindex $argv 1] : 4}]
+# if {![string is integer -strict $jobs] || $jobs < 1 || $jobs > 16} {error "Invalid jobs"}
+# set build_name [expr {$argc > 2 ? [lindex $argv 2] : "vivado_gesture_v1"}]
+# if {![regexp {^[A-Za-z0-9_-]+$} $build_name]} {error "Invalid build directory name"}
+# set work [file normalize [file join $root .. b3w]]
+# set project_file [file join $work gblock gblock.xpr]
+# set reports [file join $root vivado reports]
+# set deliver [file join $root overlay]
+# file mkdir $work $reports $deliver
+# cd $work
+# set_param general.maxThreads $jobs
+# if {[file exists $project_file]} {
+#     if {$stage eq "create"} {error "Project already exists; open it or use bitstream stage to resume"}
+#     open_project $project_file
+# } else {
+#     if {$stage eq "reports"} {error "No project to report"}
+#     if {![file exists [file join $work ip_repo component.xml]]} {error "Run prepare_ip.py first"}
+#     create_project gblock [file join $work gblock] -part xczu5eg-sfvc784-1-e
+#     # Reuse matching, verified OOC IP synthesis results when available. Vivado
+#     # keys entries by tool/part/configuration; top-level wiring is rebuilt.
+#     set previous_cache [file join $root build vivado gblock gblock.cache ip]
+#     if {[file isdirectory $previous_cache]} {config_ip_cache -use_cache_location $previous_cache}
+#     set_property target_language Verilog [current_project]
+#     set_property ip_repo_paths [list [file join $work ip_repo]] [current_project]
+#     update_ip_catalog
+#     create_bd_design gblock
+#     set ps [create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 ps_e_0]
+#     source [file join $root vivado restore_ps.tcl]
+#     restore_board_ps $ps $root $reports
+#     # Keep the board's DDR/MIO/boot configuration and PL clocks. Expose only the
+#     # AXI ports used here. GP2 slave = HP0_FPD, GP0 master = HPM0_FPD.
+#     set_property -dict [list \
+#         CONFIG.PSU__USE__M_AXI_GP0 {1} CONFIG.PSU__USE__M_AXI_GP1 {0} \
+#         CONFIG.PSU__USE__M_AXI_GP2 {0} \
+#         CONFIG.PSU__USE__S_AXI_GP0 {0} CONFIG.PSU__USE__S_AXI_GP1 {0} \
+#         CONFIG.PSU__USE__S_AXI_GP2 {1} CONFIG.PSU__USE__S_AXI_GP3 {0} \
+#         CONFIG.PSU__USE__S_AXI_GP4 {0} CONFIG.PSU__USE__S_AXI_GP5 {0} \
+#         CONFIG.PSU__USE__S_AXI_GP6 {0} \
+#         CONFIG.PSU__SAXIGP2__DATA_WIDTH {128}] $ps
+#     set dma [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0]
+#     set_property -dict [list \
+#         CONFIG.c_include_sg {0} CONFIG.c_micro_dma {0} \
+#         CONFIG.c_include_mm2s {1} CONFIG.c_include_s2mm {1} \
+#         CONFIG.c_addr_width {64} CONFIG.c_sg_length_width {26} \
+#         CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_m_axi_s2mm_data_width {64} \
+#         CONFIG.c_m_axis_mm2s_tdata_width {32} CONFIG.c_s_axis_s2mm_tdata_width {32} \
+#         CONFIG.c_include_mm2s_dre {0} CONFIG.c_include_s2mm_dre {0} \
+#         CONFIG.c_mm2s_burst_size {16} CONFIG.c_s2mm_burst_size {16}] $dma
+#     set conv [create_bd_cell -type ip -vlnv hand:hls:gesture_blocks56_axis:2.0 gesture_blocks56_axis_0]
+#     set ctrl [create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 control_interconnect]
+#     set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {2}] $ctrl
+#     set mem [create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 memory_interconnect]
+#     set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] $mem
+#     set rst [create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_pl0]
+#     set one [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_one]
+#     set_property CONFIG.CONST_VAL {1} $one
+#     set zero [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_zero]
+#     set_property CONFIG.CONST_VAL {0} $zero
+#     # Reset polarity is derived from the connected PS pl_resetn0 pin. This is a
+#     # read-only IP parameter in 2025.2; the HWH compatibility check verifies 0.
+#     connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins rst_pl0/dcm_locked]
+#     connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins rst_pl0/mb_debug_sys_rst]
+#     # Both reset inputs inherit ACTIVE_LOW polarity. A constant zero on aux
+#     # would hold the entire AXI path in reset. Drive both from the PS reset.
+#     connect_bd_net [get_bd_pins ps_e_0/pl_resetn0] [get_bd_pins rst_pl0/ext_reset_in] [get_bd_pins rst_pl0/aux_reset_in]
+#     connect_bd_net [get_bd_pins ps_e_0/pl_clk0] \
+#         [get_bd_pins ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins ps_e_0/saxihp0_fpd_aclk] \
+#         [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins axi_dma_0/m_axi_mm2s_aclk] \
+#         [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins gesture_blocks56_axis_0/ap_clk] \
+#         [get_bd_pins control_interconnect/aclk] [get_bd_pins memory_interconnect/aclk] \
+#         [get_bd_pins rst_pl0/slowest_sync_clk]
+#     connect_bd_net [get_bd_pins rst_pl0/peripheral_aresetn] \
+#         [get_bd_pins axi_dma_0/axi_resetn] [get_bd_pins gesture_blocks56_axis_0/ap_rst_n] \
+#         [get_bd_pins control_interconnect/aresetn] [get_bd_pins memory_interconnect/aresetn]
+#     connect_bd_intf_net [get_bd_intf_pins ps_e_0/M_AXI_HPM0_FPD] [get_bd_intf_pins control_interconnect/S00_AXI]
+#     connect_bd_intf_net [get_bd_intf_pins control_interconnect/M00_AXI] [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+#     connect_bd_intf_net [get_bd_intf_pins control_interconnect/M01_AXI] [get_bd_intf_pins gesture_blocks56_axis_0/s_axi_control]
+#     connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_MM2S] [get_bd_intf_pins memory_interconnect/S00_AXI]
+#     connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins memory_interconnect/S01_AXI]
+#     connect_bd_intf_net [get_bd_intf_pins memory_interconnect/M00_AXI] [get_bd_intf_pins ps_e_0/S_AXI_HP0_FPD]
+#     connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins gesture_blocks56_axis_0/s_axis]
+#     connect_bd_intf_net [get_bd_intf_pins gesture_blocks56_axis_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+#     assign_bd_address
+#     set_property offset 0xA0000000 [get_bd_addr_segs ps_e_0/Data/SEG_axi_dma_0_Reg]
+#     set_property range 64K [get_bd_addr_segs ps_e_0/Data/SEG_axi_dma_0_Reg]
+#     set_property offset 0xA0010000 [get_bd_addr_segs ps_e_0/Data/SEG_gesture_blocks56_axis_0_Reg]
+#     set_property range 64K [get_bd_addr_segs ps_e_0/Data/SEG_gesture_blocks56_axis_0_Reg]
+#     validate_bd_design
+#     if {[get_property CONFIG.C_EXT_RESET_HIGH $rst] ne "0" || [get_property CONFIG.C_AUX_RESET_HIGH $rst] ne "0"} {
+#         error "Reset polarity must match PS pl_resetn0"
+#     }
+#     foreach pin {ext_reset_in aux_reset_in} {
+#         if {[get_bd_nets -of_objects [get_bd_pins rst_pl0/$pin]] ne [get_bd_nets -of_objects [get_bd_pins ps_e_0/pl_resetn0]]} {
+#             error "Reset $pin must be driven by the PS reset; no asserted constant permitted"
+#         }
+#     }
+#     save_bd_design
+#     report_property -all -file [file join $reports ps_final_properties.txt] $ps
+#     write_bd_tcl -force [file join $reports gblock_generated.tcl]
+#     set bd [get_files */gblock.bd]
+#     generate_target all $bd
+#     set wrapper [make_wrapper -files $bd -top]
+#     add_files -norecurse $wrapper
+#     set_property top gblock_wrapper [current_fileset]
+#     update_compile_order -fileset sources_1
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/hand/b3w/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/AMDDesignTools/2025.2/Vivado/data/ip'.
+Wrote  : <D:\hand\b3w\gblock\gblock.srcs\sources_1\bd\gblock\gblock.bd> 
+## proc restore_board_ps {ps root report_dir} {
+##     set readonly [list]
+##     foreach line [split [report_property -all -return_string $ps] "\n"] {
+##         if {[regexp {^(CONFIG\.PSU__\S+)\s+\S+\s+true\s} $line -> name]} {
+##             lappend readonly $name
+##         }
+##     }
+##     set input [open [file join $root board_baseline ps_2022_1_parameters.tsv] r]
+##     set settings [list]
+##     set skipped [list]
+##     while {[gets $input line] >= 0} {
+##         if {$line eq ""} {continue}
+##         lassign [split $line "\t"] name encoded
+##         if {![regexp {^PSU__[A-Za-z0-9_]+$} $name]} {error "Invalid PS parameter name"}
+##         if {[lsearch -exact $readonly CONFIG.$name] >= 0} {
+##             lappend skipped $name
+##         } else {
+##             lappend settings CONFIG.$name [encoding convertfrom utf-8 [binary decode base64 $encoded]]
+##         }
+##     }
+##     close $input
+##     set_property -dict $settings $ps
+##     set output [open [file join $report_dir ps_restore.tsv] w]
+##     puts $output "property\told_value_base64\tnew_value_base64"
+##     foreach {name old} $settings {
+##         set actual [get_property $name $ps]
+##         puts $output "$name\t[binary encode base64 -maxlen 0 $old]\t[binary encode base64 -maxlen 0 $actual]"
+##     }
+##     close $output
+##     set output [open [file join $report_dir ps_readonly_skipped.txt] w]
+##     puts $output [join $skipped "\n"]
+##     close $output
+##     puts "PS_RESTORED_WRITABLE=[expr {[llength $settings]/2}] READONLY_SKIPPED=[llength $skipped]"
+## }
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+PS_RESTORED_WRITABLE=1149 READONLY_SKIPPED=13
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/axi_dma_0/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Slave segment '/ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/axi_dma_0/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/ps_e_0/Data' at <0xA000_0000 [ 64K ]>.
+Slave segment '/gesture_blocks56_axis_0/s_axi_control/Reg' is being assigned into address space '/ps_e_0/Data' at <0xA001_0000 [ 64K ]>.
+WARNING: [BD 41-1629] Slave segment </ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-3281] Instance '/axi_dma_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+WARNING: [BD 41-3281] Instance '/ps_e_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [BD 5-943] Reserving offset range <0xA000_0000 [ 64K ]> from slave interface '/control_interconnect/S00_AXI' to master interface '/control_interconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xA001_0000 [ 64K ]> from slave interface '/control_interconnect/S00_AXI' to master interface '/control_interconnect/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] gblock_control_interconnect_0: SmartConnect gblock_control_interconnect_0 is in Low-Area Mode.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/memory_interconnect/S00_AXI' to master interface '/memory_interconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/memory_interconnect/S00_AXI' to master interface '/memory_interconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/memory_interconnect/S01_AXI' to master interface '/memory_interconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/memory_interconnect/S01_AXI' to master interface '/memory_interconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] gblock_memory_interconnect_0: SmartConnect gblock_memory_interconnect_0 is in High-performance Mode.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps_e_0/S_AXI_HP0_FPD(1) and /memory_interconnect/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps_e_0/S_AXI_HP0_FPD(1) and /memory_interconnect/M00_AXI(0)
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 905.219 ; gain = 110.422
+Wrote  : <D:\hand\b3w\gblock\gblock.srcs\sources_1\bd\gblock\gblock.bd> 
+WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
+/gesture_blocks56_axis_0
+Please add the following user repository(s):
+d:/hand/b3w/ip_repo
+before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <D:/hand/gesture_block_accel_v2/vivado/reports/gblock_generated.tcl>.
+
+INFO: [BD 41-1662] The design 'gblock.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v
+Verilog Output written to : D:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/sim/gblock.v
+Verilog Output written to : D:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/hdl/gblock_wrapper.v
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] gblock_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Amd's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Amd's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gesture_blocks56_axis_0 .
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(168) to pin: '/s00_nodes/S_SC_AR_payld'(164) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(168) to pin: '/s00_nodes/S_SC_AW_payld'(164) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(164) to pin: '/m00_nodes/M_SC_AR_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(164) to pin: '/m00_nodes/M_SC_AW_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(164) to pin: '/m01_nodes/M_SC_AR_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(164) to pin: '/m01_nodes/M_SC_AW_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_ar_node/s_sc_payld'(168) to pin: '/s00_nodes/S_SC_AR_payld'(164) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_nodes/s00_aw_node/s_sc_payld'(168) to pin: '/s00_nodes/S_SC_AW_payld'(164) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_r_node/s_sc_payld'(55) to pin: '/m00_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_nodes/m00_b_node/s_sc_payld'(9) to pin: '/m00_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_r_node/s_sc_payld'(55) to pin: '/m01_nodes/S_SC_R_payld'(53) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_nodes/m01_b_node/s_sc_payld'(9) to pin: '/m01_nodes/S_SC_B_payld'(7) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_r_payld'(53) to pin: '/s00_nodes/M_SC_R_payld'(55) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/s00_axi2sc/s_sc_b_payld'(7) to pin: '/s00_nodes/M_SC_B_payld'(9) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_ar_payld'(164) to pin: '/m00_nodes/M_SC_AR_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m00_sc2axi/s_sc_aw_payld'(164) to pin: '/m00_nodes/M_SC_AW_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_ar_payld'(164) to pin: '/m01_nodes/M_SC_AR_payld'(168) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/m01_sc2axi/s_sc_aw_payld'(164) to pin: '/m01_nodes/M_SC_AW_payld'(168) - Only lower order bits will be connected.
+Exporting to file d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/bd_0/hw_handoff/gblock_control_interconnect_0.hwh
+Generated Hardware Definition File d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/bd_0/synth/gblock_control_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block control_interconnect .
+Exporting to file d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/bd_0/hw_handoff/gblock_memory_interconnect_0.hwh
+Generated Hardware Definition File d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/bd_0/synth/gblock_memory_interconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_interconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_pl0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_zero .
+Exporting to file D:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/hw_handoff/gblock.hwh
+Generated Hardware Definition File D:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/gblock.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/gblock.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/gblock_sv.sveo
+generate_target: Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 975.793 ; gain = 70.574
+# if {$stage eq "create"} {close_project; exit}
+# if {$stage eq "bitstream"} {
+#     if {[get_property PROGRESS [get_runs synth_1]] ne "100%"} {
+#         launch_runs synth_1 -jobs $jobs
+#         wait_on_run synth_1
+#         if {[get_property PROGRESS [get_runs synth_1]] ne "100%"} {error "Synthesis failed"}
+#     }
+#     if {![string match "*write_bitstream Complete*" [get_property STATUS [get_runs impl_1]]]} {
+#         launch_runs impl_1 -to_step write_bitstream -jobs $jobs
+#         wait_on_run impl_1
+#         if {![string match "*write_bitstream Complete*" [get_property STATUS [get_runs impl_1]]]} {error "Implementation failed"}
+#     }
+# }
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sat Oct 31 16:54:11 2026] Launched gblock_ps_e_0_0_synth_1, gblock_gesture_blocks56_axis_0_0_synth_1, gblock_control_interconnect_0_synth_1, gblock_axi_dma_0_0_synth_1, gblock_memory_interconnect_0_synth_1, gblock_rst_pl0_0_synth_1...
+Run output will be captured here:
+gblock_ps_e_0_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_ps_e_0_0_synth_1/runme.log
+gblock_gesture_blocks56_axis_0_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_gesture_blocks56_axis_0_0_synth_1/runme.log
+gblock_control_interconnect_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_control_interconnect_0_synth_1/runme.log
+gblock_axi_dma_0_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_axi_dma_0_0_synth_1/runme.log
+gblock_memory_interconnect_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_memory_interconnect_0_synth_1/runme.log
+gblock_rst_pl0_0_synth_1: D:/hand/b3w/gblock/gblock.runs/gblock_rst_pl0_0_synth_1/runme.log
+[Sat Oct 31 16:54:11 2026] Launched synth_1...
+Run output will be captured here: D:/hand/b3w/gblock/gblock.runs/synth_1/runme.log
+[Sat Oct 31 16:54:11 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log gblock_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gblock_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 31 17:07:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gblock_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/hand/b3w/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design D:/hand/b3w/gblock/gblock.srcs/sources_1/bd/gblock/gblock.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ gblock_const_one_0
+gblock_const_zero_0
+Command: synth_design -top gblock_wrapper -part xczu5eg-sfvc784-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 388
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1932.348 ; gain = 209.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gblock_wrapper' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/hdl/gblock_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'gblock' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:13]
+INFO: [Synth 8-6157] synthesizing module 'gblock_axi_dma_0_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_axi_dma_0_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'gblock_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'gblock_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'gblock_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'gblock_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'gblock_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'gblock_axi_dma_0_0' has 64 connections declared, but only 59 given [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:167]
+INFO: [Synth 8-6157] synthesizing module 'gblock_const_one_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_const_one_0/synth/gblock_const_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_const_one_0' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_const_one_0/synth/gblock_const_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gblock_const_zero_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_const_zero_0/synth/gblock_const_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_const_zero_0' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_const_zero_0/synth/gblock_const_zero_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gblock_control_interconnect_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_control_interconnect_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_control_interconnect_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_control_interconnect_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'gblock_control_interconnect_0' is unconnected for instance 'control_interconnect' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'gblock_control_interconnect_0' is unconnected for instance 'control_interconnect' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'gblock_control_interconnect_0' is unconnected for instance 'control_interconnect' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'gblock_control_interconnect_0' is unconnected for instance 'control_interconnect' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'gblock_control_interconnect_0' is unconnected for instance 'control_interconnect' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+WARNING: [Synth 8-7023] instance 'control_interconnect' of module 'gblock_control_interconnect_0' has 79 connections declared, but only 74 given [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:231]
+INFO: [Synth 8-6157] synthesizing module 'gblock_gesture_blocks56_axis_0_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_gesture_blocks56_axis_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_gesture_blocks56_axis_0_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_gesture_blocks56_axis_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'gblock_gesture_blocks56_axis_0_0' is unconnected for instance 'gesture_blocks56_axis_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:306]
+WARNING: [Synth 8-7071] port 'm_axis_TSTRB' of module 'gblock_gesture_blocks56_axis_0_0' is unconnected for instance 'gesture_blocks56_axis_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:306]
+WARNING: [Synth 8-7023] instance 'gesture_blocks56_axis_0' of module 'gblock_gesture_blocks56_axis_0_0' has 32 connections declared, but only 30 given [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:306]
+INFO: [Synth 8-6157] synthesizing module 'gblock_memory_interconnect_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_memory_interconnect_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_memory_interconnect_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_memory_interconnect_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gblock_ps_e_0_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_ps_e_0_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'emio_gpio_o' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'emio_gpio_t' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'emio_uart1_rtsn' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'emio_uart1_dtrn' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'pl_clk2' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7071] port 'pl_clk3' of module 'gblock_ps_e_0_0' is unconnected for instance 'ps_e_0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+WARNING: [Synth 8-7023] instance 'ps_e_0' of module 'gblock_ps_e_0_0' has 95 connections declared, but only 86 given [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:406]
+INFO: [Synth 8-6157] synthesizing module 'gblock_rst_pl0_0' [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_rst_pl0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_rst_pl0_0' (0#1) [D:/hand/b3w/gblock/gblock.runs/synth_1/.Xil/Vivado-13448-ljh159/realtime/gblock_rst_pl0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'gblock_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:493]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'gblock_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:493]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'gblock_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:493]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'gblock_rst_pl0_0' is unconnected for instance 'rst_pl0' [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:493]
+WARNING: [Synth 8-7023] instance 'rst_pl0' of module 'gblock_rst_pl0_0' has 10 connections declared, but only 6 given [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:493]
+INFO: [Synth 8-6155] done synthesizing module 'gblock' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/synth/gblock.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'gblock_wrapper' (0#1) [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/hdl/gblock_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2061.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0/gblock_ps_e_0_0_in_context.xdc] for cell 'gblock_i/ps_e_0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0/gblock_ps_e_0_0_in_context.xdc] for cell 'gblock_i/ps_e_0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0/gblock_axi_dma_0_0_in_context.xdc] for cell 'gblock_i/axi_dma_0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0/gblock_axi_dma_0_0_in_context.xdc] for cell 'gblock_i/axi_dma_0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0_in_context.xdc] for cell 'gblock_i/gesture_blocks56_axis_0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0_in_context.xdc] for cell 'gblock_i/gesture_blocks56_axis_0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/gblock_control_interconnect_0/gblock_control_interconnect_0_in_context.xdc] for cell 'gblock_i/control_interconnect'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/gblock_control_interconnect_0/gblock_control_interconnect_0_in_context.xdc] for cell 'gblock_i/control_interconnect'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/gblock_memory_interconnect_0/gblock_memory_interconnect_0_in_context.xdc] for cell 'gblock_i/memory_interconnect'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/gblock_memory_interconnect_0/gblock_memory_interconnect_0_in_context.xdc] for cell 'gblock_i/memory_interconnect'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0/gblock_rst_pl0_0_in_context.xdc] for cell 'gblock_i/rst_pl0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0/gblock_rst_pl0_0_in_context.xdc] for cell 'gblock_i/rst_pl0'
+Parsing XDC File [D:/hand/b3w/gblock/gblock.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/hand/b3w/gblock/gblock.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2061.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2061.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2061.270 ; gain = 338.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2066.059 ; gain = 343.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2782.539 ; gain = 1059.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2782.539 ; gain = 1059.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2793.855 ; gain = 1071.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |gblock_axi_dma_0_0               |         1|
+|2     |gblock_control_interconnect_0    |         1|
+|3     |gblock_gesture_blocks56_axis_0_0 |         1|
+|4     |gblock_memory_interconnect_0     |         1|
+|5     |gblock_ps_e_0_0                  |         1|
+|6     |gblock_rst_pl0_0                 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |gblock_axi_dma_0               |     1|
+|2     |gblock_control_interconnect    |     1|
+|3     |gblock_gesture_blocks56_axis_0 |     1|
+|4     |gblock_memory_interconnect     |     1|
+|5     |gblock_ps_e_0                  |     1|
+|6     |gblock_rst_pl0                 |     1|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3043.609 ; gain = 1320.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3043.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3043.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 88e7cda1
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 3043.609 ; gain = 2402.898
+INFO: [Common 17-1381] The checkpoint 'D:/hand/b3w/gblock/gblock.runs/synth_1/gblock_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gblock_wrapper_utilization_synth.rpt -pb gblock_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 17:08:41 2026...
+[Sat Oct 31 17:08:45 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:14:35 . Memory (MB): peak = 975.793 ; gain = 0.000
+[Sat Oct 31 17:08:47 2026] Launched impl_1...
+Run output will be captured here: D:/hand/b3w/gblock/gblock.runs/impl_1/runme.log
+[Sat Oct 31 17:08:47 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log gblock_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gblock_wrapper.tcl -notrace
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 31 17:08:54 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gblock_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/hand/b3w/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/AMDDesignTools/2025.2/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 677.719 ; gain = 97.320
+Command: link_design -top gblock_wrapper -part xczu5eg-sfvc784-1-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0.dcp' for cell 'gblock_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/gblock_control_interconnect_0.dcp' for cell 'gblock_i/control_interconnect'
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_gesture_blocks56_axis_0_0/gblock_gesture_blocks56_axis_0_0.dcp' for cell 'gblock_i/gesture_blocks56_axis_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/gblock_memory_interconnect_0.dcp' for cell 'gblock_i/memory_interconnect'
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0.dcp' for cell 'gblock_i/ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0.dcp' for cell 'gblock_i/rst_pl0'
+Netlist sorting complete. Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2162.277 ; gain = 23.906
+INFO: [Netlist 29-17] Analyzing 7709 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 11 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0.xdc] for cell 'gblock_i/ps_e_0/inst'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_ps_e_0_0/gblock_ps_e_0_0.xdc] for cell 'gblock_i/ps_e_0/inst'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0.xdc] for cell 'gblock_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0.xdc] for cell 'gblock_i/axi_dma_0/U0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/bd_0/ip/ip_1/bd_5ca4_psr_aclk_0_board.xdc] for cell 'gblock_i/control_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/bd_0/ip/ip_1/bd_5ca4_psr_aclk_0_board.xdc] for cell 'gblock_i/control_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/smartconnect.xdc] for cell 'gblock_i/control_interconnect/inst'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_control_interconnect_0/smartconnect.xdc] for cell 'gblock_i/control_interconnect/inst'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/bd_0/ip/ip_1/bd_8cc6_psr_aclk_0_board.xdc] for cell 'gblock_i/memory_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/bd_0/ip/ip_1/bd_8cc6_psr_aclk_0_board.xdc] for cell 'gblock_i/memory_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/smartconnect.xdc] for cell 'gblock_i/memory_interconnect/inst'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_memory_interconnect_0/smartconnect.xdc] for cell 'gblock_i/memory_interconnect/inst'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0_board.xdc] for cell 'gblock_i/rst_pl0/U0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_rst_pl0_0/gblock_rst_pl0_0_board.xdc] for cell 'gblock_i/rst_pl0/U0'
+Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0_clocks.xdc] for cell 'gblock_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/hand/b3w/gblock/gblock.gen/sources_1/bd/gblock/ip/gblock_axi_dma_0_0/gblock_axi_dma_0_0_clocks.xdc] for cell 'gblock_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 97 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.260 . Memory (MB): peak = 4327.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2227 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 965 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 72 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM32X1S => RAM32X1S (RAMS32): 256 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 500 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 160 instances
+
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:03:16 ; elapsed = 00:02:15 . Memory (MB): peak = 4327.199 ; gain = 3649.480
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu5eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4327.199 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 203112d77
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:00:40 . Memory (MB): peak = 4327.199 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 203112d77
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.687 . Memory (MB): peak = 4650.434 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 203112d77
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4650.434 ; gain = 0.000
+Phase 1 Initialization | Checksum: 203112d77
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4650.434 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 203112d77
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4784.949 ; gain = 134.516
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 203112d77
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 4784.949 ; gain = 134.516
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 203112d77
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Phase 2 Timer Update And Timing Data Collection | Checksum: 203112d77
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 4784.949 ; gain = 134.516
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 4 inverters resulting in an inversion of 40 pins
+INFO: [Opt 31-138] Pushed 323 inverter(s) to 3759 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: a7932fb7
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:24 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Retarget | Checksum: a7932fb7
+INFO: [Opt 31-389] Phase Retarget created 5211 cells and removed 6051 cells
+INFO: [Opt 31-1021] In phase Retarget, 120 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 15664f280
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:27 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Constant propagation | Checksum: 15664f280
+INFO: [Opt 31-389] Phase Constant propagation created 467 cells and removed 2884 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 120 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.822 . Memory (MB): peak = 4784.949 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.882 . Memory (MB): peak = 4784.949 ; gain = 0.000
+Phase 5 Sweep | Checksum: c47b1818
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:39 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Sweep | Checksum: c47b1818
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3274 cells
+INFO: [Opt 31-1021] In phase Sweep, 152 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: c47b1818
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:46 . Memory (MB): peak = 4784.949 ; gain = 134.516
+BUFG optimization | Checksum: c47b1818
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: c47b1818
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:47 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Shift Register Optimization | Checksum: c47b1818
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 91bcd086
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:49 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Post Processing Netlist | Checksum: 91bcd086
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 135 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: beda2dab
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:57 . Memory (MB): peak = 4784.949 ; gain = 134.516
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.576 . Memory (MB): peak = 4784.949 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: beda2dab
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:57 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Phase 9 Finalization | Checksum: beda2dab
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:57 . Memory (MB): peak = 4784.949 ; gain = 134.516
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |            5211  |            6051  |                                            120  |
+|  Constant propagation         |             467  |            2884  |                                            120  |
+|  Sweep                        |               0  |            3274  |                                            152  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            135  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: beda2dab
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:57 . Memory (MB): peak = 4784.949 ; gain = 134.516
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 132 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 2 Total Ports: 264
+Ending PowerOpt Patch Enables Task | Checksum: 13cef76db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6362.660 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 13cef76db
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:26 . Memory (MB): peak = 6362.660 ; gain = 1577.711
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 13cef76db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 6362.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 6362.660 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:07:04 ; elapsed = 00:03:11 . Memory (MB): peak = 6362.660 ; gain = 2035.461
+INFO: [Vivado 12-24828] Executing command : report_drc -file gblock_wrapper_drc_opted.rpt -pb gblock_wrapper_drc_opted.pb -rpx gblock_wrapper_drc_opted.rpx
+Command: report_drc -file gblock_wrapper_drc_opted.rpt -pb gblock_wrapper_drc_opted.pb -rpx gblock_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:41 ; elapsed = 00:00:23 . Memory (MB): peak = 6362.660 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:41 ; elapsed = 00:00:23 . Memory (MB): peak = 6362.660 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.489 . Memory (MB): peak = 6362.660 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 6362.660 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.213 . Memory (MB): peak = 6362.660 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c6c80b2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.299 . Memory (MB): peak = 6362.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 6362.660 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8ea47a35
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 6362.660 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: a2c60323
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:28 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: a2c60323
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:28 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 1 Placer Initialization | Checksum: a2c60323
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:29 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 17d1c7ab0
+
+Time (s): cpu = 00:05:37 ; elapsed = 00:02:46 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: bfff7ff8
+
+Time (s): cpu = 00:05:43 ; elapsed = 00:02:52 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: e6284339
+
+Time (s): cpu = 00:05:45 ; elapsed = 00:02:54 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: e6284339
+
+Time (s): cpu = 00:06:04 ; elapsed = 00:03:00 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1fe68fd87
+
+Time (s): cpu = 00:06:14 ; elapsed = 00:03:09 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 228380bdf
+
+Time (s): cpu = 00:06:35 ; elapsed = 00:03:19 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 228380bdf
+
+Time (s): cpu = 00:06:37 ; elapsed = 00:03:20 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 2.1.1 Partition Driven Placement | Checksum: 228380bdf
+
+Time (s): cpu = 00:06:37 ; elapsed = 00:03:20 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 2.1 Floorplanning | Checksum: 1a67a67fd
+
+Time (s): cpu = 00:06:38 ; elapsed = 00:03:20 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1a67a67fd
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:03:21 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1a67a67fd
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:03:22 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 132324153
+
+Time (s): cpu = 00:11:08 ; elapsed = 00:05:31 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: f5a873aa
+
+Time (s): cpu = 00:11:40 ; elapsed = 00:05:44 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 21386 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 10575 nets or LUTs. Breaked 0 LUT, combined 10575 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-670] No setup violation found.  Equivalent Driver Rewiring was not performed.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[0]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[1]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[2]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[3]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[4]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-1132] Very high fanout net 'gblock_i/gesture_blocks56_axis_0/inst/grp_gesture_blocks56_axis_Pipeline_VITIS_LOOP_363_1_VITIS_LOOP_364_2_fu_3538/add_ln366_reg_1404_reg[5]_0[5]' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 4500 to 501 due to a timing constraint or macro primitives that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 501.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |          10575  |                 10575  |           0  |           1  |  00:00:10  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |          10575  |                 10575  |           0  |           4  |  00:00:11  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1702218cf
+
+Time (s): cpu = 00:12:21 ; elapsed = 00:06:12 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 2.5 Global Place Phase2 | Checksum: 107cd1097
+
+Time (s): cpu = 00:12:52 ; elapsed = 00:06:26 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 2 Global Placement | Checksum: 107cd1097
+
+Time (s): cpu = 00:12:53 ; elapsed = 00:06:26 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 128fd48e0
+
+Time (s): cpu = 00:13:28 ; elapsed = 00:06:41 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: faa77f7e
+
+Time (s): cpu = 00:13:53 ; elapsed = 00:06:53 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: e456e27d
+
+Time (s): cpu = 00:14:36 ; elapsed = 00:07:09 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 127f0a23b
+
+Time (s): cpu = 00:15:10 ; elapsed = 00:07:31 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 3.3.2 Slice Area Swap | Checksum: 127f0a23b
+
+Time (s): cpu = 00:15:11 ; elapsed = 00:07:32 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 3.3 Small Shape DP | Checksum: 1d1871dfc
+
+Time (s): cpu = 00:16:23 ; elapsed = 00:07:53 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1ff700273
+
+Time (s): cpu = 00:16:34 ; elapsed = 00:08:03 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1ccb395f1
+
+Time (s): cpu = 00:16:36 ; elapsed = 00:08:04 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 3 Detail Placement | Checksum: 1ccb395f1
+
+Time (s): cpu = 00:16:38 ; elapsed = 00:08:05 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c0837602
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.121 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: fed3ee75
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_squeeze_fu_3162/grp_squeeze_Pipeline_VITIS_LOOP_244_4_gap_columns_fu_2237/flow_control_loop_pipe_sequential_init_U/ap_loop_init, inserted BUFG to drive 7168 loads.
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_se_layer_fu_2556/ap_NS_fsm116_out, inserted BUFG to drive 3840 loads.
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_se_layer_fu_2556/E[0], inserted BUFG to drive 3840 loads.
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_se_layer_fu_2556/ap_CS_fsm_reg[1]_0[0], inserted BUFG to drive 3840 loads.
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_depthwise_fu_2264/ap_CS_fsm_state4, inserted BUFG to drive 1731 loads.
+INFO: [Place 46-45] Replicated bufg driver gblock_i/gesture_blocks56_axis_0/inst/grp_depthwise_fu_2264/ap_CS_fsm_reg[3]_replica
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_depthwise_fu_2264/grp_depthwise_Pipeline_VITIS_LOOP_175_3_fu_948/flow_control_loop_pipe_sequential_init_U/E[0], inserted BUFG to drive 1600 loads.
+INFO: [Place 46-35] Processed net gblock_i/gesture_blocks56_axis_0/inst/grp_depthwise_fu_2264/grp_depthwise_Pipeline_dw_rows_dw_columns_fu_960/flow_control_loop_pipe_sequential_init_U/SR[0], inserted BUFG to drive 1289 loads.
+INFO: [Place 46-56] BUFG insertion identified 7 candidate nets. Inserted BUFG: 7, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1e878329c
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1440043c0
+
+Time (s): cpu = 00:20:12 ; elapsed = 00:09:38 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.121. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 199723996
+
+Time (s): cpu = 00:20:15 ; elapsed = 00:09:39 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Time (s): cpu = 00:20:15 ; elapsed = 00:09:39 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 4.1 Post Commit Optimization | Checksum: 199723996
+
+Time (s): cpu = 00:20:17 ; elapsed = 00:09:40 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.559 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 23915958d
+
+Time (s): cpu = 00:20:43 ; elapsed = 00:09:52 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                2x2|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+|      South|                4x4|                8x8|                8x8|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|              16x16|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 23915958d
+
+Time (s): cpu = 00:20:45 ; elapsed = 00:09:52 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 4.3 Placer Reporting | Checksum: 23915958d
+
+Time (s): cpu = 00:20:47 ; elapsed = 00:09:53 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.222 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Time (s): cpu = 00:20:47 ; elapsed = 00:09:53 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 288a6cb98
+
+Time (s): cpu = 00:20:49 ; elapsed = 00:09:54 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+Ending Placer Task | Checksum: 1dc9f139a
+
+Time (s): cpu = 00:20:51 ; elapsed = 00:09:54 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+101 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:23:14 ; elapsed = 00:10:46 . Memory (MB): peak = 7845.012 ; gain = 1482.352
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file gblock_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file gblock_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.490 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gblock_wrapper_utilization_placed.rpt -pb gblock_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.523 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.409 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:35 ; elapsed = 00:00:12 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:00:21 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu5eg'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:32 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 2.130 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:23 ; elapsed = 00:00:35 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.497 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.358 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:35 ; elapsed = 00:00:11 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:44 ; elapsed = 00:00:20 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu5eg'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 5d5270be ConstDB: 0 ShapeSum: a240a399 RouteDB: dd0bff43
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.562 . Memory (MB): peak = 7845.012 ; gain = 0.000
+Post Restoration Checksum: NetGraph: c34f9cc8 | NumContArr: 2803df76 | Constraints: fa66ec76 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2a8636351
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:28 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2a8636351
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:28 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2a8636351
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:28 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 33e916848
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:33 . Memory (MB): peak = 7845.012 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2d85dc400
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:00:51 . Memory (MB): peak = 7845.012 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.488  | TNS=0.000  | WHS=-0.052 | THS=-8.070 |
+
+
+Phase 2.5 Soft Constraint Pins - Fast Budgeting
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 31b2ba2b7
+
+Time (s): cpu = 00:03:45 ; elapsed = 00:01:26 . Memory (MB): peak = 8108.695 ; gain = 263.684
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000594494 %
+  Global Horizontal Routing Utilization  = 0.000707975 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 231581
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 203481
+  Number of Partially Routed Nets     = 28100
+  Number of Node Overlaps             = 18
+
+Phase 2 Router Initialization | Checksum: 37c2c73ed
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:01:28 . Memory (MB): peak = 8108.695 ; gain = 263.684
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 37c2c73ed
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:01:28 . Memory (MB): peak = 8108.695 ; gain = 263.684
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1aaaa9739
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:01:51 . Memory (MB): peak = 8108.695 ; gain = 263.684
+Phase 4 Initial Routing | Checksum: 26c1f0687
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:01:51 . Memory (MB): peak = 8108.695 ; gain = 263.684
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 72610
+ Number of Nodes with overlaps = 10322
+ Number of Nodes with overlaps = 1347
+ Number of Nodes with overlaps = 215
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.742  | TNS=0.000  | WHS=-0.044 | THS=-1.285 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 24c08f60a
+
+Time (s): cpu = 00:13:58 ; elapsed = 00:06:22 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.742  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 21f9d0fb9
+
+Time (s): cpu = 00:14:35 ; elapsed = 00:06:40 . Memory (MB): peak = 8209.336 ; gain = 364.324
+Phase 5 Rip-up And Reroute | Checksum: 21f9d0fb9
+
+Time (s): cpu = 00:14:35 ; elapsed = 00:06:40 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 26d1833cb
+
+Time (s): cpu = 00:14:36 ; elapsed = 00:06:40 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 26d1833cb
+
+Time (s): cpu = 00:14:37 ; elapsed = 00:06:40 . Memory (MB): peak = 8209.336 ; gain = 364.324
+Phase 6 Delay and Skew Optimization | Checksum: 26d1833cb
+
+Time (s): cpu = 00:14:38 ; elapsed = 00:06:40 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.742  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:26 ; elapsed = 00:06:57 . Memory (MB): peak = 8209.336 ; gain = 364.324
+Phase 7 Post Hold Fix | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:26 ; elapsed = 00:06:57 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 35.04 %
+  Global Horizontal Routing Utilization  = 38.7308 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:06:58 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:30 ; elapsed = 00:06:59 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:47 ; elapsed = 00:07:11 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:48 ; elapsed = 00:07:11 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:50 ; elapsed = 00:07:13 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Phase 13 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.742  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 2f2f57e66
+
+Time (s): cpu = 00:15:51 ; elapsed = 00:07:13 . Memory (MB): peak = 8209.336 ; gain = 364.324
+Total Elapsed time in route_design: 432.973 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 18c50eb1d
+
+Time (s): cpu = 00:15:54 ; elapsed = 00:07:14 . Memory (MB): peak = 8209.336 ; gain = 364.324
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 18c50eb1d
+
+Time (s): cpu = 00:15:58 ; elapsed = 00:07:15 . Memory (MB): peak = 8209.336 ; gain = 364.324
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+124 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:16:00 ; elapsed = 00:07:17 . Memory (MB): peak = 8209.336 ; gain = 364.324
+INFO: [Vivado 12-24828] Executing command : report_drc -file gblock_wrapper_drc_routed.rpt -pb gblock_wrapper_drc_routed.pb -rpx gblock_wrapper_drc_routed.rpx
+Command: report_drc -file gblock_wrapper_drc_routed.rpt -pb gblock_wrapper_drc_routed.pb -rpx gblock_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:55 ; elapsed = 00:00:21 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file gblock_wrapper_methodology_drc_routed.rpt -pb gblock_wrapper_methodology_drc_routed.pb -rpx gblock_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file gblock_wrapper_methodology_drc_routed.rpt -pb gblock_wrapper_methodology_drc_routed.pb -rpx gblock_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:53 ; elapsed = 00:01:00 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file gblock_wrapper_timing_summary_routed.rpt -pb gblock_wrapper_timing_summary_routed.pb -rpx gblock_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:01:24 ; elapsed = 00:00:35 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file gblock_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file gblock_wrapper_route_status.rpt -pb gblock_wrapper_route_status.pb
+report_route_status: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_power -file gblock_wrapper_power_routed.rpt -pb gblock_wrapper_power_summary_routed.pb -rpx gblock_wrapper_power_routed.rpx
+Command: report_power -file gblock_wrapper_power_routed.rpt -pb gblock_wrapper_power_summary_routed.pb -rpx gblock_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+141 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:59 ; elapsed = 00:00:36 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file gblock_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file gblock_wrapper_bus_skew_routed.rpt -pb gblock_wrapper_bus_skew_routed.pb -rpx gblock_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+generate_parallel_reports: Time (s): cpu = 00:06:27 ; elapsed = 00:02:46 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.522 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.351 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 8209.336 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:40 ; elapsed = 00:00:13 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/hand/b3w/gblock/gblock.runs/impl_1/gblock_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 8209.336 ; gain = 0.000
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/memory_interconnect/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/memory_interconnect/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block gblock_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the gblock_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <gblock_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <gblock_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <gblock_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <gblock_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force gblock_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu5eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./gblock_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+172 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:45 ; elapsed = 00:00:38 . Memory (MB): peak = 8373.934 ; gain = 164.598
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 17:38:30 2026...
+[Sat Oct 31 17:38:38 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:29:50 . Memory (MB): peak = 975.793 ; gain = 0.000
+# open_run impl_1
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+Netlist sorting complete. Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2443.645 ; gain = 54.164
+INFO: [Netlist 29-17] Analyzing 7599 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 11 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.552 . Memory (MB): peak = 2986.754 ; gain = 65.816
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 4464.547 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 4464.547 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4495.219 ; gain = 30.672
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4495.219 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 5129.199 ; gain = 633.980
+Read Physdb Files: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 5129.199 ; gain = 664.652
+Restored from archive | CPU: 17.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 5129.199 ; gain = 664.652
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 5129.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2238 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 965 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 72 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32X1S => RAM32X1S (RAMS32): 256 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 500 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 160 instances
+  SRLC32E => SRL16E: 12 instances
+
+open_run: Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 5129.199 ; gain = 4153.406
+# report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -file [file join $reports timing_summary.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:01:49 ; elapsed = 00:00:45 . Memory (MB): peak = 5630.195 ; gain = 500.996
+# report_utilization -file [file join $reports utilization.rpt]
+# report_drc -file [file join $reports drc.rpt]
+Command: report_drc -file D:/hand/gesture_block_accel_v2/vivado/reports/drc.rpt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/hand/gesture_block_accel_v2/vivado/reports/drc.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:55 ; elapsed = 00:00:21 . Memory (MB): peak = 6260.266 ; gain = 628.988
+# report_methodology -file [file join $reports methodology.rpt]
+Command: report_methodology -file D:/hand/gesture_block_accel_v2/vivado/reports/methodology.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/hand/gesture_block_accel_v2/vivado/reports/methodology.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:04 ; elapsed = 00:00:42 . Memory (MB): peak = 6260.266 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+get_timing_paths: Time (s): cpu = 00:01:09 ; elapsed = 00:00:25 . Memory (MB): peak = 6260.266 ; gain = 0.000
+# set setup_paths [get_timing_paths -delay_type max -max_paths 1]
+# set hold_paths [get_timing_paths -delay_type min -max_paths 1]
+# if {[llength $setup_paths] == 0 || [llength $hold_paths] == 0} {error "Missing timing paths"}
+# set wns [get_property SLACK [lindex $setup_paths 0]]
+# set whs [get_property SLACK [lindex $hold_paths 0]]
+# if {$wns < 0 || $whs < 0} {error "Timing failed: setup=$wns hold=$whs; do not deploy"}
+# set bit [file join $work gblock gblock.runs impl_1 gblock_wrapper.bit]
+# set hwh [file join $work gblock gblock.gen sources_1 bd gblock hw_handoff gblock.hwh]
+# if {![file exists $bit] || ![file exists $hwh]} {error "Missing bitstream/HWH"}
+# file copy -force $bit [file join $deliver gesture_blocks56.bit]
+# file copy -force $hwh [file join $deliver gesture_blocks56.hwh]
+# set output [open [file join $reports build_result.tsv] w]
+# puts $output "vivado\t[version -short]"
+# puts $output "part\t[get_property PART [current_project]]"
+# puts $output "setup_slack_ns\t$wns"
+# puts $output "hold_slack_ns\t$whs"
+# puts $output "synthesis_status\t[get_property STATUS [get_runs synth_1]]"
+# puts $output "implementation_status\t[get_property STATUS [get_runs impl_1]]"
+# puts $output "board_tested\tfalse"
+# close $output
+# puts "BLOCKS56_OVERLAY_BUILD_PASS setup=$wns hold=$whs"
+BLOCKS56_OVERLAY_BUILD_PASS setup=0.767 hold=0.010
+# close_project
+close_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6260.266 ; gain = 0.000
+# exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 17:42:34 2026...
